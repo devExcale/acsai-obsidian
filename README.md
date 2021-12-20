@@ -7,6 +7,12 @@ to set the concepts in my mind and to have a repository full of inter-linked inf
 
 [//]: # (TODO: course introduction)
 
+Every class has an index note, to make the navigation easier.
+These files should link every note in the respective class in the order they were written,
+feel free to browse for yourself:
+- [Computer Architecture](/Computer%20Architecture/index.md)
+- [Linear Algebra](/Linear%20Algebra/index.md)
+
 :warning: **Every note is realized with [Obsidian](https://obsidian.md/),
 a powerful note-taking software.
 Notes are written in markdown,

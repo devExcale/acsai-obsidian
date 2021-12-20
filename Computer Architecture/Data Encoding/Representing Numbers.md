@@ -1,4 +1,4 @@
-# Numbers Encoding
+# Representing Numbers
 ---
 
 ###### Information Encoding
@@ -40,6 +40,14 @@ $$ \begin{align}
 &= (98 + 35 + 4)_{10} \\
 &= 137_{10}
 \end{align}$$
+
+These systems have some properties:
+
+- **Representation interval**
+The set of numbers we can represent with the current system. With $n$ digits in base $b$, the set of all representable numbers is $\{0,\cdots,b^n-1\}$, its size ($b^n$) is how many numbers we can represent.
+
+- **Representation length**
+The number of how many digits we need to represent a number $N$ in base $b$. This number is calculated with the formula $\lfloor{ \log_b N }\rfloor + 1$
 
 
 ###### Polynomial method
@@ -92,7 +100,7 @@ q &= 7 \ \text{div} \ 3 = 2\\
 r &= 7 \ \text{mod} \ 3 = 1
 \end{align} $$
 
-// TODO: iteration proof
+The proof is quite long, so [here](Iterated%20division%20proof.md) it is.
 
 So, to convert a number $N_a$ in base $b$ :
 1. Repeatedly divide $N_a$ for $b_a$ (**$\large b$ must be expressed in base $\large a$ and the division must be done in base $\large a$**);
@@ -138,4 +146,66 @@ $$ \begin{align}
 
 $$ \rightarrow 102202_3 = 2232_5 $$
 
-// TODO: base-$a$ to base-$a^k$, base-$b^k$ to base-$b$
+
+###### Particular bases
+
+When converting from base-$a$ to base-$b$, we can have particular cases where $b = a^k$ or $a = b^k$
+
+In the case base-$a$ --> base-$a^k$ we have that
+
+$$ \large \begin{align}
+c_{n-1} \cdots c_1 c_0 \text{ mod } a^k &= c_{k-1} \cdots c_0 \\
+c_{n-1} \cdots c_1 c_0 \text{ div } a^k &= c_{n-1} \cdots c_k \\
+\end{align} $$
+
+So, if $b = a^k$ and ${ N_a = c_{n-1} \cdots c_1 c_0 }$, then the number in base-$b$ is
+
+$$ \large
+(c_{n-1} \cdots c_{hk})_b
+\cdots
+(c_{3k-1} \cdots c_{2k})_b
+(c_{2k-1} \cdots c_k)_b
+(c_{k-1} \cdots c_{2k})_b
+$$
+
+***Ex.*** | *453 (base-10) to base-100*  ($10^2$)
+
+$$ \large \begin{align}
+403_{10} \text{ mod } 100 &= 3 \\
+403_{10} \text{ div } 100 &= 4 \\
+\end{align} $$
+$$ \large \rightarrow 403_{10} = 43_{100}$$
+
+***Ex.*** | *1000111101 (base-2) to base-4* ($2^2$)
+
+$$ \large \begin{array}{rcccccl}
+ ( & 10 & 00 & 11 & 11 & 01 & )_2 \\
+=( &  2 &  0 &  3 &  3 &  1 & )_4 \\
+\end{array} $$
+
+
+***Ex.*** | *1000111101 (base-2) to base-8* ($2^3$)
+
+$$ \large \begin{array}{rccccl}
+ ( & 1 & 000 & 111 & 101 & )_2 \\
+=( & 1 &  0  &  7  &  5  & )_8 \\
+\end{array} $$
+
+In the case base-$a^k$ --> base-$a$ we just have to convert the single digits into the lower base:
+
+$$ \large (c_{n-1})_b \cdots (c_2)_b (c_1)_b (c_0)_b $$
+
+***Ex.*** | *8315 (base-9) to base-3* ($3^2$)
+
+$$ \large \begin{array}{rccccl}
+ ( &  8 &  3 &  1 &  5 & )_9 \\
+=( & 22 & 10 & 01 & 12 & )_3 \\
+\end{array} $$
+
+
+***Ex.*** | *8D3A (base-16) to base-2* ($2^4$)
+
+$$ \large \begin{array}{rccccl}
+ ( &    8 &    D &    3 &    A & )_{16} \\
+=( & 1000 & 1101 & 0011 & 1010 & )_2    \\
+\end{array} $$

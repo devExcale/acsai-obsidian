@@ -70,3 +70,43 @@ B \supseteq A,\ A \neq B \rightarrow B \supset A
 ***Ex.*** | Relationship between the naturals set $\mathbb{N}$, the integers set $\mathbb{Z}$ and the reals set $\mathbb{R}$:
 
 $$ \large \mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}$$
+
+
+## Set Operations
+
+#### Union
+
+Two sets can be joined, the new set contains all the members of both $A$ and $B$, repeted once.
+
+$$ \large A \ \cup \ B = C $$
+
+***Ex.*** | Union examples
+
+$$ \large \begin{align}
+\{1,2\} \ \cup \ \{3,4\} &= \{1,2,3,4\} \\
+\{1,2\} \ \cup \ \{2,3\} &= \{1,2,3\} \\
+\end{align} $$
+
+#### Intersection
+
+The intersection of two sets is a new set with the elements $A$ and $B$ have in common. If there are no elements in common, an empty set is returned.
+
+$$ \large A \ \cap \ B = C $$
+
+***Ex.*** | Intersection examples
+
+$$ \large \begin{align}
+\{1,2,3\} \ \cup \ \{2,3,4\} &= \{2,3\} \\
+\{1,2,3\} \ \cup \ \{4,5,6\} &= \varnothing \\
+\end{align} $$
+
+#### Cartesian Product
+
+The cartesian product of two sets $A$ and $B$ is the set of all ordered pairs $(a,b)$ such that $a$ is a member of $A$ and $b$ is a member of $B$.
+
+$$ \large A \times B = \{ (a,b) \mid a \in A,\ b \in B \} $$
+
+***Ex.*** | Cartesian Product example
+
+$$ \large \{x_1, x_2\} \times \{y_1, y_2\}
+= \{(x_1, y_1), (x_1, y_2), (x_2, y_1), (x_2, y_2)\} $$

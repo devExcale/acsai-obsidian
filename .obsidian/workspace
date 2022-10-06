@@ -1,0 +1,135 @@
+{
+  "main": {
+    "id": "98bc55495b9f2936",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d4a69889a708d67",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Computer Architecture/Data Encoding/Representing Numbers.md",
+            "mode": "source",
+            "source": true
+          }
+        },
+        "group": "a83a0b2bcf25e4fe"
+      },
+      {
+        "id": "2e11514cab0bb301",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Computer Architecture/Data Encoding/Representing Numbers.md",
+            "mode": "preview",
+            "source": true
+          }
+        },
+        "group": "a83a0b2bcf25e4fe"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c2e3ff7c635fad58",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f43453f8a8cc13e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c6a6edf600c2c8b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "090c9d99bdde417f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ccd1f5bf3b5c8689",
+    "type": "split",
+    "children": [
+      {
+        "id": "c693001a6263d89d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c07bd18daabe06d8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Computer Architecture/Data Encoding/Representing Numbers.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "baaa64d7e295ff02",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Computer Architecture/Data Encoding/Representing Numbers.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e00cfd5c8f69e359",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Computer Architecture/Data Encoding/Representing Numbers.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 223.5
+  },
+  "active": "2d4a69889a708d67",
+  "lastOpenFiles": [
+    "Systems and Networking/Unit 2/Networks.md",
+    "Systems and Networking/Unit 2/Protocols.md",
+    "Systems and Networking/Unit 1/Operating System.md",
+    "Systems and Networking/Unit 1/High-Level Computer Architecture.md",
+    "Systems and Networking/README.md",
+    "README.md"
+  ]
+}

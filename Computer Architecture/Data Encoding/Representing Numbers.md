@@ -1,9 +1,8 @@
 # Representing Numbers
----
 
 ###### Information Encoding
 
-When dealing with information, we need a mean to picture the information and work with it. In computer science, information can be represented through sequences of symbols taken from a fixed alphabeth.
+When dealing with information, we need a mean to picture the information and work with it. In computer science, information can be represented through sequences of symbols taken from a fixed alphabet.
 
 Knowing this, we can define a *code* $C$, which is a set of words formed by the symbols of an alphabet $\Sigma$, called *support* of $C$.
 
@@ -13,7 +12,7 @@ A coding function is defined as $f : I \rightarrow C$, where $I$ is a set of wor
 ***Ex.*** | *Car --> 00, Shuttle --> 01, Airplane --> 10*
 
 We can also define a *decoding function*, to transmute back the coded data into understandable information.
-A deconding function is defined as $g : C \rightarrow I$, with the same meanings as the coding function. Tipically, this function is the inverse of the coding function.
+A decoding function is defined as $g : C \rightarrow I$, with the same meanings as the coding function. Typically, this function is the inverse of the coding function.
 
 ***Ex.*** | *00 --> Car, 01 --> Shuttle, 10 --> Airplane*
 

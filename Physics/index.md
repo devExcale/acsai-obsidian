@@ -8,3 +8,5 @@ It provides formulas, as well as theorems, which the universe is based upon.
 - Mechanics
 - Fluids and thermodynamics
 - Electricity and magnetism
+
+The course is based on *Halliday's & Resnick's* book, **Fundamentals of Physics**

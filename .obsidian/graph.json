@@ -36,6 +36,13 @@
       }
     },
     {
+      "query": "path:\"Data Management and Analysis\"",
+      "color": {
+        "a": 1,
+        "rgb": 15597823
+      }
+    },
+    {
       "query": "path:/",
       "color": {
         "a": 1,
@@ -53,6 +60,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7132754626224425,
+  "scale": 0.5676681416150968,
   "close": false
 }

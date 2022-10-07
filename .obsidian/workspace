@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "2d4a69889a708d67",
+        "id": "70b9b0e58ffdd20d",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -14,7 +14,7 @@
             "source": true
           }
         },
-        "group": "a83a0b2bcf25e4fe"
+        "group": "e3e58ea54e0fa6c4"
       },
       {
         "id": "2e11514cab0bb301",
@@ -27,7 +27,7 @@
             "source": true
           }
         },
-        "group": "a83a0b2bcf25e4fe"
+        "group": "e3e58ea54e0fa6c4"
       }
     ],
     "direction": "vertical"
@@ -115,20 +115,31 @@
                 "file": "Computer Architecture/Data Encoding/Representing Numbers.md"
               }
             }
+          },
+          {
+            "id": "39f07d7f211656d1",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 223.5
   },
-  "active": "2d4a69889a708d67",
+  "active": "70b9b0e58ffdd20d",
   "lastOpenFiles": [
+    "Data Management and Analysis/Unit 1/Relational Model.md",
+    "Linear Algebra/Sets.md",
+    "Systems and Networking/Unit 1/High-Level Computer Architecture.md",
+    "Computer Architecture/Data Encoding/Representing Numbers.md",
     "Systems and Networking/Unit 2/Networks.md",
     "Systems and Networking/Unit 2/Protocols.md",
     "Systems and Networking/Unit 1/Operating System.md",
-    "Systems and Networking/Unit 1/High-Level Computer Architecture.md",
     "Systems and Networking/README.md",
     "README.md"
   ]

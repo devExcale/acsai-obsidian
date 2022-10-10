@@ -13,11 +13,4 @@ The list of components of a *digital* information system is the following:
 - Computer Hardware (storage devices)
 - Personnel developing, managing or using the system
 
-### Information vs Data
-
-In computer systems, information is represented in the form of **data**: raw facts that need to be interpreted and correlated to a context to provide information. Data can be recorded in two ways:
-
-- **Structured data**, data is represented with a fixed format (strings of symbols and numbers);
-- **Unstructured data**, data is written an natural text.
-
 [//]: # (TODO: models pg. 16)

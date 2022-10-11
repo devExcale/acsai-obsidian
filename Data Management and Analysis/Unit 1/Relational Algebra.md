@@ -8,8 +8,8 @@ The operators are:
 - [Projection](#Projection)
 - [Selection](#Selection)
 - [Union](#Union)
-- Intersection
 - [Difference](#Difference)
+- [Intersection](#Intersection)
 - Cartesian Product
 - Join
 - Renaming
@@ -24,7 +24,7 @@ Let $R(X)$ be a relation, where $X = \{A_1, \cdots, A_n\}$ . Then $\pi_Y(R)$ whe
 
 $\text{Customer}$
 
-| Name    | C#  | Town   |
+| Name    | Code  | Town   |
 | ------- | --- | ------ |
 | Rossi   | C1  | Roma   |
 | Rossi   | C2  | Milano |
@@ -40,9 +40,9 @@ $\pi_\text{Name}(\text{Customer})$
 | Bianchi |
 | Verdi   |
 
-$\pi_\text{Name, C\#}(\text{Customer})$
+$\pi_\text{Name, Code}(\text{Customer})$
 
-| Name    | C#  |
+| Name    | Code  |
 | ------- | --- |
 | Rossi   | C1  |
 | Rossi   | C2  |
@@ -69,7 +69,7 @@ Multiple conditions can be joined using logical operators ($\lor, \land, \lnot$)
 
 $\text{Customer}$
 
-| Name    | C#  | Town   |
+| Name    | Code  | Town   |
 | ------- | --- | ------ |
 | Rossi   | C1  | Roma   |
 | Rossi   | C2  | Milano |
@@ -79,7 +79,7 @@ $\text{Customer}$
 
 $\sigma_\text{Town='Roma'}(\text{Customer})$
 
-| Name    | C#  | Town |
+| Name    | Code  | Town |
 | ------- | --- | ---- |
 | Rossi   | C1  | Roma |
 | Rossi   | C3  | Roma |
@@ -88,7 +88,7 @@ $\sigma_\text{Town='Roma'}(\text{Customer})$
 
 $\sigma_{ \text{Town='Roma'} \land \text{Name='Rossi'} }(\text{Customer})$
 
-| Name    | C#  | Town |
+| Name    | Code  | Town |
 | ------- | --- | ---- |
 | Rossi   | C1  | Roma |
 | Rossi   | C3  | Roma |
@@ -213,4 +213,34 @@ $\text{Admins} - \text{Students}$
 
 ## Intersection
 
-It is a binary commutative operator. 
+It is a binary commutative operator. An intersection creates a new relation instance containing all the tuples that are both in operands. The two operands must be compatible.
+
+It is represented by the symbol $\cap$.
+
+Let $R_1(X),\ R_2(Y)$ be two relations such that $X = Y$.
+<br>
+Then $R_1 \cap R_2 = \{ t : t \in R_1, R_2\} = R_1 - (R_1 - R_2)$
+
+$\text{Students}$
+
+| Name    | TaxCode | Department |
+| ------- | ------- | ---------- |
+| Rossi   | C1      | Math       |
+| Rossi   | C1      | Italian    |
+| Bianchi | C3      | Math       |
+| Verdi   | C4      | English    |
+
+$\text{Admins}$
+
+| Name     | TaxCode | Department |
+| -------- | ------- | ---------- |
+| Esposito | C5      | Italian    |
+| Riccio   | C6      | Math       |
+| Pierro   | C7      | English    |
+| Bianchi  | C3      | Math       |
+
+$\text{Students} \cap \text{Admins} = \text{Admins} \cap \text{Students}$
+
+| Name     | TaxCode | Department |
+| -------- | ------- | ---------- |
+| Bianchi  | C3      | Math       |

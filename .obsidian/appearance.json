@@ -1,5 +1,9 @@
 {
-  "baseFontSize": 16,
-  "cssTheme": "Deep Work",
-  "translucency": false
+  "baseFontSize": 17,
+  "cssTheme": "Minimal",
+  "translucency": false,
+  "theme": "obsidian",
+  "accentColor": "",
+  "showViewHeader": true,
+  "nativeMenus": false
 }

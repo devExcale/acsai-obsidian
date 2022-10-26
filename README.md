@@ -10,7 +10,7 @@ These files should link every note in the respective class in the order they wer
 feel free to browse for yourself:
 - [Computer Architecture](/Computer%20Architecture/index.md)
 - [Linear Algebra](/Linear%20Algebra/index.md)
-- [Systems and Networking](/Systems%20and%20Networking/README.md)
+- [Systems and Networking](Systems%20and%20Networking/Systems%20and%20Networking.md)
 
 :warning: **The whole repository is edited through [Obsidian](https://obsidian.md/), a powerful note-taking software. Notes are written in [markdown](https://www.markdownguide.org/) and  [LaTeX](https://www.latex-project.org/).
 To fully visualize the notes, it'd be best to clone the repository and open it with Obsidian.**

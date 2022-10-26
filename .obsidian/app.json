@@ -12,5 +12,6 @@
   "newLinkFormat": "absolute",
   "useMarkdownLinks": true,
   "attachmentFolderPath": "/",
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "showInlineTitle": false
 }

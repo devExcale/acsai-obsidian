@@ -1,0 +1,3 @@
+# Process
+
+A *process* is a particular instance of a program, it differs from a program because a program is static, saved in the [mass memory](/Systems%20and%20Networking/Unit%201/Architecture/Memory.md), while a process is the program that's running in the [main memory](/Systems%20and%20Networking/Unit%201/Architecture/Memory.md). Many processes may run the same program, but each process instance will have its own state!

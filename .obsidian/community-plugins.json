@@ -1,3 +1,8 @@
 [
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "obsidian-minimal-settings",
+  "obsidian-hider",
+  "obsidian-admonition",
+  "file-tree-alternative",
+  "cm-editor-syntax-highlight-obsidian"
 ]

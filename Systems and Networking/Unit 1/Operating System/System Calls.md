@@ -79,3 +79,12 @@ TK
 ## Parameter Passing
 
 TK
+
+## Common System Calls
+
+| **Name** | **Parameters**                | **Return**       | **Notes** |
+| -------- | ----------------------------- | ---------------- | --------- |
+| fork     | *none*                        | New process' PID |           |
+| execlp   | Path to executable, arguments | TK               |           |
+| waitpid  | PID                           | TK               |           |
+| sleep    | # of seconds                  | TK               |           |

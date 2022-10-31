@@ -1,44 +1,30 @@
 # Networks
 
-A network is an interconnection of machines so that these machines are able to communicate.
-There are various types of networks, some of the most used are:
+A network is an interconnection of machines whose goal is communication of these devices. There are various types of networks, some of the most used are in the table below.
 
-- Home networks
-- Enterprise networks
-- Mobile networks
-- Internet
+| **Network** | **Type** | **Goal**                             |
+| ----------- | -------- | ------------------------------------ |
+| Home        | private  | Medium download speed                |
+| Enterprise  | private  | High download an upload speed        |
+| Mobile      | public   | Oriented towards long-range wireless |
+| Internet    | public   | Connects all the previous networks   |
 
-A network is composed of many things which permit connection and communication: devices, transport means, middle hardware, protocols.
+A network is composed of many things which permit connection and communication: [devices](/Systems%20and%20Networking/Unit%202/Devices.md), [transport means](/Systems%20and%20Networking/Unit%202/Transport%20Means.md), [protocols](/Systems%20and%20Networking/Unit%202/Protocols.md).
 
-## Transport means
+## Internet
 
-If two machines need to communicate, there has to be a mean of transport for the data to travel. Based on the network type, there are different options to consider.
+Internet is a network that *connects them all*. Access is granted through an [ISP](#Internet%20Service%20Provider).
 
-**Wired** (A cable which connects two ends, guided)
-- Coaxial Cable
-- Twisted Pair
-- Optic Fibre
+### Internet Service Provider
 
-**Wireless**: (Radio waves, unguided)
-- 
+Companies that provide access to the [Internet](/Systems%20and%20Networking/Unit%202/Networks.md#Internet) through a contract, they sell either wired and wireless access.
 
-### Coaxial Cable
+Usually ISPs work on a national and international level, but smaller **regional** ISPs should provide the same services.
 
-It's one of the oldest options, it consists of two insulated concentric copper conductors.
+### Internet Exchange Point
 
-![Section of a Coaxial Cable](assets/coax_cable_section.jpg)
+IXPs are hubs that interconnect various [ISPs](#Internet%20Service%20Provider).
 
-This cable can reach high speeds (based on the transmission protocol used), and it finds various usages, e.g.: telephonic transmissions, digital transmissions, television transmissions.
+### Content Provider Network
 
-### Twisted Pair
-
-### Optic Fibre
-
-### Radio Waves
-
-## Devices
-
-- Hosts
-- Switches
-- Routers
-- Wireless Access Points
+A CPN is a private (usually enterprise) network that companies use to provide services and host servers that end user can use/connect to. To provide speed and efficiency, often CPN are on the same level of [ISPs](#Internet%20Service%20Provider).

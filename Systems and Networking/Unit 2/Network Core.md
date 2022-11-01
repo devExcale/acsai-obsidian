@@ -22,7 +22,7 @@ TK Before *forwarding* packets to the next link, a router must fully receive the
 
 ### Circuit Switching
 
-In circuit switching, routers themself don't process [packets](Systems%20and%20Networking/Unit%202/Packets/Packet.md). Instead, they open a connection between the incoming [link](?TK) and the destination link, so that the hosts can communicate directly.
+In circuit switching, routers themselves don't process [packets](Systems%20and%20Networking/Unit%202/Packets/Packet.md). Instead, they open a connection between the incoming [link](?TK) and the destination link, so that the hosts can communicate directly.
 
 It is like a direct mean between the hosts, with no sharing of resources with third parties. Old telephone networks relied on this method.
 

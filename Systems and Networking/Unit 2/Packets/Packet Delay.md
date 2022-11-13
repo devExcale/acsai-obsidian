@@ -46,7 +46,7 @@ Now, imagine an **average packet arrival rate** $a \ [\frac{packets}{s}]$, meani
 
 $$\large
 	\text{traffic intensity} = \frac{L \cdot a}{R}
-	= \frac{\text{bits arriving}}{\text{bits transmitted}}
+	= \frac{\text{bits incoming}}{\text{bits outgoing}}
 	= a \cdot d_\text{transm}
 $$
 

@@ -1,2 +1,3 @@
-**/.obsidian/
-!/.obsidian/
+.trash
+.obsidian/workspace*
+/**/.obsidian/*

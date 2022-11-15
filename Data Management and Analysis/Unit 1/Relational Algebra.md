@@ -4,14 +4,16 @@
 
 It is a formal language to interrogate a relational database, consisting of a set of unary and binary operators that, if applied to one or two relation instances (sets of tuples), generate a new relation instance.
 
+TODO: logical operators
+
 The operators are:
 - [Projection](#Projection)
 - [Selection](#Selection)
 - [Union](#Union)
 - [Difference](#Difference)
 - [Intersection](#Intersection)
-- Cartesian Product
-- Join
+- [Cartesian Product](#Cartesian%20Product)
+- [Join](#Join)
 - Renaming
 
 ## Projection
@@ -244,3 +246,101 @@ $\text{Students} \cap \text{Admins} = \text{Admins} \cap \text{Students}$
 | Name     | TaxCode | Department |
 | -------- | ------- | ---------- |
 | Bianchi  | C3      | Math       |
+
+## Cartesian Product
+
+It is a binary commutative operator. A cartesian product creates a relation with tuples obtained by combining all the tuples in the first operand with all the tuples in the second operand. It is usually used when the information needed is partitioned in multiple tables.
+
+It is represented by the symbol $\times$.
+
+$\text{Customer}$
+
+| Name    | Code | Town   |
+| ------- | ---- | ------ |
+| Rossi   | C1   | Roma   |
+| Rossi   | C2   | Milano |
+| Bianchi | C3   | Roma   |
+| Verdi   | C4   | Roma   |
+
+$\text{Order}$
+
+| Code | A   | Pieces |
+| ---- | --- | ------ |
+| C1   | A1  | 100    |
+| C2   | A2  | 200    |
+| C3   | A2  | 150    |
+| C4   | A3  | 200    |
+| C1   | A2  | 200    |
+| C1   | A3  | 100    |
+
+To list every customer with their orders we can use the cross product. A cross product will result in all combinations of all tuples, so we have to filter the resulting set to match the codes using the [selection](#Selection) operator. But to do this, we have to be able to distinguish between `Code of Customer` and `Code of Order`, we can use the [renaming](#Renaming) operator. In the end, we project only the attributes we want, ignoring duplicates.
+
+$$\large
+\pi_\text{Name, Code, Town, A, Pieces}(
+	\sigma_\text{Code = OCode} (
+		\text{Customer} \times \rho_{\text{OCode} \gets \text{Code}}(
+			\text{Order}
+		)
+	)
+)
+$$
+
+| Name    | Code | Town   | A   | Pieces |
+| ------- | ---- | ------ | --- | ------ |
+| Rossi   | C1   | Roma   | A1  | 100    |
+| Rossi   | C1   | Roma   | A2  | 200    |
+| Rossi   | C1   | Roma   | A3  | 100    |
+| Rossi   | C2   | Milano | A2  | 200    |
+| Bianchi | C3   | Roma   | A2  | 150    |
+| Verdi   | C4   | Roma   | A3  | 200    |
+
+## Join
+
+A **natural join** performs a [cartesian product](#Cartesian%20Product) of two relations $R_1(X), R_2(Y)$ and selects only some tuples that satisfy the condition $R_1[A_1] = R_2[A_1] \land R_1[A_2] = R_2[A_2] \land \cdots \land R_1[A_k] = R_2[A_k]$ where $A_1, \cdots, A_k \in X, Y$ are the attributes the two relations have in common.
+
+It is represented by the symbol $\Join$.
+
+$$\large R_1 \Join R_2 = \pi_{X \cup Y}( \sigma_C( R_1 \times R_2 ) )$$
+
+The attributes $A_1, \cdots, A_k$ in the condition must have the same name to perform a join on it.
+
+$\text{Customer}$
+
+| Name    | Code | Town   |
+| ------- | ---- | ------ |
+| Rossi   | C1   | Roma   |
+| Rossi   | C2   | Milano |
+| Bianchi | C3   | Roma   |
+| Verdi   | C4   | Roma   |
+
+$\text{Order}$
+
+| Code | A   | Pieces |
+| ---- | --- | ------ |
+| C1   | A1  | 100    |
+| C2   | A2  | 200    |
+| C3   | A2  | 150    |
+| C4   | A3  | 200    |
+| C1   | A2  | 200    |
+| C1   | A3  | 100    |
+
+$\text{Customer} \Join \text{Order}$
+
+| Name    | Code | Town   | A   | Pieces |
+| ------- | ---- | ------ | --- | ------ |
+| Rossi   | C1   | Roma   | A1  | 100    |
+| Rossi   | C1   | Roma   | A2  | 200    |
+| Rossi   | C1   | Roma   | A3  | 100    |
+| Rossi   | C2   | Milano | A2  | 200    |
+| Bianchi | C3   | Roma   | A2  | 150    |
+| Verdi   | C4   | Roma   | A3  | 200    |
+
+*Note* if two relations have no attributes in common, the join condition cannot be evaluated and the operation will default to a normal cartesian product!
+
+Another type of join is the **theta join**, which is the same as the natural join but with customizable condition: it selects the tuples resulting from the cartesian product of two relations that satisfy the condition $A \theta B$, where:
+- $\theta$ is a comparison operator ($\theta \in \{ =, \lt, \gt, \le, \ge \}$)
+- $A, B$ are two attributes attributes of the first and second relations respectively
+- $dom(A) = dom(B)$
+
+$$\large R_1 \Join R_2 = \sigma_{A \theta B}(R_1 \times R_2)$$
+

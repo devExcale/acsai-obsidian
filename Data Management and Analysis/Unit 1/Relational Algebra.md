@@ -4,7 +4,7 @@
 
 It is a formal language to interrogate a relational database, consisting of a set of unary and binary operators that, if applied to one or two relation instances (sets of tuples), generate a new relation instance.
 
-TODO: logical operators
+TK: logical operators
 
 The operators are:
 - [Projection](#Projection)
@@ -52,7 +52,9 @@ $\pi_\text{Name, Code}(\text{Customer})$
 | Bianchi | C4  |
 | Verdi   | C5  |
 
-*Note* that there aren't duplicates in the resulting table, because it is actually a set.
+
+> [!warning] Duplicates
+> Note how there aren't duplicates in the resulting table, because every table is actually a set of tuples.
 
 ## Selection
 
@@ -138,7 +140,8 @@ $\text{AllStaff} = \text{Teachers} \cup \text{Admins}$
 | Verdi    | A4   | English    |
 | Bianchi  | A5   | English    |
 
-*Note:* the resulting table is always a set, so it **must not** contain any duplicate tuple (duplicate ones will be discarded).
+> [!warning] Duplicates
+> The resulting table is always a set, so it **must not** contain any duplicate tuple. Duplicate ones will be discarded!
 
 $\text{Teachers}$
 

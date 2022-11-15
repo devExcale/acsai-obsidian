@@ -15,7 +15,7 @@ Unit 1 is focused more and the hardware/software of the single machine, while un
 ### Unit 1
 
 - [High-Level Computer Architecture](Unit%201/High-Level%20Computer%20Architecture.md)
-- [Operating System](Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md)
+- [Operating System](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md)
 
 ### Unit 2
 

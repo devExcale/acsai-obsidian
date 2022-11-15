@@ -16,7 +16,7 @@ Some of the courses
 
 - Calculus 1 - Unit 1
 - [Computer Architecture - Unit 1](Computer%20Architecture/README.md)
-- [Linear Algebra](/Linear%20Algebra/index.md)
+- [Linear Algebra](Linear%20Algebra/README.md)
 - Programming 1 - Unit 1
 - Programming 1 - Unit 2
 

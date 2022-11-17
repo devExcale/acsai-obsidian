@@ -48,7 +48,7 @@ It's not a trivial operation, because when performing a context switch the CPU m
 
 A context switch may occur due to any incoming [trap](/Systems%20and%20Networking/Unit%201/Operating%20System/Trap.md) (i.e. system calls, exceptions, HW interrupts). Whenever this happens, the CPU must context-switch to [kernel mode](Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode) to handle the interrupt.
 
-![Example of Context Switch](assets/context_switch.jpg)
+![Example of Context Switch](/assets/context_switch.jpg)
 
 ### Timed Context Switch
 

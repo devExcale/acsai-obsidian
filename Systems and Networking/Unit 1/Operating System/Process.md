@@ -58,15 +58,3 @@ From here, the process can go in the following states:
 ### Terminated
 
 In *terminated* state, the process has finished executing and all the resources used by it have to be freed.
-
-## Creating a Process
-
-A process may create other processes through [System Calls](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md), the creator process is called **parent** while the created process is called **child**. Each new process is given a unique id (PID) and stores the parent process' id (PPID).
-
-Regarding resources, there are two possibilities:
-- The child is a perfect copy of the parent, sharing the same [text and data segments](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md#Virtual%20Address%20Space) in the memory;
-- The child is a brand new process, with a different program loaded into the [address space](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md#Virtual%20Address%20Space).
-
-The parent process, after creating the child, has two options:
-- Wait for the child process to terminate and then continue executing;
-- Run concurrently with the child without being blocked.

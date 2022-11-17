@@ -13,6 +13,23 @@ Scheduling processes is no easy task, there are multiple variables to keep track
 > [!warning] Waiting time
 > The waiting time mentioned above is **not** the waiting state! The [scheduler](Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Process%20Scheduler) doesn't have control over processes in waiting state, it can only manage the ones in ready and running states.
 
+Some of these variables are dependent on other, so they can be computed through some formulas.
+
+- $T_\text{arrival}=$ **arrival time** (in the scheduling system as a ready process)
+- $T_\text{completion}=$ **completion time** (when the process completes its execution)
+- $T_\text{burst}=$ **burst time** (time required by a process for CPU execution)
+- $T_\text{turnaround} = T_\text{completion} - T_\text{arrival}$
+- $T_\text{waiting} = T_\text{turnaround} - T_\text{burst}$
+
+## List of Scheduling Algorithms
+
+1. [First Come First Serve](#First%20Come%20First%20Serve)
+2. [Round Robin](#Round%20Robin)
+3. [Shortest Job First](#Shortest%20Job%20First)
+4. [Priority Scheduling](#Priority%20Scheduling)
+5. [Multilevel Queue](#Multilevel%20Queue)
+6. [Multilevel Feedback Queue](#Multilevel%20Feedback%20Queue)
+
 ## Scheduling Policies
 
 The goals mentioned above can't be reached together and there must be some kind of trade-off, based on the scheduling policy chosen.
@@ -36,4 +53,14 @@ When the currently running process changes states, two things can happen:
 - **it completes execution,** the scheduler won't have to do anything;
 - **it goes into waiting state,** the scheduler will place it back at the end of the queue.
 
+> [!info] Non-preemptive
+> A process may continue running indefinitely until it waits or terminates by itself, which is why FCFS is a [non-preemptive](/Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Preemptive%20Scheduling) scheduling algorithm.
 
+### PROs
+
+- Very simple
+
+### CONs
+
+- Waiting time is highly variable (short jobs may sit behind long ones)
+- CPU-bound jobs will force I/O-bound ones to wait (**convoy effect**)

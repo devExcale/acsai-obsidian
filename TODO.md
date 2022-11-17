@@ -1,11 +1,8 @@
 # TODO
+
 ## Systems & Networking U1
 
 - [ ] Machine Language (Lecture 3, p~25)
 - [ ] Direct Memory Access (Lecture 3, P91)
 - [ ] Atomic Instructions (Lecture 4, p188)
-
-## Systems & Networking U2
-
-- [ ] Multiplexing
-- [ ] Transport Means
+- [ ] Process Communication (Lecture 6, p100)

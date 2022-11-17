@@ -7,9 +7,33 @@ The process scheduler must implement these objectives paying attention to any ex
 > [!warning] Overhead
 > Overhead is the time used by doing *routine actions*, like *[context-switching](#Context%20Switch)*. Swapping processes in the CPU too frequently generates too much overhead, which could be used by processes ready for execution.
 
+Scheduling decisions take place under one of four conditions:
+
+| **Condition**                              | **Cause**                                                          | **Options**                                                  |
+| ------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------ |
+| A process switches from running to waiting | I/O request or `wait` system call                                  | Select a new process                                         |
+| A process switches from running to ready   | Interrupt (e.g. [Timed Context Switch](#Timed%20Context%20Switch)) | Either select a new process or continue with the current one |
+| A process switches from waiting to ready   | I/O or `wait` completion                                           | Either select a new process or continue with the current one |
+| A process is created or terminated         | `fork` system call                                                 | Select a new process                                         |
+
+## CPU vs IO
+
+Processes can either be
+- **CPU-bound** (uses more CPU than I/O operations)
+- **I/O-bound** (uses more I/O operations than CPU)
+- **Both**
+
+Most of the programs are both, they alternate in **CPU-bursts** and **I/O-bursts**. A burst is a small program section in which either one of CPU or I/O operations are needed.
+
+![Example of mixed bursts](?TK)
+
+> [!tip] Efficient Scheduling
+> An efficient scheduling system must mix CPU-bound and I/O-bound processes in such a way to execute CPU-bound processes when the I/O-bound ones are waiting. 
+
 ## Process State Queues
 
 The [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) has a queue for each [process state](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md#Process%20Execution%20State), processes' [PCB](Systems%20and%20Networking/Unit%201/Operating%20System/Process.md#Process%20Control%20Block)'s are saved in the queue of the respective state. When the OS changes the status of a process, the process' PCB is moved from its previous queue to the queue of the current state.
+
 
 > [!tip]
 > This method to manage processes is very flexible, because the OS may use different (scheduling) policies to manage the processes in each queue.
@@ -18,11 +42,14 @@ The [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20Sys
 
 Furthermore, the waiting queue may be subdivided into one queue for each [I/O device](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md), so that processes wait in the queue of the device they're waiting for.
 
+> [!info] State Queues
+> State queues aren't necessarily FIFO queues. On the contrary, most state queues are implemented with other types of queue, to maximize scheduling efficiency.
+
 ![Example of Process State Queues](/assets/process_state_queues.jpg)
 
 ## Process Scheduler
 
-The process scheduler is that part of the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) that decides which [processes](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md) to execute and when. Then, its job is to perform those actions needed to let the [CPU](Systems%20and%20Networking/Unit%201/Architecture/CPU.md) run the selected process (i.e. [context switch](#Context%20Switch)).
+The process scheduler is that part of the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) that decides which [processes](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md) to execute and when. It is its job, then, to invoke the [dispatcher](#Dispatcher) whenever the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) must change the process to execute.
 
 There are three types of scheduler:
 
@@ -32,8 +59,17 @@ There are three types of scheduler:
 | *Short-Term Scheduler*  | Very frequent                                       | Performs context switches frequently, decreases *response time* of processes at the cost of more overhead. |
 | *Medium-Term Scheduler* | Frequency is proportional to the load of the system | Reduces overhead when there isn't a high load and allows small jobs to execute when there is a high load.  |
 
-> [!tip] Efficient Scheduling
-> An efficient scheduling system must mix CPU-bound and I/O-bound processes in such a way to execute CPU-bound processes when the I/O-bound ones are waiting. 
+## Dispatcher
+
+The dispatcher is the module that gives the process chosen by the [process scheduler](#Process%20Scheduler) control of the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md), by performing the needed actions.
+
+Its functionalities include:
+- [Context switching](#Context%20Switch);
+- Switching to [user mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode);
+- Set the [PC](/Systems%20and%20Networking/Unit%201/Architecture/Registers.md#Special%20Purpose) to the right address after a new program is loaded.
+
+> [!info] Dispatch Latency
+> The dispatcher is run whenever a context switch is needed, so the time it uses (*dispatch latency*) must me as short as possibile.
 
 ## Context Switch
 
@@ -55,3 +91,21 @@ A context switch may occur due to any incoming [trap](/Systems%20and%20Networkin
 To avoid CPU-bound processes from hogging the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md), [interrupts](/Systems%20and%20Networking/Unit%201/Operating%20System/Trap.md) may be triggered whenever a time slice has passed using a [timer](/Systems%20and%20Networking/Unit%201/Architecture/Timer.md). The **time slice** is defined as the maximum amount of time between two consecutive context switches.
 
 Timed context-swtich is the mean through which **time-sharing multi-tasking** [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md)'s can implement **pseudo-parallelism** (apparently run two or more processes at the same time).
+
+> [!tip] Time Slice
+> A context switch takes around 10 microseconds. With a time slice between 10 and 100 milliseconds (typical of a modern OS), the overhead is relatively small (with a ratio between 0.1% and 0.01%).
+
+### Preemptive Scheduling
+
+Scheduling (and [context switch](#Context%20Switch)) can happen following one of two policies: **Preemptive Scheduling** or **Non-preemptive Scheduling**.
+
+**Non-preemptive scheduling** lets the [process](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md) run until it either blocks voluntarily or it finishes; it is the case of non-timed context switch.
+
+**Preemptive scheduling** decides whether and when to stop a running process and put it in the ready state; it is the case of [timed context switch](#Timed%20Context%20Switch)
+
+> [!failure] Issues
+> Preemptive scheduling is imperative for real-time OS's, but it could lead to problems such as:
+> - The kernel is busy executing a critical system call, which is interrupted;
+> - Two processes share data, but one in interrupted while it's updating the data.
+> 
+> TK countermeasures

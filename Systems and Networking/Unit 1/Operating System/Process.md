@@ -12,7 +12,7 @@ The PCB contains the following information:
 - [Execution State](#Process%20Execution%20State)
 - PID (process identifier, a unique number)
 - [Registers'](/Systems%20and%20Networking/Unit%201/Architecture/Registers.md) values (e.g. program counter, stack pointer, general purpose)
-- [Scheduling](?TK) information (priority, state)
+- [Scheduling](Systems%20and%20Networking/Unit%201/Process%20Handling/Scheduling.md) information (priority, state)
 - Memory management information ([page tables](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md#Page))
 - [I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md) status (list of open files/devices)
 - General information ([CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) time consumed, owner process)

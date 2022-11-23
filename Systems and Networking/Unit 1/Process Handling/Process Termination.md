@@ -1,6 +1,6 @@
 # Process Termination
 
-A process usually terminates on its own using the [`exit`](?TK) system call.
+A process usually terminates on its own using the [`exit`](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md#Common%20System%20Calls) system call.
 
 The `exit` syscall takes in input an integer, which is the code of termination. The value 0 should indicate a successful completion of the process, while non-zero values indicate that the process has terminated with some kind of problem.
 

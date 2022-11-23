@@ -25,7 +25,7 @@ Processes can either be
 
 Most of the programs are both, they alternate in **CPU-bursts** and **I/O-bursts**. A burst is a small program section in which either one of CPU or I/O operations are needed.
 
-![Example of mixed bursts](?TK)
+![Example of mixed bursts](/assets/job_bursts.jpg)
 
 > [!tip] Efficient Scheduling
 > An efficient scheduling system must mix CPU-bound and I/O-bound processes in such a way to execute CPU-bound processes when the I/O-bound ones are waiting. 

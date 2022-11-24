@@ -27,15 +27,20 @@ A relation can be regarded as a table in which:
 A relation has a fixed structure:
 - the *columns* must each have a unique, self-explanatory name within a table, called **attribute name**;
 - the pair (column name, column domain) is called **attribute**, which represents a piece of information;
-- the set of all attributes of a relation is called **schema**.
+- the set of all attributes of a relation is called [relational schema](/Data%20Management%20and%20Analysis/Unit%201/Database/Schemas.md).
 
-If a relation $\large R$ has attributes $\large A_1, \cdots, A_k$, then the schema is represented as $\large R(A_1, \cdots, A_k)$.
+If a relation $\large R$ has attributes $\large A_1, \ldots, A_k$, then the schema is represented as $\large R(A_1, \ldots, A_k)$.
 
-The schema of a relation should remain *unchanged* over time, it describes its structure (**intentional aspect**).
-
-An instance of a relation contains the values currently stored, which can change very quickly (**extensional aspect**).
+> [!abstract] Aspects
+> In a relation we can define two properties:
+> - **intentional aspect,** the schema of a relation should remain *unchanged over time*, because it describes its structure;
+> - **extensional aspect,** values in a relation (instance of a relation) can change, and change very quickly.
 
 Tuples between relations can be linked: references between data in different relations are represented by values that are included in the tuples. This whole behaviour is defined with [foreign keys](?).
+
+> [!abstract] Tuples
+> Every tuple $t$ of an instance of a relation $R$ can be seen as a function that associates each attribute $A_i$ to a value $t[A_i] \in dom(A_i)$.
+
 
 ### Null values
 
@@ -51,7 +56,7 @@ If $Y$ is a subset of attributes of the schema $X$ of a relation $(Y \subseteq X
 
 ### Keys
 
-There is a method to uniquely identify the tuples of an instance of a relation: keys. A **relation key** is an attribute or subset of attributes that uniquely identify a tuple; it can be used to reference tuples from a different relation (**foreign key**).
+There is a method to uniquely identify the tuples of an instance of a relation: keys. A **relation key** is one or more subsets of attributes that uniquely identify a tuple; it can be used to reference tuples from a different relation (**foreign key**).
 
 A subset $X$ of attributes of a relation $R$ is a key of $R$ iff:
 1. for each instance of $R$, there do not exist two distinct tuples $t_1,\ t_2$ such that the two tuples have the same values for all attributes of $X$, i.e.

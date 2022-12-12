@@ -15,8 +15,8 @@ Some of the courses
 **First Year - First Semester**
 
 - Calculus 1 - Unit 1
-- [Computer Architecture - Unit 1](Computer%20Architecture/README.md)
-- [Linear Algebra](Linear%20Algebra/README.md)
+- [Computer Architecture - Unit 1](/Computer%20Architecture/README.md)
+- [Linear Algebra](/Linear%20Algebra/README.md)
 - Programming 1 - Unit 1
 - Programming 1 - Unit 2
 
@@ -24,17 +24,17 @@ Some of the courses
 
 - Algorithms
 - Calculus 1 - Unit 2
-- [Computer Architecture - Unit 2](Computer%20Architecture/README.md)
+- [Computer Architecture - Unit 2](/Computer%20Architecture/README.md)
 - [Physics](Physics/README.md)
 - Programming 2
 
 **Second Year - First Semester**
 
 - Calculus 2
-- [Data Management and Analysis - Unit 1](Data%20Management%20and%20Analysis/README.md)
-- [Probability](#)
-- [Systems and Networking - Unit 1](Systems%20and%20Networking/Systems%20and%20Networking.md)
-- [Systems and Networking - Unit 2](Systems%20and%20Networking/Systems%20and%20Networking.md)
+- [Data Management and Analysis - Unit 1](/Data%20Management%20and%20Analysis/README.md)
+- [Probability](/Probability/Probability.md)
+- [Systems and Networking - Unit 1](/Systems%20and%20Networking/Systems%20and%20Networking.md)
+- [Systems and Networking - Unit 2](/Systems%20and%20Networking/Systems%20and%20Networking.md)
 
 ##
 

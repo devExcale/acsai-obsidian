@@ -78,7 +78,7 @@ How many ways there are to choose $k$ elements from a set of $n$ elements, allow
 Simply, there are $n$ possibilities for the first choice, $n$ possibilities for the second and so on,
 
 $$\large
-\underbrace{n \cdot n \cdots n}_{k \text{ times}} = n^k
+	\underbrace{n \cdot n \cdots n}_{k \text{ times}} = n^k
 $$
 
 ### Subsets with Repetition without Ordering
@@ -88,3 +88,14 @@ TK
 $$\large
 	\binom{n+k-1}{k} = \frac{ (n+k-1)! }{ k! (n-1)! }
 $$
+
+## Combinatorics Formulas
+
+| **Multiplication Rule**                                        | **Permutations** |
+| -------------------------------------------------------------- | ---------------- |
+| $\lvert \bigtimes_{k=1}^N \Omega_k \rvert = \prod_{k=1}^N n_k$ | $n!$             |
+
+| **Subsets**      | `Ordering`              | `No ordering `                                      |
+| ---------------- | ----------------------- | --------------------------------------------------- |
+| `No repetitions` | $\frac{ n! }{ (n-k)! }$ | $\binom{n}{k} = \frac{ n! }{ k! (n-k)! }$           |
+| `Repetitions`    | $n^k$                   | $\binom{n+k-1}{k} = \frac{ (n+k-1)! }{ k! (n-1)! }$ |

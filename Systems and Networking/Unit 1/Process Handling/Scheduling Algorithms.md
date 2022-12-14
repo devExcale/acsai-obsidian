@@ -150,7 +150,7 @@ Every job is given a certain number of lottery tickets. On each time slice, a un
 
 The best policy would be to give more tickets to short running jobs and less tickets to long running jobs (similar to SJF). To avoid starvations, each job gets at least one ticket, so it can be selected anytime. Adding and deleting jobs affects the other jobs *proportionally* and not with a fixed rate.
 
-> [!info] Note
+> [!info] Randomized Scheduler
 > This is the only example of **randomized** scheduler, rather than deterministic.
 
 

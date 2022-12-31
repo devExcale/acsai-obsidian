@@ -1,10 +1,7 @@
 # Conditional Probability
 
-%%
 $\def\P#1{{ \mathbb{P} \left(#1\right) }}$
 $\def\indep{{ \mathrel{\unicode{x2AEB}} }}$
-%%
-
 **Conditional Probability** is a concept closely related to [event](/Probability/Discrete%20Probability/Probability%20Space.md#Events) [independence](/Probability/Discrete%20Probability/Independence.md).
 
 Let $A,B$ be two events with $\P{B}>0$. Then, the conditional probability of $A$ *given* $B$ is

@@ -1,11 +1,6 @@
 # Inclusion-Exclusion Formula
 
-%%
 $\def\P#1{{ \mathbb{P} \left(#1\right) }}$
-$\def\bb#1{{ \mathbb{#1} }}$
-$\def\cal#1{{ \mathcal{#1} }}$
-%%
-
 It is known that, for any two events $A, B$,
 
 $$\large
@@ -14,7 +9,7 @@ $$
 
 For any 3 events,
 
-$$\large\displaylines{
+$$\large \displaylines{
 	\P{A \cup B \cup C} = \\
 	\P{A} + \P{B} + \P{C}
 	- \P{A \cap B} - \P{A \cap C} - \P{B \cap C}

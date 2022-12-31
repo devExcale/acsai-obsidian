@@ -1,10 +1,8 @@
 # Probability Space
 
-%%
 $\def\P#1{{ \mathbb{P} \left(#1\right) }}$
 $\def\bb#1{{ \mathbb{#1} }}$
 $\def\cal#1{{ \mathcal{#1} }}$
-%%
 
 ## Sample Space
 

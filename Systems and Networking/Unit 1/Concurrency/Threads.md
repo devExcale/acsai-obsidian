@@ -34,6 +34,21 @@ Each task could be executed independently using different CPUs to reach best eff
 
 ![Multi-core performance example](?TK)
 
+## Thread Pools
+
+Creating threads is less expensive than creating processes, but continuously creating threads in a single process might lead to problems:
+
+- Overhead when creating each thread;
+- No limit to the possible number of threads.
+
+**Thread pools** resolve these problems. When the process starts up, a fixed number of threads is created (usually no more than logic units in a CPU) and are put in a waiting state. Whenever it is needed, a thread is picked up from the pool to execute what it is needed to do, and then put it back in the pool.
+
+
+> [!info] Thread Pool Scheduling
+> Thread Pools operate with a [FCFS](/Systems%20and%20Networking/Unit%201/Process%20Handling/Scheduling%20Algorithms.md#First%20Come%20First%20Serve) scheduling policy.
+> 
+> If there are no threads available when a new task comes in, the new task will be appended to a queue. When a thread frees up, the first task in the queue will be assigned to that thread.
+
 ## Types of Threads
 
 Support for multi-threading can be provided in three ways:
@@ -44,7 +59,7 @@ Support for multi-threading can be provided in three ways:
 > [!info] Lightweight Processes
 > Both threading methods have their pros and cons, so in reality threads are implemented using a mix of both.
 
-## Kernel Threads
+### Kernel Threads
 
 A *kernel thread* is actually the smallest unit of execution that can be scheduled by the OS. The OS is responsible for managing all threads, so system calls are provided to create and manage the threads from user space.
 
@@ -58,7 +73,7 @@ TK
 
 TK
 
-## User Threads
+### User Threads
 
 *User threads* are threads which are managed entirely by a user-level library, which means the OS doesn't know anything about these threads.
 
@@ -72,7 +87,7 @@ TK
 
 TK
 
-## Lightweight Processes
+### Lightweight Processes
 
 A better method to implement threads is a hybrid of both [kernel](#Kernel%20Threads) and [user](#User%20Threads) threads: mapping user threads to kernel threads.
 
@@ -106,6 +121,20 @@ The many to many model is an advantageous one that enables processes to most (if
 
 The two level model is a variant of the many to many model with the restriction that certain kernel threads are mapped to a single user thread (one to one).
 
-The only advantage this method provides is an increased flexibility of scheduling policies, so that certain threads have assured execution time.
+The only advantage this method provides is an increased flexibility of scheduling policies, so that certain threads have ensured execution time.
 
 ![Two Level Model Diagram](?TK)
+
+## Contention Scope
+
+Contention Scope how threads will compete with each other for the use of physical CPUs.
+
+> [!abstract] Process Contention Scope
+> Competition occurs between threads of the same process.
+> 
+> It is the case of user threads mapped to a single kernel thread, or threads managed by a thread library (e.g. *[many-to-one](#Many%20to%20One)*, *[many-to-many](#Many%20to%20Many)*).
+
+> [!abstract] System Contention Scope
+> Competition occurs between kernel threads and involves the [system scheduler](/Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Process%20Scheduler).
+> 
+> 

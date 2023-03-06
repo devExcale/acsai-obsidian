@@ -5,13 +5,34 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
+    {
+      "query": "path:\"AI and ML\"",
+      "color": {
+        "a": 1,
+        "rgb": 5691732
+      }
+    },
+    {
+      "query": "path:Algorithms",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
     {
       "query": "path:\"Computer Architecture\"",
       "color": {
         "a": 1,
         "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:\"Data Management and Analysis\"",
+      "color": {
+        "a": 1,
+        "rgb": 15597823
       }
     },
     {
@@ -22,24 +43,10 @@
       }
     },
     {
-      "query": "path:\"Systems and Networking\"",
-      "color": {
-        "a": 1,
-        "rgb": 5431518
-      }
-    },
-    {
       "query": "path:Physics",
       "color": {
         "a": 1,
         "rgb": 2657370
-      }
-    },
-    {
-      "query": "path:\"Data Management and Analysis\"",
-      "color": {
-        "a": 1,
-        "rgb": 15597823
       }
     },
     {
@@ -57,10 +64,10 @@
       }
     },
     {
-      "query": "path:\"AI and ML\"",
+      "query": "path:\"Systems and Networking\"",
       "color": {
         "a": 1,
-        "rgb": 5691732
+        "rgb": 5431518
       }
     },
     {
@@ -88,6 +95,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.26259844721139997,
+  "scale": 0.43887524189352956,
   "close": true
 }

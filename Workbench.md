@@ -8,6 +8,10 @@ Consequentialism
 
 Instead of storing all possible percepts, the best solution is to start from a subset of it and then include others while learning.
 
+## Graphs
+
+Walk, trail, path, loop, dag
+
 # AI ML U2
 
 ## Training

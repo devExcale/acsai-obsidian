@@ -22,10 +22,10 @@ Some of the courses
 
 **First Year - Second Semester**
 
-- Algorithms
+- [Algorithms](/Algorithms/Algorithms.md)
 - Calculus 1 - Unit 2
 - [Computer Architecture - Unit 2](/Computer%20Architecture/README.md)
-- [Physics](Physics/README.md)
+- [Physics](/Physics/README.md)
 - Programming 2
 
 **Second Year - First Semester**
@@ -38,11 +38,11 @@ Some of the courses
 
 **Second Year - Second Semester**
 
-- [Computer Vision and NLP](/Computer%20Vision%20and%20NLP/Computer%20Vision%20and%20NLP.md)
 - [Artificial Intelligence and Machine Learning - Unit 1](/AI%20and%20ML/AI%20and%20ML.md#Unit%201)
-- [Artificial Intelligence and Machine Learning - Unit 1](/AI%20and%20ML/AI%20and%20ML.md#Unit%202)
-- [Statistics](/Statistics/Statistics.md)
+- [Artificial Intelligence and Machine Learning - Unit 2](/AI%20and%20ML/AI%20and%20ML.md#Unit%202)
+- [Computer Vision and NLP](/Computer%20Vision%20and%20NLP/Computer%20Vision%20and%20NLP.md)
 - [Data Management and Analysis - Unit 2](?TK)
+- [Statistics](/Statistics/Statistics.md)
 
 ##
 

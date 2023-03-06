@@ -39,32 +39,70 @@ The set of all functional dependencies satisfied by **each legal** instance of $
 > 
 > Even if not defined, trivial functional dependencies are satisfied by any relation, hence if $Y \subset X$ then $X \rightarrow Y \in F^+$.
 
-## Properties
+## Armstrong's Axioms
 
-Given a relation $R$, two subsets $X, Y \in R$ and a set of functional dependencies $F$ defined in $R$,
+Let $F^A$ be a set of functional dependencies defined on $R$, such that $F \subseteq F^A$. Using **Armstrong's Axioms**, we can build $F^A$.
+
+TK
+
+### Reflexivity Axiom
 
 $$\large
-	X \rightarrow Y \in F^+
-	\Longleftrightarrow
-	X \rightarrow A_i \in F^+ \quad \forall A_i \in Y
+	Y \subset X \in R
+	\Longrightarrow X
+	\rightarrow Y \in F^A
 $$
 
-meaning:
-- if $X$ defines a subset $Y$ of attributes, then $X$ defines each one of the attributes in $Y$;
-- if $X$ defines some attributes $A_i$, then $X$ defines a subset $Y \ni A_i$.
+### Augmentation Axiom
 
-Properties of a functional dependency $X \rightarrow Y$ are:
-- $t_1[X] = t_2[X] \Rightarrow t_1[Y] = t_2[Y]$
-- 
+$$\large
+	X \rightarrow Y \in F^A
+	\Longrightarrow
+	XZ \rightarrow YZ \in F^A \quad \forall Z \in R
+$$
+
+### Transitivity Axiom
+
+$$\large
+	X \rightarrow Y, \ \ Y \rightarrow Z \in F^A
+	\Longrightarrow
+	X \rightarrow Z \in F^A
+$$
+
+### Union Rule
+
+$$\large
+	X \rightarrow Y, \ \ X \rightarrow Z \in F^A
+	\Longrightarrow
+	X \rightarrow YZ \in F^A
+$$
+
+### Decomposition Rule
+
+$$\large
+	X \rightarrow Y \in F^A \ \ \text{and} \ \ Z \subset Y
+	\Longrightarrow
+	X \rightarrow Z \in F^A
+$$
+
+### Pseudotransitivity Rule
+
+$$\large
+	X \rightarrow Y, \ \ WY \rightarrow Z \in F^A
+	\Longrightarrow
+	WX \rightarrow Z \in F^A
+$$
 
 ## Keys
 
-Given a relation schema $R$ and a set of functional dependencies $F$ defined on $R$, a subset $K \subseteq R$ is a key of $T$ if:
+Given a relation schema $R$ and a set of functional dependencies $F$ defined on $R$, a subset $K \subseteq R$ is a key of $R$ if:
 
 1. $K \rightarrow R \in F^+$
 2. There is no proper subset $K' \subset K$ such that $K' \rightarrow R$
 
-There can be multiple keys in a relation which are not mutually exclusive, usually in a [database](/Data%20Management%20and%20Analysis/Unit%201/Database/Databases.md) just one is chosen as a **primary key**.
+If condition 2. isn't satisfied, but the subset $K$ determines $R$, then $K$ is said to be a **superkey**.
+
+A relation can have multiple distinct keys, usually in a [database](/Data%20Management%20and%20Analysis/Unit%201/Database/Databases.md) just one is chosen as a **primary key**.
 
 > [!example] Example
 >
@@ -73,10 +111,8 @@ There can be multiple keys in a relation which are not mutually exclusive, usual
 > | **200** | *Emanuele* | *Scaccia* | 11/05/2002  | ... |
 > | **146** | *Mario*    | *Rossi*   | 11/05/2002  | ... |
 >
-> In this case, both
+> In this case, by imposing unique on $\{ \text{Name}, \text{Surname} \}$ both
 > - $\{ \text{ID}\} \rightarrow R$
 > - $\{ \text{Name}, \text{Surname} \} \rightarrow R$
 > 
 > are keys of $R$.
-> 
-> *Note:* imposing unique on $\{ \text{Name}, \text{Surname} \}$

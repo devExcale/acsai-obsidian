@@ -36,6 +36,13 @@ Some of the courses
 - [Systems and Networking - Unit 1](/Systems%20and%20Networking/Systems%20and%20Networking.md)
 - [Systems and Networking - Unit 2](/Systems%20and%20Networking/Systems%20and%20Networking.md)
 
+**Second Year - Second Semester**
+
+- [Computer Vision and NLP](/Computer%20Vision%20and%20NLP/Computer%20Vision%20and%20NLP.md)
+- Artificial Intelligence and Machine Learning - Unit 1
+- Artificial Intelligence and Machine Learning - Unit 2
+- [Statistics](/Statistics/Statistics.md)
+
 ##
 
 ---

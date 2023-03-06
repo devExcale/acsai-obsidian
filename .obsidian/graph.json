@@ -50,6 +50,13 @@
       }
     },
     {
+      "query": "path:Statistics",
+      "color": {
+        "a": 1,
+        "rgb": 11201365
+      }
+    },
+    {
       "query": "path:assets",
       "color": {
         "a": 1,
@@ -74,6 +81,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.4033252418260624,
+  "scale": 0.26259844721139997,
   "close": true
 }

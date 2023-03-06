@@ -40,9 +40,9 @@ Some of the courses
 
 - [Artificial Intelligence and Machine Learning - Unit 1](/AI%20and%20ML/AI%20and%20ML.md#Unit%201)
 - [Artificial Intelligence and Machine Learning - Unit 2](/AI%20and%20ML/AI%20and%20ML.md#Unit%202)
-- [Computer Vision and NLP](/Computer%20Vision%20and%20NLP/Computer%20Vision%20and%20NLP.md)
+- [Computer Vision and Natural Language Processing](/Computer%20Vision%20and%20NLP/Computer%20Vision%20and%20NLP.md)
 - [Data Management and Analysis - Unit 2](?TK)
-- [Statistics](/Statistics/Statistics.md)
+- [Statistics](Statistics/README.md)
 
 ##
 

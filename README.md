@@ -39,9 +39,10 @@ Some of the courses
 **Second Year - Second Semester**
 
 - [Computer Vision and NLP](/Computer%20Vision%20and%20NLP/Computer%20Vision%20and%20NLP.md)
-- Artificial Intelligence and Machine Learning - Unit 1
-- Artificial Intelligence and Machine Learning - Unit 2
+- [Artificial Intelligence and Machine Learning - Unit 1](/AI%20and%20ML/AI%20and%20ML.md#Unit%201)
+- [Artificial Intelligence and Machine Learning - Unit 1](/AI%20and%20ML/AI%20and%20ML.md#Unit%202)
 - [Statistics](/Statistics/Statistics.md)
+- [Data Management and Analysis - Unit 2](?TK)
 
 ##
 

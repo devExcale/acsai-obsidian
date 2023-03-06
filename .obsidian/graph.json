@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"Computer Architecture\"",
@@ -53,7 +53,14 @@
       "query": "path:Statistics",
       "color": {
         "a": 1,
-        "rgb": 11201365
+        "rgb": 12378423
+      }
+    },
+    {
+      "query": "path:\"AI and ML\"",
+      "color": {
+        "a": 1,
+        "rgb": 5691732
       }
     },
     {

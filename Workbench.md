@@ -1,3 +1,13 @@
+# AI ML U1
+
+## Agents
+
+Goal based agent
+
+Consequentialism
+
+Instead of storing all possible percepts, the best solution is to start from a subset of it and then include others while learning.
+
 # AI ML U2
 
 ## Training

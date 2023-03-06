@@ -6,7 +6,7 @@ It allows programs to be run without them being entirely loaded in the physical 
 
 A virtual memory is implemented by both hardware ([MMU](#Memory%20Management%20Unit)) and software ([OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md)).
 
-An advantage of virtual memory is the range of the memory: the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) can address 2<sup>64</sup> addresses, which equal to 2<sup>64</sup> bytes (16 exbibytes)! Approximately, this is a billion times more than the physical memory capacity.
+An advantage of virtual memory is the range of the memory: the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) can address $2^{64}$ addresses, equivalent to $2^{64}$ bytes (16 exbibytes)! Approximately, this is a billion times more than the physical memory capacity.
 
 ## Page
 
@@ -26,7 +26,7 @@ For quick lookups, the MMU uses a [cache](/Systems%20and%20Networking/Unit%201/A
 
 The virtual address space is a virtual memory block used by [processes](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md). Every process can use a fixed contiguous amount of *virtual* addresses in the memory, which are translated into real addresses by the [MMU](#Memory%20Management%20Unit).
 
-The amount of addresses user programs can use are dependant on the hardware and on the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md). For example, on a 32-bit architecture, the virtual addresses range from 0 to 2<sup>32</sup>-1.
+The amount of addresses user programs can use are dependant on the hardware and on the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md). For example, on a 32-bit architecture, the virtual addresses range from $0$ to $2^{32}-1$.
 
 The layout is as follows (from top to bottom):
 1. Kernel Space

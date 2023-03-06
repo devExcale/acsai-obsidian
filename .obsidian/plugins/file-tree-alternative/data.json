@@ -20,6 +20,6 @@
   "createdYaml": false,
   "fileNameIsHeader": true,
   "folderNote": false,
-  "deleteFileOption": "trash",
+  "deleteFileOption": "system-trash",
   "showFileNameAsFullPath": false
 }

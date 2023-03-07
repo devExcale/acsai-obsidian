@@ -38,8 +38,8 @@ Some of the courses
 
 **Second Year - Second Semester**
 
-- [Artificial Intelligence and Machine Learning - Unit 1](/AI%20and%20ML/AI%20and%20ML.md#Unit%201)
-- [Artificial Intelligence and Machine Learning - Unit 2](/AI%20and%20ML/AI%20and%20ML.md#Unit%202)
+- [Artificial Intelligence and Machine Learning - Unit 1](AI%20and%20ML/README.md#Unit%201)
+- [Artificial Intelligence and Machine Learning - Unit 2](AI%20and%20ML/README.md#Unit%202)
 - [Computer Vision and Natural Language Processing](/Computer%20Vision%20and%20NLP/Computer%20Vision%20and%20NLP.md)
 - [Data Management and Analysis - Unit 2](?TK)
 - [Statistics](Statistics/README.md)

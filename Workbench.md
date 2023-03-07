@@ -12,6 +12,8 @@ Instead of storing all possible percepts, the best solution is to start from a s
 
 Walk, trail, path, loop, dag
 
+
+
 # AI ML U2
 
 ## Training
@@ -25,6 +27,8 @@ The formula calculates the arithmetic means of both x and y, then calculates how
 ## Inductive Bias
 
 Different people (and different AI's) have different experiences, which influences the resulting reasoning.
+
+
 
 # Statistics
 

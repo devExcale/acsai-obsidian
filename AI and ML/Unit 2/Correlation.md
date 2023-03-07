@@ -2,7 +2,7 @@
 
 Correlation is a statistical relationship between variables, where a change in one variable is associated with a change in another variable.
 
-![correlation_examples](assets/correlation_examples.png)
+![Examples of correlation between sets of points](assets/correlation_examples.png)
 
 ## Pearson's Correlation Coefficient
 
@@ -23,6 +23,20 @@ where:
 - $\text{cov}(X,Y)$ is the covariance of the two variables;
 - $\sigma_X$ is the standard deviation of the variable $X$;
 - $\sigma_Y$ is the standard deviation of the variable $Y$.
+
+The formula could be rewritten in the following way
+
+> [!note] Correlation Formula
+> 
+> The correlation formula could be rewritten in the following way.
+> 
+> $$\large
+> 	r = \frac
+> 	{ \sum (x_i - \overline x) (y_i - \overline y) }
+> 	{ \sqrt {
+> 	\sum (x_i - \overline x)^2 \sum (x_i - \overline x)^2
+> 	} }
+> $$
 
 ## Learning Paradigms
 

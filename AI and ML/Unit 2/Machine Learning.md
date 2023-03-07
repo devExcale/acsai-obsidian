@@ -6,6 +6,12 @@ The whole Machine Learning system is based on finding common patterns in the dat
 
 ![Diagram of the Machine Learning workflow](assets/machine_learning_approach.png)
 
+## Types of Machine Learning
+
+- [Supervised Learning](/AI%20and%20ML/Unit%202/Supervised%20Learning.md)
+- [Unsupervised Learning](AI%20and%20ML/Unit%202/Unsupervised%20Learning.md)
+- Reinforced Learning
+
 ## Limits of Machine Learning
 
 TK labels

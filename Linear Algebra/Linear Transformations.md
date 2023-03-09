@@ -19,6 +19,10 @@ If the determinant is:
 - **negative,** the transformation reverses orientation and reflects the space;
 - **zero,** the transformation collapses the space onto a lower-dimensional subspace.
 
+## Translation
+
+TK
+
 ## Scaling
 
 A scaling transformation changes the size of an object. The scaling transformation multiplies each component of a vector $\vec v$ by $\alpha$, resulting in a new vector $\vec w = \alpha \cdot \vec v$.
@@ -81,3 +85,20 @@ $$
 where $k$ determines the amount and direction of the shear.
 
 When applied to a vector, a shear transformation moves the components of the vector parallel to the direction of the shear, with the amount of movement proportional to the distance from the origin.
+
+## All Transformation Together
+
+All the previous transformations ([scaling](#Scaling), [rotation](#Rotation), [shearing](#Shearing)) can be applied at the same time by multiplying the vector space by the following matrix,
+
+$$\large
+	\begin{bmatrix}
+		s_x\cos\theta & -c_x\sin\theta \\
+		c_y\sin\theta & s_y\cos\theta
+	\end{bmatrix}
+$$
+
+where:
+
+- $s_x, s_y$ are the scaling factors;
+- $\theta$ is the rotation angle;
+- $c_x, x_y$ are the shearing factors.

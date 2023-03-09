@@ -1,5 +1,5 @@
 # Linear Equations
----
+
 
 A linear equations is a basic type of equation where all the unknowns have exponent equal 1. All unknowns are grouped on the left, while the known values are on the right.
 

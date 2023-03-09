@@ -1,8 +1,6 @@
 # Sets
----
 
-A set is a collection of omogeneous elements, with no order and every elements is unique in the set. A set can have finite or infinite elements.
-
+A set is a collection of homogeneous elements, with no order and every elements is unique in the set. A set can have finite or infinite elements.
 
 ## Defining a set
 
@@ -32,8 +30,7 @@ The first part is the "generator function", which takes one or more values and g
 
 $$ \large \mathbb{Q} = \{ \frac{a}{b} \mid b \ne 0 \quad a,b \in \mathbb{Z}\} $$
 
-
-## Set Properties
+## Properties of Sets
 
 #### Membership
 

@@ -6,10 +6,16 @@ It is used to solve systems of linear equations, to analyse and model data, and 
 
 ## Table of Contents
 
+**Root**
+
 - [Sets](/Linear%20Algebra/Sets.md)
 - [Linear Equations](/Linear%20Algebra/Linear%20Equations.md)
 - [Vectors](/Linear%20Algebra/Vectors.md)
 - [Matrices](/Linear%20Algebra/Matrices.md)
 - [Hyperplanes](/Linear%20Algebra/Hyperplanes.md)
-- [Linear Transformations](Linear%20Algebra/Transformations/Linear%20Transformations.md)
 - [Eigenvectors](/Linear%20Algebra/Eigenvectors.md)
+
+**Linear Transformations**
+- [Linear Transformations](/Linear%20Algebra/Transformations/Linear%20Transformations.md)
+- [Spectral Decomposition](/Linear%20Algebra/Transformations/Spectral%20Decomposition.md)
+- [Singular Value Decomposition](/Linear%20Algebra/Transformations/Singular%20Value%20Decomposition.md)

@@ -40,8 +40,8 @@ Scaling can also be applied to the single components separately by changing the 
 
 $$\large
 	\begin{bmatrix}
-	1 & 0 \\
-	0 & 2
+	\alpha & 0 \\
+	0 & \beta
 	\end{bmatrix}
 	
 	\begin{bmatrix}
@@ -49,7 +49,7 @@ $$\large
 	\end{bmatrix} =
 	
 	\begin{bmatrix}
-	x \\ 2y
+	\alpha x \\ \beta y
 	\end{bmatrix}
 $$
 

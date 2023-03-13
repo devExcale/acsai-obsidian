@@ -1,3 +1,9 @@
+# Workbench
+
+*Just a big TODO list*
+
+---
+
 # AI ML U1
 
 ## Agents
@@ -8,11 +14,13 @@ Consequentialism
 
 Instead of storing all possible percepts, the best solution is to start from a subset of it and then include others while learning.
 
-## Graphs
+## Automata
 
-Walk, trail, path, loop, dag
+- [ ] Finite-State LTS means that it has finite states and actions, Finite-State Automata means that it has to end at some point.
 
+- [ ] Every non-deterministic automata can be represented as a deterministic automata, even though the states and actions may increase.
 
+---
 
 # AI ML U2
 
@@ -28,7 +36,25 @@ The formula calculates the arithmetic means of both x and y, then calculates how
 
 Different people (and different AI's) have different experiences, which influences the resulting reasoning.
 
+## Eigendecompositions
 
+PCA, Hessian, Covariance Matrix, Singular Value Decomposition
+
+Gaussian generation, covariance matrix
+
+Standardize data
+
+Maximizing the variance of the projection of the data
+
+U is composed of the eigenvalues
+
+---
+
+# Computer Vision and NLP
+
+- [ ] CV images are stored in standard numpy arrays
+
+---
 
 # Statistics
 
@@ -46,3 +72,9 @@ Box plot
 
 Response Variable
 Explanatory Variable
+
+---
+
+## Data Management and Analysis U2
+
+*Empty, for now...*

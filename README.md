@@ -32,7 +32,7 @@ Some of the courses
 
 - Calculus 2
 - [Data Management and Analysis - Unit 1](/Data%20Management%20and%20Analysis/README.md)
-- [Probability](/Probability/Probability.md)
+- [README](Probability/README.md)
 - [Systems and Networking - Unit 1](/Systems%20and%20Networking/Systems%20and%20Networking.md)
 - [Systems and Networking - Unit 2](/Systems%20and%20Networking/Systems%20and%20Networking.md)
 

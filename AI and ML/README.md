@@ -19,3 +19,5 @@ The courses I've signed up for: AI and machine learning.
 - [Bayes Optimal Classifier](/AI%20and%20ML/Unit%202/Bayes%20Optimal%20Classifier.md)
 
 [**Unsupervised Learning**](/AI%20and%20ML/Unit%202/Unsupervised%20Learning.md)
+
+- [Principal Component Analysis](/AI%20and%20ML/Unit%202/Principal%20Component%20Analysis.md)

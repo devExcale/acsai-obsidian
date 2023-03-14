@@ -1,12 +1,14 @@
 # Workbench
 
-*Just a big TODO list*
+*Just a big TODO list of notes*
 
----
 
-# AI ML U1
+![hr](assets/hr.png)
 
-## Agents
+
+## AI ML U1
+
+#### Agents
 
 Goal based agent
 
@@ -14,7 +16,7 @@ Consequentialism
 
 Instead of storing all possible percepts, the best solution is to start from a subset of it and then include others while learning.
 
-## Automata
+#### Automata
 
 - [ ] Finite-State LTS means that it has finite states and actions, Finite-State Automata means that it has to end at some point.
 
@@ -22,29 +24,31 @@ Instead of storing all possible percepts, the best solution is to start from a s
 
 - [ ]  An FSA is deterministic if the outcome of an action is determined, non-deterministic if the outcome isn't determined (i.e. deterministic if for each state every action leads to one state only, non-deterministic otherwise).
 
-## Searching
+#### Searching
 
 - [ ] Graph search vs tree-like search
 
 - [ ] Breadth-first search is complete (if there's a solution it will return it, otherwise it won't)
 
----
 
-# AI ML U2
+![hr](assets/hr.png)
 
-## Training
+
+## AI ML U2
+
+#### Training
 
 A model can't be verified on the same dataset it has been trained on, because the model is kind of guaranteed to reach the expected output. To verify the correctness of a model, a dataset with different data is required, so that the model will try to guess the output on data it has never seen.
 
-## Pearson Correlation Coefficient
+#### Pearson Correlation Coefficient
 
 The formula calculates the arithmetic means of both x and y, then calculates how much the set of the points change wrt to the mean point. Then, it sums all contributions to calculate the correlation between x and y. 
 
-## Inductive Bias
+#### Inductive Bias
 
 Different people (and different AI's) have different experiences, which influences the resulting reasoning.
 
-## Eigendecompositions
+#### Eigendecompositions
 
 - [ ] PCA: point cloud should be centred by subtracting mu
 
@@ -56,15 +60,19 @@ Different people (and different AI's) have different experiences, which influenc
 
 - [ ] There is a way to retrieve the Principal Components from SVD
 
----
 
-# Computer Vision and NLP
+![hr](assets/hr.png)
+
+
+## Computer Vision and NLP
 
 - [ ] CV images are stored in standard NumPy arrays
 
----
 
-# Statistics
+![hr](assets/hr.png)
+
+
+## Statistics
 
 Forchetta: the range of values a variable could assume.
 
@@ -81,8 +89,12 @@ Box plot
 Response Variable
 Explanatory Variable
 
----
+
+![hr](assets/hr.png)
+
 
 ## Data Management and Analysis U2
 
 *Empty, for now...*
+
+![hr](assets/hr.png)

@@ -1,6 +1,6 @@
-# Center of a Distribution
+# Centre of Distributions
 
-The center of a distribution can be defined in multiple ways, depending on the needs and on the kind of information we're looking for.
+The centre of a distribution can be defined in multiple ways, depending on the needs and on the kind of information we're looking for.
 
 ## Mean
 
@@ -38,3 +38,11 @@ The median is the value in the middle of the ordered set of all observations, i.
 > [!warning] Extreme Values
 > 
 > The median isn't affected by extreme values: changing one of the first/last values into something much lower/higher will not affect the mean, as the mean is only affected by the middle value(s).
+
+## Mode
+
+The mode of a distribution is the value that occurs the most often.
+
+The mode can be used with both quantitative and qualitative data, but it is the most useful with qualitative data, because mean and median can't be applied to qualitative data.
+
+A single mode isn't guaranteed to exist, there could exist more than one mode (more than one group of categories with the same frequency) or no mode at all (groups of same frequency are evened out).

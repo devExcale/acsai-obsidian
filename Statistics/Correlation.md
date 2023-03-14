@@ -38,5 +38,4 @@ The formula could be rewritten in the following way
 > 	} }
 > $$
 
-## Learning Paradigms
 

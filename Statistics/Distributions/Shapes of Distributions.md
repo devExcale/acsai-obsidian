@@ -1,4 +1,4 @@
-# Shape of a Distribution
+# Shapes of Distributions
 
 Given a statistical study's [graph](Statistics/Data%20Graphs.md), graphical properties can be noted.
 

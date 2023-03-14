@@ -15,12 +15,14 @@ A relation can be regarded as a table in which:
 - each **row** is a *distinct* tuple that represent an instance of information;
 - each **column** corresponds to a component of information and contains homogeneous values (same domain).
 
-*example:* The following table is a relation with two tuples of 4 elements with the specified domain, but it provides no information: there's no context.
-
-| String | String  | Integer | Real |
-| ------ | ------- | ------- | ---- |
-| Mario  | Bianchi | 10      | 28.5 |
-| Paolo  | Rossi   | 2       | 26.5 |
+> [!example] Context to Information
+> 
+> The following table is a relation with two tuples of 4 elements with the specified domain, but it provides no information: there's no context.
+> 
+> | String | String  | Integer | Real |
+> | ------ | ------- | ------- | ---- |
+> | Mario  | Bianchi | 10      | 28.5 |
+> | Paolo  | Rossi   | 2       | 26.5 |
 
 ## Relation
 
@@ -29,18 +31,17 @@ A relation has a fixed structure:
 - the pair (column name, column domain) is called **attribute**, which represents a piece of information;
 - the set of all attributes of a relation is called [relational schema](/Data%20Management%20and%20Analysis/Unit%201/Database/Schemas.md).
 
-If a relation $\large R$ has attributes $\large A_1, \ldots, A_k$, then the schema is represented as $\large R(A_1, \ldots, A_k)$.
+If a relation $R$ has attributes $A_1, \ldots, A_k$, then the schema is represented as $R(A_1, \ldots, A_k)$ or $R = A_1, \ldots, A_k$ .
 
-> [!abstract] Aspects
+> [!note] Aspects
 > In a relation we can define two properties:
 > - **intentional aspect,** the schema of a relation should remain *unchanged over time*, because it describes its structure;
 > - **extensional aspect,** values in a relation (instance of a relation) can change, and change very quickly.
 
 Tuples between relations can be linked: references between data in different relations are represented by values that are included in the tuples. This whole behaviour is defined with [foreign keys](?).
 
-> [!abstract] Tuples
+> [!note] Tuples
 > Every tuple $t$ of an instance of a relation $R$ can be seen as a function that associates each attribute $A_i$ to a value $t[A_i] \in dom(A_i)$.
-
 
 ### Null values
 
@@ -52,7 +53,7 @@ Null does not belong to any domain, but it can be used as a *wildcard* to replac
 
 The components of a relation are indicated by the names rather than their position: $t[A_i]$ indicates the value of the attribute with name $A_i$ of the tuple $t$.
 
-If $Y$ is a subset of attributes of the schema $X$ of a relation $(Y \subseteq X)$ then $t_Y = (t[y_1], \cdots, t[y_i])\ s.t.\ y_i \in Y$ is the tuple composed only of the values of $t$ that correspond to the attributes contained in $Y$. $t_Y$ is also called a **restriction** of $t$.
+If $Y$ is a subset of attributes of the schema $X$ of a relation $(Y \subseteq X)$ then $t_Y = (t[y_1], \cdots, t[y_i]) \text{ s.t. } y_i \in Y$ is the tuple composed only of the values of $t$ that correspond to the attributes contained in $Y$. $t_Y$ is also called a **restriction** of $t$.
 
 ### Keys
 

@@ -3,8 +3,8 @@
 Given a relation schema $R$, a *functional dependency* on $R$ is an ordered pair of non-empty subsets $X,Y \in R$, with notation $X \rightarrow Y$ (sometimes $XY$), such that
 
 $$\large
-	\forall t_1, t_2 \in r :
 	t_1[X] = t_2[X] \Rightarrow t_1[Y] = t_2[Y]
+	\quad\quad \forall t_1, t_2 \in r
 $$
 
 where $r$ is an instance of $R$.
@@ -18,80 +18,96 @@ where $r$ is an instance of $R$.
 > | **146** | *Mario*    | *Rossi*   | ... | 30    |
 > | **200** | *Emanuele* | *Scaccia* | ... | 29    |
 > 
-> In this case, $\{ \text{ID} \} \rightarrow \{ \text{Name}, \text{Surname} \}$.
+> In this case, $\set\text{ID} \rightarrow \set{ \text{Name}, \text{Surname} }$.
 
-> [!info] Constraints
-> Functional dependencies are just another type of [constraint](/Data%20Management%20and%20Analysis/Unit%201/Database/Constraints.md).
+- The set of all functional dependencies defined on $R$ is called $F$ ;
+- $r$ is said to be legal if it satisfies all the functional dependencies in $F$.
 
-The set of all functional dependencies defined on $R$ is called $F$; $r$ is said to be legal if it satisfies all the functional dependencies in $F$.
-
-## Closure of F
-
-A legal instance $r$ of $R$ satisfies all the functional dependencies in $F$, but it could have additional functional dependencies that are not included in $F$.
-
-The set of all functional dependencies satisfied by **each legal** instance of $R$, even the ones not in $F$, is called the **closure of $F$** (denoted by $F^+$).
-
-> [!note] Note
-> Note that $F \subseteq F^+$, because $F^+$ contains every functional dependency satisfied by legal instances of $R$, which by definition satisfy every functional dependency in $F$. This implies that every functional dependency in $F$ is contained in $F^+$.
-
-> [!tip] Trivial Functional Dependencies
-> Given two subsets $X, Y$ such that $Y \subset X \subseteq R$, we have that every legal instance $r$ of $R$ must satisfy the (so called) **trivial functional dependency** $X \rightarrow Y$.
-> 
-> Even if not defined, trivial functional dependencies are satisfied by any relation, hence if $Y \subset X$ then $X \rightarrow Y \in F^+$.
+> [!tip] Constraints
+> Functional dependencies are another way to express some types of [constraints](/Data%20Management%20and%20Analysis/Unit%201/Database/Constraints.md).
 
 ## Armstrong's Axioms
 
-Let $F^A$ be a set of functional dependencies defined on $R$, such that $F \subseteq F^A$. Using **Armstrong's Axioms**, we can build $F^A$.
+Armstrong's axioms define new functional dependencies from the ones that already exist.
 
-TK
+The three axioms are:
 
-### Reflexivity Axiom
+- reflexivity axiom;
+- augmentation axiom;
+- transitivity.
 
-$$\large
-	Y \subset X \in R
-	\Longrightarrow X
-	\rightarrow Y \in F^A
-$$
+Moreover, three additional rules can be derived from the axioms:
 
-### Augmentation Axiom
+- union rule;
+- decomposition rule;
+- pseudo-transitivity rule.
 
-$$\large
-	X \rightarrow Y \in F^A
-	\Longrightarrow
-	XZ \rightarrow YZ \in F^A \quad \forall Z \in R
-$$
+By iteratively applying the axioms and rules to $F$, a new set of functional dependencies $F^A$ can be constructed, which will contain additional functional dependencies that were not contained in $F$.
 
-### Transitivity Axiom
+> [!tip] Closure of $F$
+> 
+> When $F^A$ is complete and no other functional dependencies can be found, then $F^A$ is equal to the [closure](/Data%20Management%20and%20Analysis/Unit%201/Relational/Closure%20of%20Functional%20Dependencies.md) of $F$.
 
-$$\large
-	X \rightarrow Y, \ \ Y \rightarrow Z \in F^A
-	\Longrightarrow
-	X \rightarrow Z \in F^A
-$$
 
-### Union Rule
+> [!note] Reflexivity Axiom
+> 
+> *All functional dependencies $X \rightarrow Y$, defined for every $Y \subset X$, belong to $F^A$.*
+> 
+> $$\large
+> 	X \rightarrow Y \in F^A
+> 	\quad \quad
+> 	\forall Y \subset X
+> $$
 
-$$\large
-	X \rightarrow Y, \ \ X \rightarrow Z \in F^A
-	\Longrightarrow
-	X \rightarrow YZ \in F^A
-$$
+> [!note] Augmentation Axiom
+> 
+> *All functional dependencies $XZ \rightarrow YZ$, defined for every $X \rightarrow Y \in F$, belong to $F^A$.*
+> 
+> $$\large
+> 	XZ \rightarrow YZ \in F^A
+> 	\quad \quad
+> 	\forall X \rightarrow Y \in F,\ Z \in R
+> $$
 
-### Decomposition Rule
+> [!note] Transitivity Axiom
+> 
+> *All functional dependencies $X \rightarrow Z$, defined for every couple $X \rightarrow Y, Y \rightarrow Z \in F$, belong to $F^A$.*
+> 
+> $$\large
+> 	X \rightarrow Z \in F^A
+> 	\quad \quad
+> 	\forall X \rightarrow Y,\ Y \rightarrow Z \in F
+> $$
 
-$$\large
-	X \rightarrow Y \in F^A \ \ \text{and} \ \ Z \subset Y
-	\Longrightarrow
-	X \rightarrow Z \in F^A
-$$
+> [!note] Union Rule
+> 
+> *All functional dependencies $X \rightarrow YZ$, defined for every couple $X \rightarrow Y, X \rightarrow Z \in F$, belong to $F^A$.*
+> 
+> $$\large
+> 	X \rightarrow YZ \in F^A
+> 	\quad \quad
+> 	\forall X \rightarrow Y,\ X \rightarrow Z \in F
+> $$
 
-### Pseudotransitivity Rule
+> [!note] Decomposition Rule
+> 
+> *All functional dependencies $X \rightarrow Z$, defined for every $Z \subset Y \text{ s.t. } X \rightarrow Y \in F$, belong to $F^A$.*
+> 
+> $$\large
+> 	X \rightarrow Z \in F^A
+> 	\quad \quad
+> 	\forall Z \subset Y \text{ s.t. } X \rightarrow Y \in F
+> $$
 
-$$\large
-	X \rightarrow Y, \ \ WY \rightarrow Z \in F^A
-	\Longrightarrow
-	WX \rightarrow Z \in F^A
-$$
+> [!note] Pseudo-transitivity Rule
+> 
+> *All functional dependencies $XW \rightarrow Z$, defined for every couple $X \rightarrow Y, WY \rightarrow Z \in F$, belong to $F^A$.*
+> 
+> $$\large
+> 	WX \rightarrow Z \in F^A
+> 	\quad \quad
+> 	\forall X \rightarrow Y,\ WY \rightarrow Z \in F
+> $$
 
 ## Keys
 

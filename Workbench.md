@@ -20,6 +20,14 @@ Instead of storing all possible percepts, the best solution is to start from a s
 
 - [ ] Every non-deterministic automata can be represented as a deterministic automata, even though the states and actions may increase.
 
+- [ ]  An FSA is deterministic if the outcome of an action is determined, non-deterministic if the outcome isn't determined (i.e. deterministic if for each state every action leads to one state only, non-deterministic otherwise).
+
+## Searching
+
+- [ ] Graph search vs tree-like search
+
+- [ ] Breadth-first search is complete (if there's a solution it will return it, otherwise it won't)
+
 ---
 
 # AI ML U2
@@ -38,21 +46,21 @@ Different people (and different AI's) have different experiences, which influenc
 
 ## Eigendecompositions
 
-PCA, Hessian, Covariance Matrix, Singular Value Decomposition
+- [ ] PCA: point cloud should be centred by subtracting mu
 
-Gaussian generation, covariance matrix
+- [ ] PCA: point cloud should be divided by sigma to round the cloud
 
-Standardize data
+- [ ] Another PCA interpretation: find an orthogonal projection that minimises the reconstruction error
 
-Maximizing the variance of the projection of the data
+- [ ] What if the sample cardinality is smaller than the data dimensionality
 
-U is composed of the eigenvalues
+- [ ] There is a way to retrieve the Principal Components from SVD
 
 ---
 
 # Computer Vision and NLP
 
-- [ ] CV images are stored in standard numpy arrays
+- [ ] CV images are stored in standard NumPy arrays
 
 ---
 

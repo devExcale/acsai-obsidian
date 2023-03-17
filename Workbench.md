@@ -48,11 +48,13 @@ The formula calculates the arithmetic means of both x and y, then calculates how
 
 Different people (and different AI's) have different experiences, which influences the resulting reasoning.
 
-#### Eigendecompositions
+#### PCA
 
 - [ ] PCA: point cloud should be centred by subtracting mu
 
 - [ ] PCA: point cloud should be divided by sigma to round the cloud
+
+- [ ] Reconstruction Error
 
 - [ ] Another PCA interpretation: find an orthogonal projection that minimises the reconstruction error
 
@@ -60,6 +62,19 @@ Different people (and different AI's) have different experiences, which influenc
 
 - [ ] There is a way to retrieve the Principal Components from SVD
 
+#### Matrix Calculus
+
+- [ ] First derivative of vector to scalar: Gradient (Dx1)
+
+- [ ] Second derivative of vector to scalar: Hessian (DxD, symmetric)
+
+- [ ] First derivative of vector to vector (D->P): Jacobian (DxP)
+
+- [ ] Secondo derivative of vector to vector (D->P): High-order Tensor (DxPxP)
+
+- [ ] The hessian can be seen as the jacobian of the gradient
+
+- [ ] Quadratic Forms: $x^T A x$ ($A$ symmetric) | If we call $Ax = b$, then $x^T b$ is the dot product between $x$ and itself after $A$ has been applied
 
 ![hr](assets/hr.png)
 

@@ -109,26 +109,27 @@ By iteratively applying the axioms and rules to $F$, a new set of functional dep
 > 	\forall X \rightarrow Y,\ WY \rightarrow Z \in F
 > $$
 
-## Keys
+[Keys](Data%20Management%20and%20Analysis/Unit%201/Relational/Keys.md)
 
-Given a relation schema $R$ and a set of functional dependencies $F$ defined on $R$, a subset $K \subseteq R$ is a key of $R$ if:
+## Partial Dependencies
 
-1. $K \rightarrow R \in F^+$
-2. There is no proper subset $K' \subset K$ such that $K' \rightarrow R$
+$X \rightarrow A \in F^+$ is said to be a partial dependency if both:
 
-If condition 2. isn't satisfied, but the subset $K$ determines $R$, then $K$ is said to be a **superkey**.
+- $A$ is **prime**;
+- $X \subset K$, i.e. $X$ is a proper subset of a key.
 
-A relation can have multiple distinct keys, usually in a [database](/Data%20Management%20and%20Analysis/Unit%201/Database/Databases.md) just one is chosen as a **primary key**.
-
-> [!example] Example
->
-> | ID      | Name       | Surname   | DateOfBirth | ... |
-> | ------- | ---------- | --------- | ----------- | --- |
-> | **200** | *Emanuele* | *Scaccia* | 11/05/2002  | ... |
-> | **146** | *Mario*    | *Rossi*   | 11/05/2002  | ... |
->
-> In this case, by imposing unique on $\{ \text{Name}, \text{Surname} \}$ both
-> - $\{ \text{ID}\} \rightarrow R$
-> - $\{ \text{Name}, \text{Surname} \} \rightarrow R$
+> [!example]
 > 
-> are keys of $R$.
+> TK
+
+## Transitive Dependencies
+
+$X \rightarrow A \in F^+$ is said to be a transitive dependency if both:
+
+- $A$ is **prime**;
+- $X \not\subset K \quad \forall K$;
+- $K \setminus X = \emptyset$.
+
+> [!example]
+> 
+> TK

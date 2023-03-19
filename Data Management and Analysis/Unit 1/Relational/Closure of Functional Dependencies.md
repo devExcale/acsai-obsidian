@@ -1,3 +1,5 @@
+$\def \clj#1#2{{ #1_#2^+ }}$
+
 # Closure of Functional Dependencies
 
 A legal instance $r$ of $R$ is ensured to satisfy all the [functional dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Functional%20Dependencies.md) in $F$, but it could satisfy additional functional dependencies that aren't included in $F$.
@@ -22,3 +24,7 @@ A legal instance $r$ of $R$ is ensured to satisfy all the [functional dependenci
 Given two subsets $X, Y$ such that $Y \subset X \subseteq R$, every legal instance $r$ of $R$ must satisfy the (so called) **trivial functional dependency** $X \rightarrow Y$.
 
 Even if not defined, trivial functional dependencies are satisfied by any relation, hence if $Y \subset X$ then $X \rightarrow Y \in F^+$.
+
+## Equivalence of Functional Dependencies
+
+Two sets of functional dependencies are said to be equivalent ($F \equiv G$) if their closures are the same ($F^+ = G^+$)

@@ -70,7 +70,7 @@ Different people (and different AI's) have different experiences, which influenc
 
 - [ ] First derivative of vector to vector (D->P): Jacobian (DxP)
 
-- [ ] Secondo derivative of vector to vector (D->P): High-order Tensor (DxPxP)
+- [ ] Second derivative of vector to vector (D->P): High-order Tensor (DxPxP)
 
 - [ ] The hessian can be seen as the jacobian of the gradient
 

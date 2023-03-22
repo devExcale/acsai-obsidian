@@ -1,3 +1,4 @@
+$\def \clj#1{{ #1^+ }}$
 $\def \clj#1#2{{ #1_#2^+ }}$
 
 # Closure of Attributes

@@ -4,16 +4,8 @@ If a relations isn't in [3rd normal form](/Data%20Management%20and%20Analysis/Un
 
 - $R = \bigcup_{i=1}^n R_i$;
 - every subschema $R_i$ is in 3NF;
-- all functional dependencies are preserved;
-- the natural join of all $R_i$ should return the original instance of $R$.
-
-A decomposition $\rho = R_1, R_2, \cdots, R_n$ is said to preserve $F$ if
-
-$$\large
-	F \equiv G = \bigcup_{i=1}^n \pi_{R_i}(F)
-$$
-
-where $\pi_{R_i}(F) = \set{X \rightarrow Y \in F^+ \mid XY \subseteq R_i}$.
+- all [functional dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Functional%20Dependencies.md) are preserved;
+- the [natural join](/Data%20Management%20and%20Analysis/Unit%201/Relational/Relational%20Algebra.md#Join) of all $R_i$ should return the original instance of $R$ (*lossless join*).
 
 > [!info] Projecting Functional Dependencies and Relation Instances
 > 
@@ -25,3 +17,5 @@ where $\pi_{R_i}(F) = \set{X \rightarrow Y \in F^+ \mid XY \subseteq R_i}$.
 > 	r_i &= \pi_{R_i}(r)
 > \end{aligned}
 > $$
+
+1. [Preserving functional dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Preserving%20Functional%20Dependencies.md)

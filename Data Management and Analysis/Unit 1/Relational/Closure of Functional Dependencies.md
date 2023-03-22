@@ -1,3 +1,4 @@
+$\def \clj#1{{ #1^+ }}$
 $\def \clj#1#2{{ #1_#2^+ }}$
 
 # Closure of Functional Dependencies
@@ -27,4 +28,4 @@ Even if not defined, trivial functional dependencies are satisfied by any relati
 
 ## Equivalence of Functional Dependencies
 
-Two sets of functional dependencies are said to be equivalent ($F \equiv G$) if their closures are the same ($F^+ = G^+$)
+Two sets of functional dependencies are said to be equivalent ($F \equiv G$) if their closures are the same, i.e. $F^+ = G^+$.

@@ -46,7 +46,7 @@ By iteratively applying the axioms and rules to $F$, a new set of functional dep
 
 > [!tip] Closure of $F$
 > 
-> When $F^A$ is complete and no other functional dependencies can be found, then $F^A$ is equal to the [closure](/Data%20Management%20and%20Analysis/Unit%201/Relational/Closure%20of%20Functional%20Dependencies.md) of $F$.
+> When no other functional dependencies can be found by applying Armstrong's axioms on $F^A$, then $F^A$ will be equal to the [closure](/Data%20Management%20and%20Analysis/Unit%201/Relational/Closure%20of%20Functional%20Dependencies.md) of $F$ ($F^+$).
 
 
 > [!note] Reflexivity Axiom
@@ -108,8 +108,6 @@ By iteratively applying the axioms and rules to $F$, a new set of functional dep
 > 	\quad \quad
 > 	\forall X \rightarrow Y,\ WY \rightarrow Z \in F
 > $$
-
-[Keys](Data%20Management%20and%20Analysis/Unit%201/Relational/Keys.md)
 
 ## Partial Dependencies
 

@@ -51,3 +51,5 @@ If, for any $X \rightarrow A$, $A \in \clj{X}{G \setminus \set{X \rightarrow A}}
 > [!tip]
 > 
 > If, for a dependency $X \rightarrow A$, there are no other dependencies such that $A$ is determined or is a determinant, then the dependency can't be removed, because then $A$ wouldn't be determined anymore.
+
+4. **At the end** $G = \text{min cover(} F \text{)}$

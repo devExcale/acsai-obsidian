@@ -122,7 +122,7 @@ $X \rightarrow A \in F^+$ is said to be a partial dependency if both:
 
 ## Transitive Dependencies
 
-$X \rightarrow A \in F^+$ is said to be a transitive dependency if both:
+$X \rightarrow A \in F^+$ is said to be a transitive dependency if all:
 
 - $A$ is **prime**;
 - $X \not\subset K \quad \forall K$;

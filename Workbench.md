@@ -74,7 +74,17 @@ Different people (and different AI's) have different experiences, which influenc
 
 - [ ] The hessian can be seen as the jacobian of the gradient
 
-- [ ] Quadratic Forms: $x^T A x$ ($A$ symmetric) | If we call $Ax = b$, then $x^T b$ is the dot product between $x$ and itself after $A$ has been applied
+- [ ] Quadratic Forms: $x^T A x$ ($A$ symmetric) | If we call $Ax = b$, then $x^T b$ is the dot product between $x$ and itself after $A$ has been applied. Geometrically, it represents the shape of the *parabola* of the matrix
+
+- [ ] Quadratic form can be applied to asymmetric square matrices too: let $B = \frac{1}{2} A + \frac{1}{2} A^T$, then $B$ is symmetric and the quadratic form can be applied to $B$. 
+
+- [ ] Gradient is linear
+
+- [ ] Lagrange multiplier
+
+#### K-mean
+
+- [ ] Furthest-first Heuristic: first is picked at random, others are picked iteratively based on decreasing distance (updated on each assignment)
 
 ![hr](assets/hr.png)
 

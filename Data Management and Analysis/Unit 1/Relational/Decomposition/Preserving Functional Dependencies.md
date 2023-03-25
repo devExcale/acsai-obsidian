@@ -19,7 +19,6 @@ To check that $F \equiv G$ (i.e. $F^+ = G^+$), it could also be checked that $F^
 > 
 > By the definition of the [decomposition](Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Decomposition%20of%20Relations.md), it follows that $F \supseteq G$, so naturally $F^+ \supseteq G^+$.
 
-
 > [!question] $F^+ \subseteq G^+$
 > 
 > Assume that $F \subseteq G^+$, then

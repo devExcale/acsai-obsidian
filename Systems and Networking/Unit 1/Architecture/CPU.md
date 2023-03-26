@@ -2,7 +2,7 @@
 
 The *Central Processing Unit* is the component that executes actual [instructions](/Systems%20and%20Networking/Unit%201/Architecture/Instructions.md) and computations. In modern [architectures](?TK), there can be multiple processors that work parallelly in order to increase computing power.
 
-![Diagram of a CPU](/assets/cpu_diagram.svg)
+![Diagram of a CPU](assets/Diagram%20-%20CPU.svg)
 
 ## Components
 
@@ -23,7 +23,7 @@ Also called *Combinatorial Unit*, the *ALU* is the core that executes arithmetic
 
 It takes in input two operands, which can come from [registers](/Systems%20and%20Networking/Unit%201/Architecture/Registers.md) or [literals](?).
 
-![Arithmetic Logical Unit Diagram](/assets/alu_diagram.png)
+![Arithmetic Logical Unit Diagram](assets/Diagram%20-%20ALU.png)
 
 ### Address Generation Unit
 

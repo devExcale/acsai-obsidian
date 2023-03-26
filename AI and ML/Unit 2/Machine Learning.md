@@ -4,7 +4,7 @@ Machine Learning is a branch of Artificial Intelligence that teaches machines to
 
 The whole Machine Learning system is based on finding common patterns in the data, called **training set**, which then will be used to make a prediction on new input data.
 
-![Diagram of the Machine Learning workflow](assets/machine_learning_approach.png)
+![Diagram of the Machine Learning workflow](assets/Diagram%20-%20ML%20Approach.png)
 
 ## Types of Machine Learning
 

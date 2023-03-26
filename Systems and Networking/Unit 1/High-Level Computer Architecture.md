@@ -4,7 +4,7 @@
 
 Today's computers are based on *Von Neumann*'s Architecture.
 
-![[assets/von_neumann_arch.jpg]]
+![[assets/Diagram - Von Neumann Architecture.jpg]]
 
 ## Cache
 

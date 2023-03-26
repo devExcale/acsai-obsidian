@@ -2,7 +2,7 @@
 
 *The classes I've signed up for: AI and machine learning.*
 
-![Venn Diagram of AI, ML and DL](/assets/ai_ml_dl.png)
+![Venn Diagram of AI, ML and DL](assets/Diagram%20-%20Venn%20AI%20Branches.png)
 
 ## Table of Contents
 

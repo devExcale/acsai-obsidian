@@ -44,7 +44,7 @@ A simple reflex agent is an agent that operates on condition rules. The sensors 
 > The Simple Reflex Agent is a *stateless* agent, in the sense that the agent decides on an action by rules which are applied to the current state of the environment, without keeping track of the past.
 
 
-![Diagram - Agent Simple Reflex](/assets/Diagram%20-%20Agent%20Simple%20Reflex.bmp)
+![Simple Reflex Agent Diagram](/assets/Diagram%20-%20Agent%20Simple%20Reflex.bmp)
 
 *Python representation of a simple reflex agent.*
 
@@ -72,7 +72,7 @@ A model-based reflex agent requires:
 > 
 > The Model-Based Reflex Agent is a *stateful* agent, in the sense that the agent decides on an action based on the current state, which is related to information of past states and actions
 
-![Diagram - Agent Model-Based Reflex](/assets/Diagram%20-%20Agent%20Model-Based%20Reflex.bmp)
+![Model-Based Reflex Agent Diagram](/assets/Diagram%20-%20Agent%20Model-Based%20Reflex.bmp)
 
 *Python representation of a model-based reflex agent.*
 
@@ -96,3 +96,21 @@ def model_reflex_agent(percept) -> action:
 	last_action = rule.action
 	return last_action
 ```
+
+## Goal-Based Agent
+
+TK
+
+![Goal-Based Agent Diagram](/assets/Diagram%20-%20Agent%20Goal-Based.bmp)
+
+## Utility-Based Agent
+
+TK
+
+![Utility-Based Agent Diagram](/assets/Diagram%20-%20Agent%20Utility-Based.bmp)
+
+## Learning Agent
+
+TK
+
+![Learning Agent Diagram](/assets/Diagram%20-%20Agent%20Learning.bmp)

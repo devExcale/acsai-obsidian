@@ -56,7 +56,7 @@ My end-goal is to have a net of information where I can link an argument from on
 
 ## Used Plugins
 
-A part of the `.obisidian` folder is uploaded in the repository, so plugins should be downloaded automatically. Regardless, here is a list of plugins I'm using to edit the notes.
+A part of the `.obsidian` folder is uploaded in the repository, so plugins should be downloaded automatically. Regardless, here is a list of plugins I'm using to edit the notes.
 
 | **Name**                | **Description**                                     | **Home**                                                                 |
 | ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------------ |

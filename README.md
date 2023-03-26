@@ -44,15 +44,24 @@ Some of the courses
 - [Data Management and Analysis - Unit 2](?TK)
 - [Statistics](/Statistics/README.md)
 
-##
-
----
+## Obsidian
 
 :warning: **The whole repository is edited through [Obsidian](https://obsidian.md/), a powerful note-taking software. Notes are written in [markdown](https://www.markdownguide.org/) and  [LaTeX](https://www.latex-project.org/); the best way to ensure full compatibility of the notes is cloning the repository and opening them through Obsidian.**
 
 My end-goal is to have a net of information where I can link an argument from one class to another, hopefully something that will look like this.
 
 ![Obsidian graph preview](https://obsidian.md/images/screenshot.png)
+
+## Knowledge Graph
+
+This is the state of the knowledge graph, updated on `march 26th, 2023`.
+
+- The nodes are markdown notes
+- The edges are links between notes
+
+![Knowledge Graph](/assets/Knowledge%20Graph.png)
+
+*Every colour is a root folder, a list will follow.*
 
 ## Used Plugins
 

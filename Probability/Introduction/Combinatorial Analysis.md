@@ -60,7 +60,7 @@ $$
 > [!info] Multinomial Coefficient
 > The notation TK is called **multinomial coefficient**, it is read the same as the binomial coefficient.
 
-> [!note] Choosing and Partitioning
+> [!tip] Choosing and Partitioning
 > $$
 > \frac{ n! }{ k! (n-k)! }
 > = \binom{n}{k}

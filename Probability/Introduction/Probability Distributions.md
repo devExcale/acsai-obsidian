@@ -6,7 +6,7 @@ $\def\cal#1{{ \mathcal{#1} }}$
 
 TK !uniform
 
-A **probability distribution**, or simply *distribution*, is a [probability measure](/Probability/Discrete%20Probability/Probability%20Space.md#Probability%20Measure) $\bb{P}$ on some [sample space](/Probability/Discrete%20Probability/Probability%20Space.md#Sample%20Space) and [sigma algebra](?TK) $(\Omega, \cal{F})$.
+A **probability distribution**, or simply *distribution*, is a [probability measure](Probability/Introduction/Probability%20Space.md#Probability%20Measure) $\bb{P}$ on some [sample space](Probability/Introduction/Probability%20Space.md#Sample%20Space) and [sigma algebra](?TK) $(\Omega, \cal{F})$.
 
 > [!abstract] Discrete Distribution
 > A probability distribution is called *discrete* if the sample space $\Omega$ is a discrete set.

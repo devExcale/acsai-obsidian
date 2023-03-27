@@ -8,7 +8,7 @@ $\def\cal#1{{ \mathcal{#1} }}$
 $\def\seq#1#2{{ #1_1, #1_2, \ldots, #1_#2 }}$
 $\def\seqf#1#2#3{{ #1_1(#2_1), #1_2(#2_2), \ldots, #1_#3(#2_#3) }}$
 
-For a [random variable](/Probability/Discrete%20Probability/Random%20Variables.md) $X : \Omega \rightarrow S$, the *expectation* (*expected* or *mean* value) of $X$ si defined to be
+For a [random variable](Probability/Random%20Variables/Random%20Variables.md) $X : \Omega \rightarrow S$, the *expectation* (*expected* or *mean* value) of $X$ si defined to be
 
 $$\large
 	\E{X} = \sum_{x \in S} x \P{X=x} .

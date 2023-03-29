@@ -1,5 +1,3 @@
-# Expectation
-
 $\def\P#1{{ \mathbb{P} \left(#1\right) }}$
 $\def\E#1{{ \mathbb{E} \left(#1\right) }}$
 $\def\X#1{{ \mathbb{X} \left(#1\right) }}$
@@ -7,6 +5,9 @@ $\def\bb#1{{ \mathbb{#1} }}$
 $\def\cal#1{{ \mathcal{#1} }}$
 $\def\seq#1#2{{ #1_1, #1_2, \ldots, #1_#2 }}$
 $\def\seqf#1#2#3{{ #1_1(#2_1), #1_2(#2_2), \ldots, #1_#3(#2_#3) }}$
+$\def\indep{{ \mathrel\unicode{x2AEB} }}$
+
+# Expectation
 
 For a [random variable](Probability/Random%20Variables/Random%20Variables.md) $X : \Omega \rightarrow S$, the *expectation* (*expected* or *mean* value) of $X$ si defined to be
 
@@ -37,54 +38,75 @@ $$\large\begin{aligned}
 	
 \end{aligned}$$
 
-## Properties of the Expectation
+## Properties of Expectations
 
+1. **Non-negative Random Variables**
 
-> [!note] 1. Non-negative RV
+A non-negative random variable will always have non-negative expectation.
+
+$$\large
+	X \ge 0 \Rightarrow \E{X} \ge 0
+$$
+
+The only way for a non-negative random variable to have expectation zero is for the random variable to have zero as the only result.
+
+$$\large
+	X \ge 0 \land \E{X} = 0
+	\Leftrightarrow
+	\P{X = 0} = 1
+$$
+
+2. **Scalar multiplication**
+
+Let $c \in \bb R$ be a constant, then
+
+$$\large
+\begin{aligned}
+	\E{c} &= c \\
+	\E{cX} &= c \, \E{X}
+\end{aligned}
+$$
+
+3. **Sum of Random Variables**
+
+For any random variables $X,Y$, the expectation of the sum of the two is the sum of the expectations.
+
+$$\large
+	\E{X+Y} = \E{X} + \E{Y}
+$$
+
+> [!note] Linearity of Expectation
 > 
-> If $X \ge 0$ then $\E{X} \ge 0$, and $\E{X} = 0$ iff $\P{X = 0} = 1$
-
-> [!note] 2. Multiplying by Constants
+> By generalizing properties 2 and 3, it can be seen that the expectation is a linear function.
 > 
-> If $c \in \bb R$ is a constant, then $\E{c} = c$ and $\E{cX} = c\,\E{X}$
-
-> [!note] 3. Sum of RV
-> 
-> For any random variables $X,Y$ it holds $\E{X+Y} = \E{X} + \E{Y}$
-
-> [!tip] Linearity of Expectation
-> By generalizing by induction properties 2 and 3, given any constants $c_1, c_2, \ldots, c_n$ and any random variables $X_1, X_2, \ldots, X_n$, it holds
 > $$\large
 > 	\E{ \sum_{k=1}^n c_k X_k }
 > 	= \sum_{k=1}^n c_k \E{ X_k }
 > $$
 
-> [!note] 4. Function of RV
-> 
-> For any function $g : S \rightarrow S'$, $g(X) : \Omega \rightarrow S'$ is a random variable taking values in $S'$, and
-> $$\large
-> 	\E{ g(X) } = \sum_{x \in S} g(x) \P{X = x}
-> $$
+4. **Function of Random Variables**
 
-> [!note] 5. TK
-> 
-> If $X \ge 0$ takes integer values, then
-> $$\large
-> 	\E{X} = \sum_{k=1}^\infty \P{X \ge k}
-> $$
+Given any function $g : S \rightarrow S'$, $g(X) : \Omega \rightarrow S'$ is a random variables taking values in $S'$. Its expectation is given by the following formula.
 
-> [!note] 6. Product of Independent RV
-> 
-> If $X,Y$ are two independent random variables, then $\E{XY} = \E{X}\E{Y}$.
-> Generally, if $X_1, X_2, \ldots, X_n$ are independent random variables, then
-> $$\large
-> 	\E{X_1, X_2, \ldots, X_n} = \prod_{k=1}^n \E{X_k}
-> $$
+$$\large
+	\E{ g(X) } = \sum_{x \in S} g(x) \P{X = x}
+$$
 
-> [!note] 7. Independence of Functions of RV
-> 
-> If $X : \Omega \rightarrow S_X$ and $Y : \Omega \rightarrow S_Y$ are two independent random variables, and $f : S_X \rightarrow S'_X$ and $g : S_Y \rightarrow S'_Y$ are two functions, then $f(X)$ and $g(Y)$ are two independent random variables. Generally,
-> $$\large
-> 	\seq{X}{n} \text{ ind.}
-> 	\Rightarrow \seqf{f}{X}{n}
-> $$
+5. **TK**
+
+If $X$ takes non-negative integer values, then the expectation is also given by the following formula.
+
+$$\large
+	X \subseteq \bb N
+	\Rightarrow
+	\E{X} = \sum_{k=1}^\infty \P{X \ge k}
+$$
+
+6. **Product of Independent Random Variables**
+
+If $X,Y$ are two independent random variables, then the expectation of their product is given by the product of their expectations. More generally, if $\seq X n$ are independent random variables, the expectation of their product is given by the product of their expectations.
+
+$$\large
+	\E{X_1, X_2, \ldots, X_n} = \prod_{k=1}^n \E{X_k}
+$$
+

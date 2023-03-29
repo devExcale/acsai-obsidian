@@ -1,12 +1,12 @@
-# Probability Distributions
-
 $\def\P#1{{ \mathbb{P} \left(#1\right) }}$
 $\def\bb#1{{ \mathbb{#1} }}$
 $\def\cal#1{{ \mathcal{#1} }}$
 
+# Probability Distributions
+
 TK !uniform
 
-A **probability distribution**, or simply *distribution*, is a [probability measure](Probability/Introduction/Probability%20Space.md#Probability%20Measure) $\bb{P}$ on some [sample space](Probability/Introduction/Probability%20Space.md#Sample%20Space) and [sigma algebra](?TK) $(\Omega, \cal{F})$.
+A **probability distribution**, or simply *distribution*, is a [probability measure](/Probability/Introduction/Probability%20Space.md#Probability%20Measure) $\bb{P}$ on some [sample space](/Probability/Introduction/Probability%20Space.md#Sample%20Space) and [sigma algebra](?TK) $(\Omega, \cal{F})$.
 
 > [!abstract] Discrete Distribution
 > A probability distribution is called *discrete* if the sample space $\Omega$ is a discrete set.
@@ -16,7 +16,6 @@ A distribution defines a **weight** $p_\omega$ for each outcome, which can also 
 $$\large
 	p_\omega = \P{\set\omega}
 $$
-
 
 > [!note] Sum of weights
 > Note that all the outcomes are disjoint between themselves and, by definition of probability measure $\P{\Omega} = 1$, hence

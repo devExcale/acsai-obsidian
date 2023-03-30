@@ -44,6 +44,11 @@ Some of the courses
 - [Data Management and Analysis - Unit 2](?TK)
 - [Statistics](/Statistics/README.md)
 
+**Other**
+
+- [Workbench](/Workbench.md)
+- [Latex Definitions](/Latex%20Definitions.md)
+
 ## Obsidian
 
 :warning: **The whole repository is edited through [Obsidian](https://obsidian.md/), a powerful note-taking software. Notes are written in [markdown](https://www.markdownguide.org/) and  [LaTeX](https://www.latex-project.org/); the best way to ensure full compatibility of the notes is cloning the repository and opening them through Obsidian.**

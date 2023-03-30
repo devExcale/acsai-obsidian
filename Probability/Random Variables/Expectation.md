@@ -9,34 +9,39 @@ $\def\indep{{ \mathrel\unicode{x2AEB} }}$
 
 # Expectation
 
-For a [random variable](Probability/Random%20Variables/Random%20Variables.md) $X : \Omega \rightarrow S$, the *expectation* (*expected* or *mean* value) of $X$ si defined to be
+For a [random variable](Probability/Random%20Variables/Random%20Variables.md) $X : \Omega \rightarrow S$, the *expectation* (*expected* or *mean* value) of $X$ is defined to be
 
 $$\large
-	\E{X} = \sum_{x \in S} x \P{X=x} .
+\begin{aligned}
+	\E{X}
+	&= \sum_{x \in S} x \P{X=x}
+	\\
+	&= \sum_{x \in S} x p_x
+\end{aligned}
 $$
 
 > [!info] Expectation of $X$
 > The *expectation* of $X$ is the average of  the values taken by $X$, averaged with weights corresponding to the probabilities of the values.
 
-The expectation of a random variable can also be computed using the formula
+The expectation of a random variable can also be computed using the following formula.
 
 $$\large
 	\E{X} = \sum_{\omega \in \Omega} X(\omega) \P{\set\omega} .
 $$
 
-##### Proof
-
-$$\large\begin{aligned}
-	\sum_{\omega \in \Omega} X(\omega) \P{\set\omega}
-	
-	&= \sum_{x \in S_X} \sum_{\omega \in \Omega : X(\omega) = x} X(\omega) \P{\set\omega}
-	\\\\
-	&= \sum_{x \in S_X} x
-	\underbrace{ \sum_{\omega \in \Omega : X(\omega) = x} \P{\set\omega} }_{ \P{X = x} }
-	\\\\
-	&= \sum_{x \in \S_X} x \P{X = x}
-	
-\end{aligned}$$
+> [!cite] Proof
+> 
+> $$\large
+> \begin{aligned}
+> 	\sum_{\omega \in \Omega} X(\omega) \P{\set\omega}
+> 	&= \sum_{x \in S_X} \sum_{\omega \in \Omega : X(\omega) = x} X(\omega) \P{\set\omega}
+> 	\\\\
+> 	&= \sum_{x \in S_X} x
+> 	\underbrace{ \sum_{\omega \in \Omega : X(\omega) = x} \P{\set\omega} }_{ \P{X = x} }
+> 	\\\\
+> 	&= \sum_{x \in S_X} x \P{X = x}
+> \end{aligned}
+> $$
 
 ## Properties of Expectations
 
@@ -110,3 +115,16 @@ $$\large
 	\E{X_1, X_2, \ldots, X_n} = \prod_{k=1}^n \E{X_k}
 $$
 
+## Expectations of Common Distributions
+
+$$\large
+\begin{aligned}
+	X &\sim Bernoulli(p) &\Longrightarrow \E{X} &= p
+	\\
+	X &\sim Binomial(N,p) &\Longrightarrow \E{X} &= Np
+	\\
+	X &\sim Geometric(p) &\Longrightarrow \E{X} &= \frac{1}{p}
+	\\
+	X &\sim Poisson(\lambda) &\Longrightarrow \E{X} &= \lambda
+\end{aligned}
+$$

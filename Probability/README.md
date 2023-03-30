@@ -18,12 +18,14 @@ The study of probability has two main branches:
 4. [Conditional Probability](/Probability/Introduction/Conditional%20Probability.md)
 5. [Law of Total Probability](/Probability/Introduction/Law%20of%20Total%20Probability.md)
 6. [Bayes' Theorem](/Probability/Introduction/Bayes'%20Theorem.md)
-7. [Probability Distributions](/Probability/Introduction/Probability%20Distributions.md)
 
 **Random Variables**
 
-1. [Random Variables](/Probability/Random%20Variables/Random%20Variables.md)
-2. [Expectation](/Probability/Random%20Variables/Expectation.md)
+1. [Probability Distributions](/Probability/Random%20Variables/Probability%20Distributions.md)
+2. [Random Variables](/Probability/Random%20Variables/Random%20Variables.md)
+3. [Expectation](/Probability/Random%20Variables/Expectation.md)
+4. [Variance](/Probability/Random%20Variables/Variance.md)
+5. [Covariance](/Probability/Random%20Variables/Covariance.md)
 
 **Continuous**
 

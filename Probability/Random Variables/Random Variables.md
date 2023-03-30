@@ -6,6 +6,7 @@ $\def\P#1{{ \bb{P} \left( {#1} \right) }}$
 $\def\Pid#1#2{{ \bb{1}_{#1} \left( {#2} \right) }}$
 $\def \seq#1#2{{ {#1}_1, {#1}_2, \ldots, {#1}_{#2} }}$
 $\def \seqf#1#2#3{{ {#1}_1({#2}_1), {#1}_2({#2}_2), \ldots, {#1}_{#3}({#2}_{#3}) }}$
+
 # Random Variables
 
 **Random Variables** are functions of the outcome of an experiment.
@@ -29,10 +30,10 @@ $$\large
 	p_x = \P{X = x} \quad \forall x \in S.
 $$
 
-The collection $(p_x)_{x \in S}$ is referred to as the **[probability distribution](/Probability/Introduction/Probability%20Distributions.md#Probability%20Distributions) of $X$**.
+The collection $(p_x)_{x \in S}$ is referred to as the **[probability distribution](Probability/Random%20Variables/Probability%20Distributions.md#Probability%20Distributions) of $X$**.
 
 > [!info] Distribution Notation
-> If the distribution of $X$ is well known (e.g. [Bernoulli](/Probability/Introduction/Probability%20Distributions.md#Bernoulli%20Distribution)), then we can also write $X \sim Bernoulli(p)$.
+> If the distribution of $X$ is well known (e.g. [Bernoulli](Probability/Random%20Variables/Probability%20Distributions.md#Bernoulli%20Distribution)), then we can also write $X \sim Bernoulli(p)$.
 
 The function $F_X : \bb R \rightarrow [0,1]$ given by
 

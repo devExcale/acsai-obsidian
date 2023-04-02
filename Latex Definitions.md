@@ -32,10 +32,10 @@ $\def \Var#1{{ \text{Var} \left(#1\right) }}$
 $\def \Cov#1{{ \text{Cov} \left(#1\right) }}$
 ```
 
-- *Identity Random Variable*
+- *Indicator Function*
 
 ```tex
-$\def \Pid#1#2{{ \bb{1}_{#1} \left( {#2} \right) }}$
+$\def \Ind#1#2{{ \bb{1}_{#1} \left( {#2} \right) }}$
 ```
 
 - *Bold font*
@@ -48,6 +48,12 @@ $\def \bb#1{{ \mathbb{#1} }}$
 
 ```tex
 $\def \cal#1{{ \mathcal{#1} }}$
+```
+
+- *Normal distribution*
+
+```tex
+$\def \ND#1#2{{ \mathcal N \left( {#1},{#2} \right) }}$
 ```
 
 - *Sequence*

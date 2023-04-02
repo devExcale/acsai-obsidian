@@ -14,6 +14,7 @@ $$
 The interpretation of $\P{A|B}$ is the probability of the event $A$, knowing that the event $B$ occurred first.
 
 > [!tip] Independent Events
+> 
 > If $A \indep B$,
 > $$\large
 > 	\P{A|B} = \frac{ \P{A \cap B} }{ \P{B} }

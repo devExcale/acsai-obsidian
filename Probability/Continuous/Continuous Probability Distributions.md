@@ -1,42 +1,14 @@
 $\def \P#1{{ \mathbb{P} \left(#1\right) }}$
-$\def \Ind#1#2{{ \bb{1}_{#1} \left( {#2} \right) }}$
+$\def \Ind#1#2{{ \mathbb {1}_{#1} \left( {#2} \right) }}$
 $\def \ND#1#2{{ \mathcal N \left( {#1},{#2} \right) }}$
 
 # Continuous Probability Distributions
 
-Continuous probability distributions are [distributions](/Probability/Random%20Variables/Probability%20Distributions.md) that take values in the whole set of real numbers. Because there are infinite outcomes, $\P A = 0$ for every non-dense set $A$; probabilities are instead measured on sets of intervals $[a,b]$.
-
-A function $f : R \rightarrow [0,1]$ is a **probability density function** *pdf* if
-
-$$\large
-	f(x) \ge 0 \quad \forall x \in R,
-	\quad \quad
-	\int_{-\infty}^{+\infty} f(x) dx = 1
-$$
-
-The probability of a value $x \in R$ belonging in an interval $[a,b]$, given a pdf $f$, is defined as
-
-$$\large
-	\P{[a,b]} = \int_a^b f(x) dx
-$$
-
-> [!note] Interval bounds
-> 
-> Note that, (a simple reason, but there are other ones) because single outcomes have infinitesimal weight,
-> $$\large
-> 	\P{[a,b]} = \P{[a,b)} = \P{(a,b]} = \P{(a,b)}
-> $$
-
-An indicator function, which will aid in pdf definitions, can be defined as
-
-$$\large
-	\Ind A x = \cases{
-		1 \quad \quad \omega \in A \\
-		0 \quad \quad \omega \not \in A
-	}
-$$
+Here are listed some [continuous probability](Probability/Continuous/Continuous%20Probability.md) distributions with known features.
 
 ## Uniform Distribution
+
+The Uniform Distribution, written as $X \sim Uniform(a,b)$ or just $X \sim U(a,b)$, is a distribution that gives to each interval contained in $[a,b]$ a probability proportional to its length.
 
 Given an interval $[a,b]$, the uniform distribution is defined as follows.
 
@@ -44,54 +16,96 @@ $$\large
 	f(x) = \frac{1}{b - a} \Ind{[a,b]} x
 $$
 
-The uniform distribution gives to each interval contained in $[a,b]$ a probability proportional to its length.
+Note that if $x \not \in [a,b]$ then $\Ind{[a,b]} x = 0$, hence
 
-> [!note] Integration bounds
+$$\large
+	\int_{-\infty}^{+\infty} f(x) dx =
+	\int_a^b f(x) dx = 1
+$$
+
+> [!tip] Properties of a Uniform Distribution
 > 
-> Note that, because $x \not \in [a,b] \Rightarrow \Ind{[a,b]} x = 0$,
+> The expectation of a uniform distribution is half the sum of $a$ and $b$.
 > $$\large
-> 	\int_{-\infty}^{+\infty} f(x) dx =
-> 	\int_a^b f(x) dx = 1
+> 	\E{ U(a,b) } = \frac{a+b}{2}
+> $$
+> 
+> The variance of a uniform distribution is given by the following expression.
+> $$\large
+> 	\Var{ U(a,b) } = \frac{(a-b)^2}{12}
 > $$
 
 ## Exponential Distribution
 
-Given a parameter $\lambda$, the exponential distribution is defined as follows.
+The Exponential Distribution, written as $X \sim Exponential(\lambda)$ or just $X \sim exp(\lambda)$, is defined as follows.
 
 $$\large
 	f(x) = \lambda e^{-\lambda x} \Ind{[0,+\infty]} x
 $$
 
-> [!note] Integration bounds
+Note that if $x < 0$ then $\Ind{[0,+\infty]} x = 0$, hence
+
+$$\large
+	\int_{-\infty}^{+\infty} f(x) dx =
+	\int_0^\infty f(x) dx = 1
+$$
+
+> [!tip] Properties of an Exponential Distribution
 > 
-> Note that, because $x \not \in [0,+\infty] \Rightarrow \Ind{[0,+\infty]} x = 0$,
+> The expectation of an exponential distribution is inversely proportional to the parameter $\lambda$.
 > $$\large
-> 	\int_{-\infty}^{+\infty} f(x) dx =
-> 	\int_0^\infty f(x) dx = 1
+> 	\E{ exp(\lambda) } = \frac{1}{\lambda}
+> $$
+> 
+> The expectation of an exponential distribution is inversely proportional to the square of $\lambda$.
+> $$\large
+> 	\Var{ exp(\lambda) } = \frac{1}{\lambda^2}
 > $$
 
 ## Cauchy Distribution
 
-The Cauchy distribution is defined as follows.
+The Cauchy Distribution, written as $X \sim Cauchy(0,1)$, is defined as follows.
 
 $$\large
 	f(x) = \frac{1}{\pi (1 + x^2)}
 $$
 
-> [!note] Integration bounds
+Note that by symmetry,
+
+$$\large
+	\int_{-\infty}^{+\infty} f(x) dx =
+	\frac{2}{\pi} \int_0^\infty \frac{1}{1 + x^2} dx =
+	\frac{2}{\pi} [\arctan x]^{+\infty}_0 = 1
+$$
+
+> [!tip] Properties of a Cauchy Distribution
 > 
-> Note that, by symmetry,
-> $$\large
-> 	\int_{-\infty}^{+\infty} f(x) dx =
-> 	\frac{2}{\pi} \int_0^\infty \frac{1}{1 + x^2} dx =
-> 	\frac{2}{\pi} [\arctan x]^{+\infty}_0 + 1
-> $$
+> The integral $\int_{-\infty}^{+\infty} x f(x) dx$ diverges, hence both the expectation and the variance of a Cauchy distribution aren't defined.
 
 ## Gaussian Distribution
 
-The Gaussian distribution with parameters $\mu,\sigma^2$, a.k.a. *Normal* distribution written as $\ND{\mu}{\sigma^2}$, is defined as follows.
+The Gaussian distribution with parameters $\mu,\sigma^2$, a.k.a. *Normal* distribution and written as $\ND{\mu}{\sigma^2}$, is defined as follows.
 
 $$\large
 	f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}
 	\exp \left( {-\frac{{(x-\mu)}^2}{2\sigma^2}} \right)
 $$
+
+A special case of Gaussian distribution is the distribution with parameters $\mu = 0, \sigma^2 = 1$; it is written as $\ND{0}{1}$ and it is called *Standard Gaussian* or *Standard Normal* distribution.
+
+$$\large
+	f(x) = \Phi(x) = \frac{1}{\sqrt{2\pi}}
+	\exp \left({ -\frac{x^2}{2} }\right)
+$$
+
+> [!tip] Properties of a Normal Distribution
+> 
+> The expectation of a normal distribution is given by the parameter $\mu$.
+> $$\large
+> 	\E{ \ND{\mu}{\sigma^2} } = \mu
+> $$
+> 
+> The variance of a normal distribution is given by the parameter $\sigma^2$.
+> $$\large
+> 	\Var{ \ND{\mu}{\sigma^2} } = \sigma^2
+> $$

@@ -50,7 +50,7 @@ for FILE in $FILES; do
 	awk -v regex="$REGEX" '{ if ($0 ~ regex) { gsub(regex, "[\\1](/\\2)", $0); printf("Fixed %s\n", FILE) } } 1' "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
 
 	# Mark file for commit
-	git add "$file"
+	git add "$FILE"
 done
 
 # Commit only if option is enabled

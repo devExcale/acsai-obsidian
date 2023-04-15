@@ -1,8 +1,8 @@
-# Agents
+# Agent
 
 An agent is something that interacts dynamically with an environment.
 
-![Agent Logic Diagram](/assets/agent_diagram.bmp)
+![Agent Logic Diagram](assets/Diagram%20-%20Agent.bmp)
 
 An agent is composed of
 - **sensors,** which are used to read from the environment (the possible readings are called *percepts*);
@@ -35,14 +35,20 @@ Performance measures should be built according to what the agent should achieve,
 > 
 > A bad agent, for example, will always try to eat every piece or to check the king. Doing this isn't the best way to win a chess game.
 
-## PEAS
+### PEAS
 
-PEAS stands for *Performance measure, Environment, Actuators, Sensors*, it's the base for every agent.
+PEAS is an acronym that indicates the base structure of every goal-based agent. It stands for:
+
+- *Performance measure*
+- *Environment*
+- *Actuators*
+- *Sensors*
 
 > [!example] pac-man
 > 
-> The pac-man ghosts can be considered agents, they have all the characteristics of an agent.
-> - **Performance Measure:** could be the distance from pac-man, or how close it is from catching him (by some sort of criteria)
+> The pac-man ghosts are agents with the following PEAS.
+> 
+> - **Performance Measure:** could be the distance from pac-man or how close it is from catching it (by some sort of criteria)
 > - **Environment:** the maze
 > - **Actuators:** whatever moves the ghost
-> - **Sensors:** whatever they use to understand theirs and pac-man's position in the maze, and if pac-man is energized
+> - **Sensors:** whatever it uses to understand theirs and pac-man's position in the maze and if pac-man is energized

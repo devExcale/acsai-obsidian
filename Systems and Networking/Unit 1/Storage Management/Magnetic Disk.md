@@ -12,7 +12,7 @@ The magnetic disk drives are composed of multiple disks, attached to a *spindle*
 
 Each surface is composed of multiple *tracks* (concentric rings), the set of all tracks at the same radius from the spindle is called *cylinder*. The track, then, is further divided into *sectors*, which is the smallest addressable unit, with a memory size of 512 bytes.
 
-![Image of a Magnetic Disk](/assets/magnetic_disk_structure.jpg)
+![Image of a Magnetic Disk](assets/Magnetic%20Disk%20Structure.jpg)
 
 ## Capacity
 

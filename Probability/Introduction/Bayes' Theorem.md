@@ -1,8 +1,8 @@
-# Bayes' Theorem
-
 $\def\P#1{{ \mathbb{P} \left(#1\right) }}$
 
-From [conditional probability](/Probability/Discrete%20Probability/Conditional%20Probability.md), if $A,B$ are two events with positive probabilities, we have
+# Bayes' Theorem
+
+From [conditional probability](Probability/Introduction/Conditional%20Probability.md), if $A,B$ are two events with positive probabilities, we have
 
 $$\large
 	\P{A \cap B} = \P{A|B} \P{B} = \P{B|A} \P{A}

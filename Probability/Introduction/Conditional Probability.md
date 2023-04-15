@@ -1,8 +1,9 @@
-# Conditional Probability
-
 $\def\P#1{{ \mathbb{P} \left(#1\right) }}$
 $\def\indep{{ \mathrel{\unicode{x2AEB}} }}$
-**Conditional Probability** is a concept closely related to [event](/Probability/Discrete%20Probability/Probability%20Space.md#Events) [independence](/Probability/Discrete%20Probability/Independence.md).
+
+# Conditional Probability
+
+**Conditional Probability** is a concept closely related to [event](/Probability/Introduction/Probability%20Space.md#Events) [independence](/Probability/Introduction/Independence.md).
 
 Let $A,B$ be two events with $\P{B}>0$. Then, the conditional probability of $A$ *given* $B$ is
 
@@ -13,6 +14,7 @@ $$
 The interpretation of $\P{A|B}$ is the probability of the event $A$, knowing that the event $B$ occurred first.
 
 > [!tip] Independent Events
+> 
 > If $A \indep B$,
 > $$\large
 > 	\P{A|B} = \frac{ \P{A \cap B} }{ \P{B} }

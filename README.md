@@ -32,7 +32,7 @@ Some of the courses
 
 - Calculus 2
 - [Data Management and Analysis - Unit 1](/Data%20Management%20and%20Analysis/README.md)
-- [README](Probability/README.md)
+- [Probability](/Probability/README.md)
 - [Systems and Networking - Unit 1](/Systems%20and%20Networking/Systems%20and%20Networking.md)
 - [Systems and Networking - Unit 2](/Systems%20and%20Networking/Systems%20and%20Networking.md)
 
@@ -44,9 +44,12 @@ Some of the courses
 - [Data Management and Analysis - Unit 2](?TK)
 - [Statistics](/Statistics/README.md)
 
-##
+**Other**
 
----
+- [Workbench](/Workbench.md)
+- [Latex Definitions](/Latex%20Definitions.md)
+
+## Obsidian
 
 :warning: **The whole repository is edited through [Obsidian](https://obsidian.md/), a powerful note-taking software. Notes are written in [markdown](https://www.markdownguide.org/) and  [LaTeX](https://www.latex-project.org/); the best way to ensure full compatibility of the notes is cloning the repository and opening them through Obsidian.**
 
@@ -54,9 +57,20 @@ My end-goal is to have a net of information where I can link an argument from on
 
 ![Obsidian graph preview](https://obsidian.md/images/screenshot.png)
 
+## Knowledge Graph
+
+This is the state of the knowledge graph, updated on `march 26th, 2023`.
+
+- The nodes are markdown notes
+- The edges are links between notes
+
+![Knowledge Graph](/assets/Knowledge%20Graph.png)
+
+*Every colour is a root folder, a list will follow.*
+
 ## Used Plugins
 
-A part of the `.obisidian` folder is uploaded in the repository, so plugins should be downloaded automatically. Regardless, here is a list of plugins I'm using to edit the notes.
+A part of the `.obsidian` folder is uploaded in the repository, so plugins should be downloaded automatically. Regardless, here is a list of plugins I'm using to edit the notes.
 
 | **Name**                | **Description**                                     | **Home**                                                                 |
 | ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------------ |

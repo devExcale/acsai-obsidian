@@ -2,7 +2,7 @@
 
 A **system bus** is a connection that transfers bit from a component to another.
 
-![System Buses scheme](/assets/system_bus.png)
+![System Buses scheme](assets/Diagram%20-%20System%20Bus.png)
 
 The primary system buses are:
 - **Data bus,** carries actual data

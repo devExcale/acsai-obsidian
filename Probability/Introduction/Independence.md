@@ -1,9 +1,9 @@
-# Independence
-
 $\def\P#1{{ \mathbb{P} \left( {#1} \right) }}$
 $\def\indep{{ \mathrel{\unicode{x2AEB}} }}$
 
-Independence is a property of two or more [events](/Probability/Discrete%20Probability/Probability%20Space.md#Events), it indicates whether the [probability](Probability/Discrete%20Probability/Probability%20Space.md#Probability%20Measure) of the events is influenced by one of the events happening first.
+# Independence
+
+Independence is a property of two or more [events](/Probability/Introduction/Probability%20Space.md#Events), it indicates whether the [probability](/Probability/Introduction/Probability%20Space.md#Probability%20Measure) of the events is influenced by one of the events happening first.
 
 ## Pairwise Independence
 

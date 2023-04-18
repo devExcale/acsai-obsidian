@@ -86,6 +86,18 @@ Different people (and different AI's) have different experiences, which influenc
 
 - [ ] Furthest-first Heuristic: first is picked at random, others are picked iteratively based on decreasing distance (updated on each assignment)
 
+#### Classification vs Regression
+
+- [ ] Regression: turning a hyper-dimensional vector into a scalar
+- [ ] Classification: map subsets of hyper-dimensional vectors into a discrete set of scalars 
+
+#### Parametric vs Non-parametric
+
+- [ ] Parametric: the conversion from a vector to the result scalar is given from some set of parameters $\theta$, the model has to be *trained* guess $\theta$
+- [ ] Non-parametric: the conversion from a vector to the result scalar doesn't need any set of parameters, the model doesn't have to be trained
+- [ ] Example of non-parametric: knn, decision trees
+
+
 ![hr](assets/hr.png)
 
 

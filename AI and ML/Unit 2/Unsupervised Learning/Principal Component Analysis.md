@@ -46,6 +46,18 @@ X = np.dot(eig_vec.T, X)
 
 The dataset $X$, after applying PCA, will be a $N \times k$ matrix where each observation (sample) is projected on the top $k$ principal components.
 
+## Choosing how many components
+
+There are various methods to choose how many components a PCA compression should retain:
+
+- [Akaike Information Criteria](?TK)
+- [Bayesian Information Criteria](?TK)
+- 95% variance
+
+> [!abstract] 95% variance
+>
+> A good rule of thumb is to keep $\min (k)$ components with the most variance (i.e. higher eigenvalues) such that compressing the data on those $k$ components will retain at least $95\%$ of the original variance.
+
 ## Applications of PCA
 
 -   Visualization

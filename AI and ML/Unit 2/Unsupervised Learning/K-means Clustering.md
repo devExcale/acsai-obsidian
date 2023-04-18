@@ -71,4 +71,4 @@ The first centroid is picked randomly between all the points. Then, for each cen
 
 > [!info] Inverse Transform Sampling
 > 
-> This method to pick points proportionally to their distance to the closest centroid is called *inverse transform sampling*,
+> This method to pick points proportionally to their distance to the closest centroid is called *inverse transform sampling*.

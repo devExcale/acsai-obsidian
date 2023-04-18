@@ -12,45 +12,39 @@ PCA is often used as a pre-processing step before applying other machine learnin
 
 ## Performing PCA
 
-1.  **Normalize the data to have zero mean and unit variance**
+Here is a python algorithm to perform PCA on a dataset $X$
 
 ```python
-# Subtract mean and divide by std dev
+# Let
+# - X be a NxD matrix, where N and D are
+#   the number of samples and dimensions, respectively.
+# - k (k <= D) be the number of desired dimensions.
+#
+# The algorithm assumes that the columns of X represent
+# the variables, the rows the observations.
+
+# 1. Subtract mean and divide by std dev
 X -= np.mean(X)
 X /= np.std(X)
-```
 
-2.  **Compute the covariance matrix of the normalized data**
+# 2. Compute the covariance matrix
+cov = np.cov(x)
 
-```python
-cov = np.cov(X)
-```
-
-3.  **Compute the eigenvectors and eigenvalues of the covariance matrix**
-
-```python
+# 3. Compute eigenvectors and eigenvalues
 eig_val, eig_vec = np.linalg.eig(cov)
-```
 
-4.  **Sort the eigenvectors by their corresponding eigenvalues in decreasing order**
-
-```python
+# 4. Sort the eigenvectors by their corresponding eigenvalues in decreasing order
 eig_vec = eig_vec[:, eig_val.argsort()[::-1]]
-```
 
-5.  **Choose the top k eigenvectors as the new basis for the data, where k is the desired number of dimensions**
-
-```python
+# 5.Choose the top k eigenvectors as the new basis,
+#   k is the desired number of principal components (dimensions)
 eig_vec = eig_vec[k]
-```
 
-6.  **Transform the data into the new basis**
-
-```python
+# 6. Project the data onto the principal components
 X = np.dot(eig_vec.T, X)
 ```
 
-The data, after applying PCA, will be a $N \times k$
+The dataset $X$, after applying PCA, will be a $N \times k$ matrix where each observation (sample) is projected on the top $k$ principal components.
 
 ## Applications of PCA
 

@@ -4,13 +4,17 @@ Principal Component Analysis is a popular [unsupervised machine learning](AI%20a
 
 PCA works by finds a set of orthogonal vectors that explain the maximum variance in a dataset, known as **principal components**. By projecting the data onto these principal components, we can reduce the dimensionality of the data while still preserving most of its variance. PCA can also be used for data visualization and noise reduction.
 
-> [!tip] Principal Components
+> [!note] Principal Components
 > 
 > The principal components are ordered by the amount of variance: the first principal component explains the largest amount of variance, followed by the second principal component, and so on.
 
 ![PCA on a cloud of points, from Wikipedia](/assets/GaussianScatterPCA.svg)
 
 PCA is often used as a pre-processing step before applying other machine learning techniques, such as clustering or classification. By reducing the dimensionality of the data, PCA can improve the performance of these techniques and reduce the risk of overfitting.
+
+> [!tip] Applications of PCA
+> 
+> PCA can find usage in applications such as dimensionality reduction, data visualization, data compression and reconstruction, features decorrelation.
 
 ## Performing PCA
 
@@ -61,11 +65,3 @@ There are various methods to choose how many components a PCA compression should
 > [!abstract] 95% variance
 >
 > A good rule of thumb is to keep $\min (k)$ components with the most variance (i.e. higher eigenvalues) such that compressing the data on those $k$ components will retain at least $95\%$ of the original variance.
-
-## Applications of PCA
-
--   Data Visualization
--   Dimensionality Reduction
--   Reconstructing data and Compression
--   Further pre-processing by machine learning algorithms
--   Decorrelate the features

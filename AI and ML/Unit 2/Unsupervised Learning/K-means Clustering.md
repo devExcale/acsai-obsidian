@@ -15,21 +15,20 @@ $\def \bb#1{{ \mathbb #1 }}$
 
 ## Lloyd's Method
 
-Lloyd's method is one way to compute K-means clustering
+The most popular algorithm to perform K-means clustering is called *Lloyd's method*, it features three steps that are performed until convergence.
 
-1. **Initialization**
+1. **Initialization:** $k$ points are chosen at random from the set of all points, they will be the initial centroids $\seq \mu k$.
 
-$k$ points are chosen at random from the set of all points, they will be the initial centroids $\seq \mu k$
+2. **Assignment:** for each point $\vec x_i$, compute the closet centroid and assign the label of the centroid to the point.
 
-2. **Assignment**
+3. **Update:** for each centroid $\mu_j$, compute the mean of all the points in the cluster. Then, update $\mu_j$ to be the computed mean.
 
-For each point $\vec x_i$, compute the closet centroid and assign the label of the centroid to the point.
+*Assignment* and *update* (steps 2 and 3) are performed iteratively until all points are assigned again their previously (i.e. previous iteration) assigned centroid.
 
-3. **Update**
+> [!warning] Empty clusters
+> 
+> There are 
 
-For each centroid $\mu_j$, compute the mean of all the points in the cluster. Then, update $\mu_j$ to be the computed mean,
-
-Assignment and update (steps 2 and 3) are performed iteratively until the centroids won't change between iterations. The algorithm is guaranteed to terminate: once the 
 
 ## Furthest-First Heuristic
 

@@ -1,9 +1,9 @@
-name: Run fix_abs_path.sh on push to master
+name: Run fix_abs_path.sh on push to unstable
 
 on:
   push:
     branches:
-      - master
+      - unstable
 
 jobs:
   build:

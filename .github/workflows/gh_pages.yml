@@ -23,7 +23,7 @@ jobs:
           path: .cache
 
       - name: Install dependencies
-        run: pip install mkdocs-webcontext mkdocs-ezlinks-plugin
+        run: pip install mkdocs-webcontext-plugin mkdocs-ezlinks-plugin
 
       - name: Build docs
         uses: athackst/mkdocs-simple-plugin@v2.3.0

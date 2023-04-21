@@ -16,11 +16,6 @@ jobs:
     
       - name: Checkout
         uses: actions/checkout@v3
-        
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
           
       - name: Cache
         uses: actions/cache@v2
@@ -28,12 +23,7 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
-      - name: Install MkDocs Material
-        run: pip install mkdocs-material
-        
-      - name: Install MkDocs Simple Plugin
-        run: pip install mkdocs-simple-plugin
-          
+      # Python and mkdocs-material plugin are already downloaded
       - name: Build docs
         uses: athackst/mkdocs-simple-plugin@v2.3.0
         with:

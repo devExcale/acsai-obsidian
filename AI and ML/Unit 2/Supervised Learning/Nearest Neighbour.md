@@ -1,10 +1,27 @@
 # Nearest Neighbour
 
-Nearest Neighbour (a.k.a. *k-NN*)
+Nearest Neighbour, a.k.a. *k-NN*, is a [supervised](/AI%20and%20ML/Unit%202/Supervised%20Learning/Supervised%20Learning.md) machine learning algorithm used to predict classifications on data.
+
+Let the input data live in a $D$ dimensional space, then the goal of k-NN is to infer the classification of the data by looking at the closest $k$ *neighbours* (data points) to the input in the space.
+
+## Classifying
+
+Given the training data $\mathcal D = \set{ (x_1, y_1), \ldots, (x_n, y_n)}$ and an input point $v$, the label $y_v$ of $v$ is inferred to be the label of the closest point to $v$.
+
+$$\large \displaylines {
+	x^* = \arg \min_{x_i \in \mathcal D} \text d (x_i, v) \\
+	y_v = y^* \quad | \quad (x^*, y^*) \in \mathcal D
+}$$
+
+> [!note] Distance metric
+> 
+> In the mathematical representation of the algorithm, $\text d(\cdot, \cdot)$ refers to a suitable [distance metric](?TK).
+
+Stopping a just one 
 
 ## Choosing K
 
-Choosing the right $k$ is important to avoid [underfitting](?TK) and [overfitting](?TK)
+Choosing the right hyper-parameter $k$ is important to avoid [underfitting and overfitting](/AI%20and%20ML/Unit%202/Machine%20Learning.md#Fitting%20the%20Data) the model.
 
 - **Best constant predictor**
 

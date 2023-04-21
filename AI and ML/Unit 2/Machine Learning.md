@@ -39,6 +39,20 @@ Models can be distinguished into two categories:
 > 
 > Non-parametric models are sometimes referred to as *instance-based learning*, because learning for such models is simply storing training data.
 
+## Fitting the Data
+
+Efficiency, correctness and accuracy of a machine learning model all depend from how the model *fits the data*.
+
+A model may fit the data in three ways:
+
+- **Underfitting,** the model is too simple and lacks the ability to learn the patterns and structure present in the data, usually occurs when a model does not fit the training data well enough;
+
+- **Overfitting,** the model is too complex and has learned too many of the noise and small details from the training data, it occurs when a model fits the training data too well;
+
+- **Best fitting,** the model fits the training data well enough to capture the underlying patterns and structure without being biased by the noise and details. The best fitting model is neither underfitting nor overfitting and can accurately predict outcomes of unseen data.
+
+![Graphical examples of over, under and best fitting](/assets/over_under_fit.png)
+
 ## Limits of Machine Learning
 
 Machine learning isn't perfect: there are multiple limitations to it.
@@ -53,4 +67,4 @@ Noise could be present in the data: input data could present some noise, which c
 
 - **Blackbox**
 
-Most of the time, especially with complex and big models, the models themselves could pose as a blackbox: feed in the data and get out a prediction, but it may be insanely hard to graps why the models made such a prediction.
+Most of the time, especially with complex and big models, the models themselves could pose as a blackbox: feed in the data and get out a prediction, but it may be insanely hard to grasp why the models made such a prediction.

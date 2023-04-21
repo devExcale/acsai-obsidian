@@ -65,8 +65,8 @@ plugins:
       include_extensions:
        - '*'
       semiliterate:
-#  - webcontext:
-#      context: acsai-obsidian
+  - webcontext:
+      context: acsai-obsidian
   - ezlinks:
       warn_ambiguities: false
       wikilinks: false

@@ -16,11 +16,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Cache
-        uses: actions/cache@v2
-        with:
-          key: ${{ github.ref }}
-          path: .cache
+      # - name: Cache
+        # uses: actions/cache@v2
+        # with:
+          # key: ${{ github.ref }}
+          # path: .cache
 
       - name: Install dependencies
         run: pip install mkdocs-webcontext-plugin mkdocs-ezlinks-plugin

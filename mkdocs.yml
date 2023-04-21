@@ -59,9 +59,11 @@ markdown_extensions:
 plugins:
   - search
   - simple:
-      ignore_folders: [ "\.*" ]
-      include_extensions: [ "*" ]
-      semiliterate: [ ]
+      ignore_folders:
+       - '\.*'
+      include_extensions:
+       - '*'
+      semiliterate:
 
 extra_javascript:
   - javascripts/mathjax.js

@@ -4,7 +4,6 @@ site_name: xk ACSAI-Obsidian
 site_description: Notes I've taken during my ACSAI journey.
 site_author: Emanuele "Excale" Scaccia
 
-docs_dir: ""
 repo_url: https://github.com/devExcale/acsai-obsidian
 use_directly_urls: true
 

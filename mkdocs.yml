@@ -7,7 +7,7 @@ site_url: https://devExcale.github.com/acsai-obsidian/
 
 repo_url: https://github.com/devExcale/acsai-obsidian
 edit_uri: blob/master/
-use_directly_urls: true
+use_directory_urls: true
 
 theme:
     name: 'material'
@@ -65,8 +65,8 @@ plugins:
       include_extensions:
        - '*'
       semiliterate:
-  - webcontext:
-      context: acsai-obsidian
+#  - webcontext:
+#      context: acsai-obsidian
   - ezlinks:
       warn_ambiguities: false
       wikilinks: false

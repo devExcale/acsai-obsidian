@@ -16,19 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Cache
-        uses: actions/cache@v2
-        with:
-          path: ${{ env.pythonLocation }}
-          key: ${{ env.pythonLocation }}-pip-${{ hashFiles('.github/py_requirements.txt') }}
-
-      - name: Install dependencies
-        run: pip install -r .github/py_requirements.txt
-
       - name: Build docs
         uses: athackst/mkdocs-simple-plugin@v2.3.0
         with:

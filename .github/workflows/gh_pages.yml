@@ -35,7 +35,7 @@ jobs:
         run: pip install mkdocs-simple-plugin
           
       - name: Build docs
-        uses: athackst/mkdocs-simple-plugin
+        uses: athackst/mkdocs-simple-plugin@v2.3.0
         with:
           publish_branch: gh-pages
           config: "mkdocs.yml"

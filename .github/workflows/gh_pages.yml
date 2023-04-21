@@ -22,6 +22,12 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+          cache: 'pip'
+
       - name: Install dependencies
         run: pip install mkdocs-webcontext-plugin mkdocs-ezlinks-plugin
 

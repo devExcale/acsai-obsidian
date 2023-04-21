@@ -19,11 +19,11 @@ jobs:
       - name: Cache
         uses: actions/cache@v2
         with:
-          key: ${{ github.ref }}
-          path: .cache
+          path: ${{ env.pythonLocation }}
+          key: ${{ env.pythonLocation }}-pip-${{ hashFiles('.github/py_requirements.txt') }}
 
       - name: Install dependencies
-        run: pip install mkdocs-webcontext-plugin mkdocs-ezlinks-plugin
+        run: pip install -r .github/py_requirements.txt
 
       - name: Build docs
         uses: athackst/mkdocs-simple-plugin@v2.3.0

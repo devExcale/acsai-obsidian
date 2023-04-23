@@ -59,12 +59,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - simple:
-      ignore_folders:
-       - '\.*'
-      include_extensions:
-       - '*'
-      semiliterate:
   - ezlinks:
       warn_ambiguities: false
       wikilinks: false

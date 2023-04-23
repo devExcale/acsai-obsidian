@@ -1,4 +1,4 @@
 # Python requirements
 
-mkdocs-webcontext-plugin
+mkdocs
 mkdocs-ezlinks-plugin

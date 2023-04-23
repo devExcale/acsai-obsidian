@@ -1,4 +1,5 @@
 # Python requirements
 
 mkdocs
+mkdocs-material
 mkdocs-ezlinks-plugin

@@ -22,6 +22,10 @@ echo Moving mkdocs.yml to root...
 mv .github/mkdocs/mkdocs.yml .
 
 
+# Print current structure
+tree
+
+
 # Install mkdocs and dependencies
 
 echo Installing python requirements...

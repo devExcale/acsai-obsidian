@@ -1,6 +1,6 @@
 # Principal Component Analysis
 
-Principal Component Analysis is a popular [unsupervised machine learning](AI%20and%20ML/Unit%202/Unsupervised%20Learning/Unsupervised%20Learning.md) technique used for data analysis and dimensionality reduction.
+Principal Component Analysis is a popular [unsupervised machine learning](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/Unsupervised%20Learning.md) technique used for data analysis and dimensionality reduction.
 
 PCA works by finds a set of orthogonal vectors that explain the maximum variance in a dataset, known as **principal components**. By projecting the data onto these principal components, we can reduce the dimensionality of the data while still preserving most of its variance. PCA can also be used for data visualization and noise reduction.
 

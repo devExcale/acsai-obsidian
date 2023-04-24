@@ -16,7 +16,7 @@ where:
 > 
 > There can be at most $\text{rank}(A)$ eigenvectors in a transformation, but it isn't guaranteed to be exactly that number.
 > 
-> For example, take a generic [rotation matrix](Linear%20Algebra/Transformations/Linear%20Transformations.md#Rotation). Geometrically, it's impossible for a vector to be rotated and stay on the same direction as before; even though the rank of a rotation matrix is $2$, there are no eigenvectors.
+> For example, take a generic [rotation matrix](/Linear%20Algebra/Transformations/Linear%20Transformations.md#Rotation). Geometrically, it's impossible for a vector to be rotated and stay on the same direction as before; even though the rank of a rotation matrix is $2$, there are no eigenvectors.
 
 ## Finding Eigenvectors
 

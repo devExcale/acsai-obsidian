@@ -30,10 +30,10 @@ $$\large
 	p_x = \P{X = x} \quad \forall x \in S.
 $$
 
-The collection $(p_x)_{x \in S}$ is referred to as the **[probability distribution](Probability/Random%20Variables/Probability%20Distributions.md#Probability%20Distributions) of $X$**.
+The collection $(p_x)_{x \in S}$ is referred to as the **[probability distribution](/Probability/Random%20Variables/Probability%20Distributions.md#Probability%20Distributions) of $X$**.
 
 > [!info] Distribution Notation
-> If the distribution of $X$ is well known (e.g. [Bernoulli](Probability/Random%20Variables/Probability%20Distributions.md#Bernoulli%20Distribution)), then we can also write $X \sim Bernoulli(p)$.
+> If the distribution of $X$ is well known (e.g. [Bernoulli](/Probability/Random%20Variables/Probability%20Distributions.md#Bernoulli%20Distribution)), then we can also write $X \sim Bernoulli(p)$.
 
 The function $F_X : \bb R \rightarrow [0,1]$ given by
 

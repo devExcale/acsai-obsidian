@@ -19,12 +19,17 @@ fi
 
 # Parse command line options
 commit=false
+verbose=false
 
 while [[ $# -gt 0 ]]; do
   key="$1"
   case $key in
     -c|--commit)
       commit=true
+      shift
+      ;;
+    -v|--verbose)
+      verbose=true
       shift
       ;;
     *)
@@ -37,17 +42,19 @@ done
 # find .md files that are tracked by git
 FILES=$(git ls-files | grep -E '[^\.].*\.md$')
 
-# regex to match relative markdown paths
-REGEX='\\[(.*)\\]\\((?!\\w+:\\/)(?![.#?\\/])(.*?)\\)'
+# regex to match relative markdown paths without dots
+REGEX='/\\[(.*)\\]\\((?!\\w+:\\/)(?![.#?\\/])(.*?)\\)/'
 
 # loop through the files
 IFS=$'\n'
 for FILE in $FILES; do
 
-	echo "Processing $FILE"
+	if [ "$verbose" = true ]; then
+		echo "Processing $FILE"
+	fi
 
 	# Replace all relative links with absolute paths
-	awk -v regex="$REGEX" '{ if ($0 ~ regex) { gsub(regex, "[\\1](/\\2)", $0); printf("Fixed %s\n", FILE) } } 1' "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
+	awk -v regex="$REGEX" '{ gsub(regex, "[\\1](/\\2)"); } 1' "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
 
 	# Mark file for commit
 	git add "$FILE"

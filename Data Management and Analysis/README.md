@@ -18,7 +18,7 @@ TK
 - [Third Normal Form](/Data%20Management%20and%20Analysis/Unit%201/Relational/Third%20Normal%20Form.md)
 - [Closure of Functional Dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Closure%20of%20Functional%20Dependencies.md)
 - [Closure of Attributes](/Data%20Management%20and%20Analysis/Unit%201/Relational/Closure%20of%20Attributes.md)
-- [Decomposition of Relations](Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Decomposition%20of%20Relations.md)
+- [Decomposition of Relations](/Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Decomposition%20of%20Relations.md)
 
 [**Database**](/Data%20Management%20and%20Analysis/Unit%201/Database/Databases.md)
 

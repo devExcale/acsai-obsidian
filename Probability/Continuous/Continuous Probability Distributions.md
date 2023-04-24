@@ -4,7 +4,7 @@ $\def \ND#1#2{{ \mathcal N \left( {#1},{#2} \right) }}$
 
 # Continuous Probability Distributions
 
-Here are listed some [continuous probability](Probability/Continuous/Continuous%20Probability.md) distributions with known features.
+Here are listed some [continuous probability](/Probability/Continuous/Continuous%20Probability.md) distributions with known features.
 
 ## Uniform Distribution
 

@@ -27,12 +27,12 @@ Unit 1 is focused more and the hardware/software of the single machine, while un
 
 ### Unit 1
 
-- [High-Level Computer Architecture](Unit%201/High-Level%20Computer%20Architecture.md)
+- [High-Level Computer Architecture](/Unit%201/High-Level%20Computer%20Architecture.md)
 - [Operating System](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md)
 
 ### Unit 2
 
-- [Networks](Systems%20and%20Networking/Unit%202/Networks.md)
-- [Devices](Systems%20and%20Networking/Unit%202/Devices.md)
-- [Protocols](Systems%20and%20Networking/Unit%202/Protocols.md)
-- [Packet](Systems%20and%20Networking/Unit%202/Packets/Packet.md)
+- [Networks](/Systems%20and%20Networking/Unit%202/Networks.md)
+- [Devices](/Systems%20and%20Networking/Unit%202/Devices.md)
+- [Protocols](/Systems%20and%20Networking/Unit%202/Protocols.md)
+- [Packet](/Systems%20and%20Networking/Unit%202/Packets/Packet.md)

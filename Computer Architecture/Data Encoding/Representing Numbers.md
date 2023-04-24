@@ -99,7 +99,7 @@ q &= 7 \ \text{div} \ 3 = 2\\
 r &= 7 \ \text{mod} \ 3 = 1
 \end{align} $$
 
-The proof is quite long, so [here](Iterated%20division%20proof.md) it is.
+The proof is quite long, so [here](/Iterated%20division%20proof.md) it is.
 
 So, to convert a number $N_a$ in base $b$ :
 1. Repeatedly divide $N_a$ for $b_a$ (**$\large b$ must be expressed in base $\large a$ and the division must be done in base $\large a$**);

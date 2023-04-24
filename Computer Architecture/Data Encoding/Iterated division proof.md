@@ -1,7 +1,7 @@
 # Iterated division proof
 ---
 
-Let a number $N$ of $n$ digits in base $b$ be represented by the [Polynomial method](Representing%20Numbers.md#Polynomial%20method):
+Let a number $N$ of $n$ digits in base $b$ be represented by the [Polynomial method](/Representing%20Numbers.md#Polynomial%20method):
 
 $$ \large \begin{align}
 N_b &= c_0 + c_1 \cdot b^1 + c_2 \cdot b^2 + \cdots + c_{n-2} \cdot b^{n-2} + c_{n-1} \cdot b^{n-1} \\

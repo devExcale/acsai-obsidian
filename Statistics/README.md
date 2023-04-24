@@ -18,7 +18,7 @@ Statistics is the art and science of *designing studies*, *analysing the data pr
 **Chapter 2**
 
 - [Variables](/Statistics/Variables.md)
-- [Data Graphs](Statistics/Data%20Graphs.md)
-- [Shapes of Distributions](Statistics/Distributions/Shapes%20of%20Distributions.md)
-- [Centres of Distributions](Statistics/Distributions/Centres%20of%20Distributions.md)
+- [Data Graphs](/Statistics/Data%20Graphs.md)
+- [Shapes of Distributions](/Statistics/Distributions/Shapes%20of%20Distributions.md)
+- [Centres of Distributions](/Statistics/Distributions/Centres%20of%20Distributions.md)
 - [Z-Score](/Statistics/Z-Score.md)

@@ -1,6 +1,6 @@
 # Relational Algebra
 
-**Relational algebra** is a mathematical notation to query the contents of [relation](Data%20Management%20and%20Analysis/Unit%201/Relational/Relational%20Model.md#Relation). Languages like [SQL](?) are founded on relational algebra.
+**Relational algebra** is a mathematical notation to query the contents of [relation](/Data%20Management%20and%20Analysis/Unit%201/Relational/Relational%20Model.md#Relation). Languages like [SQL](?) are founded on relational algebra.
 
 It is a formal language to interrogate a relational database, consisting of a set of unary and binary operators that, if applied to one or two relation instances (sets of tuples), generate a new relation instance.
 

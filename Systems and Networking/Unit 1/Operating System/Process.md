@@ -12,7 +12,7 @@ The PCB contains the following information:
 - [Execution State](#Process%20Execution%20State)
 - PID (process identifier, a unique number)
 - [Registers'](/Systems%20and%20Networking/Unit%201/Architecture/Registers.md) values (e.g. program counter, stack pointer, general purpose)
-- [Scheduling](Systems%20and%20Networking/Unit%201/Process%20Handling/Scheduling.md) information (priority, state)
+- [Scheduling](/Systems%20and%20Networking/Unit%201/Process%20Handling/Scheduling.md) information (priority, state)
 - Memory management information ([page tables](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md#Page))
 - [I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md) status (list of open files/devices)
 - General information ([CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) time consumed, owner process)
@@ -50,7 +50,7 @@ From here, the process can go in the following states:
 
 In *waiting* state, the process is suspended while waiting for (usually) [I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md) events. Once the event is done, the process goes back to ready state to be resume execution.
 
-Most of the events are **blocking**: the process can't do anything until the [system call](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md) returns. Meanwhile, the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) sets the process to the waiting state and [schedules](^TK) another process right away, so to avoid the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) being idle.
+Most of the events are **blocking**: the process can't do anything until the [system call](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md) returns. Meanwhile, the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) sets the process to the waiting state and [schedules](/^TK) another process right away, so to avoid the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) being idle.
 
 From here, the process can go in the following states:
 - [Ready](#Ready) ([I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md) or event completion)

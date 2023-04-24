@@ -3,7 +3,7 @@
 *Just a big TODO list of notes*
 
 
-![hr](assets/hr.png)
+![hr](/assets/hr.png)
 
 
 ## AI ML U1
@@ -31,7 +31,7 @@ Instead of storing all possible percepts, the best solution is to start from a s
 - [ ] Breadth-first search is complete (if there's a solution it will return it, otherwise it won't)
 
 
-![hr](assets/hr.png)
+![hr](/assets/hr.png)
 
 
 ## AI ML U2
@@ -98,7 +98,7 @@ Different people (and different AI's) have different experiences, which influenc
 - [ ] Example of non-parametric: knn, decision trees
 
 
-![hr](assets/hr.png)
+![hr](/assets/hr.png)
 
 
 ## Computer Vision and NLP
@@ -106,7 +106,7 @@ Different people (and different AI's) have different experiences, which influenc
 - [ ] CV images are stored in standard NumPy arrays
 
 
-![hr](assets/hr.png)
+![hr](/assets/hr.png)
 
 
 ## Statistics
@@ -127,11 +127,11 @@ Response Variable
 Explanatory Variable
 
 
-![hr](assets/hr.png)
+![hr](/assets/hr.png)
 
 
 ## Data Management and Analysis U2
 
 *Empty, for now...*
 
-![hr](assets/hr.png)
+![hr](/assets/hr.png)

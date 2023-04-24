@@ -25,14 +25,14 @@ Processes can either be
 
 Most of the programs are both, they alternate in **CPU-bursts** and **I/O-bursts**. A burst is a small program section in which either one of CPU or I/O operations are needed.
 
-![Example of mixed bursts](assets/Job%20Bursts%20Example.jpg)
+![Example of mixed bursts](/assets/Job%20Bursts%20Example.jpg)
 
 > [!tip] Efficient Scheduling
 > An efficient scheduling system must mix CPU-bound and I/O-bound processes in such a way to execute CPU-bound processes when the I/O-bound ones are waiting. 
 
 ## Process State Queues
 
-The [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) has a queue for each [process state](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md#Process%20Execution%20State), processes' [PCB](Systems%20and%20Networking/Unit%201/Operating%20System/Process.md#Process%20Control%20Block)'s are saved in the queue of the respective state. When the OS changes the status of a process, the process' PCB is moved from its previous queue to the queue of the current state.
+The [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) has a queue for each [process state](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md#Process%20Execution%20State), processes' [PCB](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md#Process%20Control%20Block)'s are saved in the queue of the respective state. When the OS changes the status of a process, the process' PCB is moved from its previous queue to the queue of the current state.
 
 
 > [!tip]
@@ -45,7 +45,7 @@ Furthermore, the waiting queue may be subdivided into one queue for each [I/O de
 > [!info] State Queues
 > State queues aren't necessarily FIFO queues. On the contrary, most state queues are implemented with other types of queue, to maximize scheduling efficiency.
 
-![Example of Process State Queues](assets/Process%20State%20Queues.jpg)
+![Example of Process State Queues](/assets/Process%20State%20Queues.jpg)
 
 ## Process Scheduler
 
@@ -82,9 +82,9 @@ It's not a trivial operation, because when performing a context switch the CPU m
 > [!info] Internal State
 > The internal state of a process includes everything needed by the CPU to run the process, such as special registers (PC, SP, etc.) and ordinary registers.
 
-A context switch may occur due to any incoming [trap](/Systems%20and%20Networking/Unit%201/Operating%20System/Trap.md) (i.e. system calls, exceptions, HW interrupts). Whenever this happens, the CPU must context-switch to [kernel mode](Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode) to handle the interrupt.
+A context switch may occur due to any incoming [trap](/Systems%20and%20Networking/Unit%201/Operating%20System/Trap.md) (i.e. system calls, exceptions, HW interrupts). Whenever this happens, the CPU must context-switch to [kernel mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode) to handle the interrupt.
 
-![Example of Context Switch](assets/Diagram%20-%20Context%20Switch.jpg)
+![Example of Context Switch](/assets/Diagram%20-%20Context%20Switch.jpg)
 
 ### Timed Context Switch
 

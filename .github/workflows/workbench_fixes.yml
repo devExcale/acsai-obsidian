@@ -1,0 +1,31 @@
+name: Run automatic fixes on changes
+
+on:
+  push:
+    branches:
+      - workbench
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set git user
+        run: git config --global user.name 'Workflow'
+          
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Run fixes
+        run: python .github/scripts/fix_mdlinks.py ${GITHUB_WORKSPACE}
+      
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m '[Workflow] Auto-fixes'
+          git push

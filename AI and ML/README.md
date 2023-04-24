@@ -2,7 +2,7 @@
 
 *The classes I've signed up for: AI and machine learning.*
 
-![Venn Diagram of AI, ML and DL](assets/Diagram%20-%20Venn%20AI%20Branches.png)
+![Venn Diagram of AI, ML and DL](/assets/Diagram%20-%20Venn%20AI%20Branches.png)
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@
 
 [**Machine Learning**](/AI%20and%20ML/Unit%202/Machine%20Learning.md)
 
-- [Principal Component Analysis](AI%20and%20ML/Unit%202/Principal%20Component%20Analysis.md)
+- [Principal Component Analysis](/AI%20and%20ML/Unit%202/Principal%20Component%20Analysis.md)
 
 [**Unsupervised Learning**](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/Unsupervised%20Learning.md)
 

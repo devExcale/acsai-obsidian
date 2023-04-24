@@ -3,7 +3,7 @@ name: Fix Notes
 on:
   push:
     branches:
-      - workbench
+      - master
 
 jobs:
   build:
@@ -22,10 +22,12 @@ jobs:
           python-version: '3.9'
 
       - name: Run fixes
-        run: python .github/scripts/fix_mdlinks.py ${GITHUB_WORKSPACE}
+        run: python .github/scripts/fix_notes.py mdlinks ${GITHUB_WORKSPACE}
       
       - name: Commit changes
         run: |
-          git add .
-          git commit -m '[Workflow] Auto-fixes'
-          git push
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "[Workflow] Auto-fix notes"
+            git push
+          fi

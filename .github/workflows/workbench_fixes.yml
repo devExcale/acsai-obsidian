@@ -1,4 +1,4 @@
-name: Run automatic fixes on changes
+name: Fix Notes
 
 on:
   push:

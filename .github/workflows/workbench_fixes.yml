@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Set git user
         run: git config --global user.name 'Workflow'
           
       - name: Setup Python

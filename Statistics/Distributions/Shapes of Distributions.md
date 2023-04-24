@@ -4,7 +4,7 @@ Given a statistical study's [graph](/Statistics/Data%20Graphs.md), graphical pro
 
 ## Modality of a Distribution
 
-The modality of a distribution of data is the general shape that the [graph](Statistics/Data%20Graphs.md) assumes when using graphs such as [dot plots](Statistics/Data%20Graphs.md#Dot%20Plot) and [histograms](/Statistics/Data%20Graphs.md#Histogram).
+The modality of a distribution of data is the general shape that the [graph](Statistics/Data%20Graphs.md) assumes when using graphs such as [dot plots](/Statistics/Data%20Graphs.md#Dot%20Plot) and [histograms](/Statistics/Data%20Graphs.md#Histogram).
 
 A graph can
 

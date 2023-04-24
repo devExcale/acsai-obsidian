@@ -22,7 +22,7 @@ jobs:
           python-version: '3.9'
 
       - name: Run fixes
-        run: python .github/scripts/fix_mdlinks.py {{ vars.GITHUB_ACTION_PATH }}
+        run: python .github/scripts/fix_mdlinks.py ${GITHUB_WORKSPACE}
       
       - name: Commit changes
         run: |

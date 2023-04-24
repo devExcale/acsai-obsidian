@@ -5,7 +5,7 @@ import sys
 from typing import Callable
 
 # compile the regex
-pattern = re.compile('\\[(.*)]\\((?!\\w+:/)(?![.#?/])(.*?)\\)')
+pattern = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?/])(.*?)\\)')
 
 
 def main():

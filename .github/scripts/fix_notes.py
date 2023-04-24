@@ -10,8 +10,12 @@ exit_codes = {
 	"invalid_arguments": 2,
 }
 
-# compile the regex
-pattern = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?/])(.*?)\\)')
+# Regex: relative markdown link [text](link)
+reg_mdlink_rel = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?/])(.*?)\\)')
+# Regex: absolute markdown link to a markdown file [text](/link.md)
+reg_mdlink_mdfile = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?])(/.*?).md\\)', flags=re.IGNORECASE)
+# Regex: absolute markdown link to a README.md file [text](/link/README.md)
+reg_mdlink_readme = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?])(/.*?)/README.md\\)', flags=re.IGNORECASE)
 
 options = {
 	# help: help message
@@ -26,10 +30,16 @@ args = {
 
 
 def init_options() -> None:
-	options["mdlinks"] = {
-		"help": "Fixes links in markdown files",
-		"args_check": check_args_mdlinks,
-		"action": command_mdlink,
+	options["rel-abs"] = {
+		"help": "Convert relative links to absolute links",
+		"args_check": check_argument_directory,
+		"action": command_rel_abs,
+	}
+
+	options["md-dir"] = {
+		"help": "Convert links that point to a markdown file to a directory with the same name",
+		"args_check": check_argument_directory,
+		"action": command_md_dir,
 	}
 
 
@@ -63,7 +73,7 @@ def parse_args() -> None:
 		args_check()
 
 
-def check_args_mdlinks() -> None:
+def check_argument_directory() -> None:
 	# check the number of arguments
 	if len(args["arguments"]) < 1:
 
@@ -87,15 +97,31 @@ def check_args_mdlinks() -> None:
 		print(f"Using directory '{directory}'")
 
 
-def command_mdlink() -> None:
+def command_md_dir() -> None:
 	# get all md files
-	files = unroll_dir(args["arguments"][0], ignore_dir=lambda x: x.startswith("."))
-	files = [path for path in files if path.endswith(".md")]
+	files = get_md_files(args["arguments"][0])
 
-	# fix links
-	edited = sum(fix_relative_links(file) for file in files)
+	# convert links
+	edited = sum(convert_mdfile_links(file) for file in files)
 
 	print(f"Changed {edited} files")
+
+
+def command_rel_abs() -> None:
+	# get all md files
+	files = get_md_files(args["arguments"][0])
+
+	# convert links
+	edited = sum(convert_relative_links(file) for file in files)
+
+	print(f"Changed {edited} files")
+
+
+def get_md_files(directory: str) -> list[str]:
+	files = unroll_dir(directory, ignore_dir=lambda x: x.startswith("."))
+	files = [path for path in files if path.endswith(".md")]
+
+	return files
 
 
 def unroll_dir(path: str, ignore_dir: Callable[[str], bool] = None) -> list[str]:
@@ -115,7 +141,34 @@ def unroll_dir(path: str, ignore_dir: Callable[[str], bool] = None) -> list[str]
 	return filepaths
 
 
-def fix_relative_links(file: str) -> bool:
+def convert_mdfile_links(file: str) -> bool:
+	# open file in read/write mode
+	with open(file, "r+") as f:
+		# read the whole file
+		content = f.read()
+		og_len = len(content)
+
+		# replace all links to a README.md file
+		content = reg_mdlink_readme.sub(r"[\1](\2/)", content)
+		# replace all other links to a markdown file
+		content = reg_mdlink_mdfile.sub(r"[\1](/\2)", content)
+
+		# check if the file was changed
+		if og_len != len(content):
+			print(f"Converting mdlinks from  to absolute in '{file}'")
+
+			# write the new content
+			f.seek(0)
+			f.write(content)
+			f.truncate()
+
+			# file changed
+			return True
+	# file not changed
+	return False
+
+
+def convert_relative_links(file: str) -> bool:
 	# open file in read/write mode
 	with open(file, "r+") as f:
 		# read the whole file
@@ -123,11 +176,11 @@ def fix_relative_links(file: str) -> bool:
 		og_len = len(content)
 
 		# replace all relative links
-		content = pattern.sub(r"[\1](/\2)", content)
+		content = reg_mdlink_rel.sub(r"[\1](/\2)", content)
 
 		# check if the file was changed
 		if og_len != len(content):
-			print(f"Fixing links in '{file}'")
+			print(f"Converting mdlinks from relative to absolute in '{file}'")
 
 			# write the new content
 			f.seek(0)

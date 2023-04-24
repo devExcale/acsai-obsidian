@@ -22,7 +22,7 @@ jobs:
           python-version: '3.9'
 
       - name: Run fixes
-        run: python .github/scripts/fix_notes.py mdlinks ${GITHUB_WORKSPACE}
+        run: python .github/scripts/fix_notes.py rel-abs ${GITHUB_WORKSPACE}
       
       - name: Commit changes
         run: |

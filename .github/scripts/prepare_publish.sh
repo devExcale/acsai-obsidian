@@ -1,11 +1,14 @@
 #!/bin/sh
 
+# Process the links in markdown files to make them work with mkdocs
+echo Processing links...
+python .github/scripts/fix_notes.py md-dir ${GITHUB_WORKSPACE}
+
 echo Creating directory \'docs\'...
 mkdir docs
 
 
 # Move all files (except dotfiles) into /docs
-
 echo Moving all files into \'docs\'...
 
 for file in *

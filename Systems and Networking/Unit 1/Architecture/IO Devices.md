@@ -22,7 +22,7 @@ A physical device does *not* necessarily need to communicate with a machine, bec
 
 A *device controller* is a circuit (chip or set of chips) that controls one or more physical devices.
 
-The behaviour of the device controller is independent of the [OS](Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md), instead it's the OS that [adapts to the controller](#Device%20Driver).
+The behaviour of the device controller is independent of the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md), instead it's the OS that [adapts to the controller](#Device%20Driver).
 
 Like the CPU, every controller has some registers used to configure/interact with the device, which can be used by the CPU to communicate with it.
 

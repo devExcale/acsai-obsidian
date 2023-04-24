@@ -49,7 +49,7 @@ If the sender has multiple messages to send to the same receiver, a new connecti
 
 #### Headers
 
-Much like [HTTP](Systems%20and%20Networking/Unit%202/Protocols/HTTP.md), SMTP messages can include headers. The main difference, though, is that while HTTP headers are useful only to browsers and web servers, SMTP headers are useful only to end users (i.e. receivers).
+Much like [HTTP](/Systems%20and%20Networking/Unit%202/Protocols/HTTP.md), SMTP messages can include headers. The main difference, though, is that while HTTP headers are useful only to browsers and web servers, SMTP headers are useful only to end users (i.e. receivers).
 
 Headers in SMTP messages provide a way for senders to add more information to receivers, like an address to reply to.
 

@@ -1,6 +1,6 @@
 # Packet Delay
 
-[Packets](Systems%20and%20Networking/Unit%202/Packets/Packet.md) sent with [packet switching](/Systems%20and%20Networking/Unit%202/Network%20Core.md#Packet%20Switching) can be **lost** and suffer **delay**:
+[Packets](/Systems%20and%20Networking/Unit%202/Packets/Packet.md) sent with [packet switching](/Systems%20and%20Networking/Unit%202/Network%20Core.md#Packet%20Switching) can be **lost** and suffer **delay**:
 
 - Packets lost need to be sent again;
 - **Every** packet suffers from delay that is given from different sources.

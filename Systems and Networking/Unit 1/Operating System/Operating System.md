@@ -1,6 +1,6 @@
 # Operating System
 
-There isn't a universal definition for an **Operating System**, but one could say that it is an implementation of a *virtual machine* which should be easier to program than bare [hardware](Systems%20and%20Networking/Unit%201/High-Level%20Computer%20Architecture.md).
+There isn't a universal definition for an **Operating System**, but one could say that it is an implementation of a *virtual machine* which should be easier to program than bare [hardware](/Systems%20and%20Networking/Unit%201/High-Level%20Computer%20Architecture.md).
 
 An **OS** stands between users (or application programs) and the underlying hardware, and it is the only mean to access the hardware.
 
@@ -71,7 +71,7 @@ The OS is divided in $N$ layers, with the hardware being layer 0. Each layer L u
 
 The microkernel opposes to the monolithic kernel because the kernel contains very basic functionalities, usually what's needed to communicate with the hardware (e.g. [scheduling](?TK), [memory management](/Systems%20and%20Networking/Unit%201/Architecture/Memory.md)), the rest (e.g. application programs, [file system](?TK)) runs in [user mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode).
 
-In this structure there is a clear distinction between [policy](#Design) (user mode) and [mechanism](#Design) (microkernel) and it is very modular, but this modularity comes at a cost: processes use [message passing](Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md#Message%20Passing) to communicate, which can slow down processing speed.
+In this structure there is a clear distinction between [policy](#Design) (user mode) and [mechanism](#Design) (microkernel) and it is very modular, but this modularity comes at a cost: processes use [message passing](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md#Message%20Passing) to communicate, which can slow down processing speed.
 
 ![Diagram of Microkernel Structure](?TK)
 

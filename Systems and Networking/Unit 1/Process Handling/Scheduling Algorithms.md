@@ -11,7 +11,7 @@ Scheduling processes is no easy task, there are multiple variables to keep track
 | **Response time**   | 📉 Minimize | Usually applicable to interactive processes, it's the time measured from the issuance of a command to the begin of a response to the command. |
 
 > [!warning] Waiting time
-> The waiting time mentioned above is **not** the waiting state! The [scheduler](Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Process%20Scheduler) doesn't have control over processes in waiting state, it can only manage the ones in ready and running states.
+> The waiting time mentioned above is **not** the waiting state! The [scheduler](/Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Process%20Scheduler) doesn't have control over processes in waiting state, it can only manage the ones in ready and running states.
 
 Some of these variables are dependent on other, so they can be computed through some formulas.
 

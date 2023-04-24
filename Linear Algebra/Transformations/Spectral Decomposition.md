@@ -8,8 +8,8 @@ $$
 
 where:
 - $A$ is a symmetric matrix;
-- $Q$ is an orthogonal matrix ([rotation](Linear%20Algebra/Transformations/Linear%20Transformations.md#Rotation)) composed of the eigenvectors of $A$;
-- $\Lambda$ is a diagonal matrix ([scaling](Linear%20Algebra/Transformations/Linear%20Transformations.md#Scaling)) composed of the eigenvalues of $A$.
+- $Q$ is an orthogonal matrix ([rotation](/Linear%20Algebra/Transformations/Linear%20Transformations.md#Rotation)) composed of the eigenvectors of $A$;
+- $\Lambda$ is a diagonal matrix ([scaling](/Linear%20Algebra/Transformations/Linear%20Transformations.md#Scaling)) composed of the eigenvalues of $A$.
 
 The rotation matrices should apply rotations only, so the eigenvectors that compose $Q$ (and $Q^T$) should be normalised.
 

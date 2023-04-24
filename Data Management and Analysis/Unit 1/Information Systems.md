@@ -7,7 +7,7 @@ The notion of information system is independent of the actual implementation, an
 %% TK link application software of sysnet u1 %%
 
 The list of components of a *digital* information system is the following:
-- [Database](Data%20Management%20and%20Analysis/Unit%201/Database/Databases.md) (DB)
+- [Database](/Data%20Management%20and%20Analysis/Unit%201/Database/Databases.md) (DB)
 - Database Management System (DBMS)
 - Application Software (to access the DB)
 - Computer Hardware (storage devices)

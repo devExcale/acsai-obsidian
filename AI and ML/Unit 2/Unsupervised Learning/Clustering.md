@@ -6,7 +6,7 @@ Clustering algorithms attempt to find patterns and similarities in the data base
 
 > [!tip] Principal Component Analysis
 > 
-> [PCA](AI%20and%20ML/Unit%202/Principal%20Component%20Analysis.md) is a data analysis algorithm that may be run before applying any clustering algorithm: it helps by reducing the dimensionality of the input space while retaining most of the variance in the data (i.e. compressing the data) and by trying to reduce the noise in the input data.
+> [PCA](/AI%20and%20ML/Unit%202/Principal%20Component%20Analysis.md) is a data analysis algorithm that may be run before applying any clustering algorithm: it helps by reducing the dimensionality of the input space while retaining most of the variance in the data (i.e. compressing the data) and by trying to reduce the noise in the input data.
 
 ## Clustering Algorithms
 

@@ -19,11 +19,11 @@ If a relations isn't in [3rd normal form](/Data%20Management%20and%20Analysis/Un
 > $$
 
 1. [Preserving functional dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Preserving%20Functional%20Dependencies.md)
-2. [Lossless Join](Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Lossless%20Join.md)
+2. [Lossless Join](/Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Lossless%20Join.md)
 
 ## Finding a Decomposition
 
-1. Compute a [minimal cover](Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Minimal%20Cover.md) $G$ of $F$, set $\rho = \emptyset$ ;
+1. Compute a [minimal cover](/Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Minimal%20Cover.md) $G$ of $F$, set $\rho = \emptyset$ ;
 
 2. If there are any, set all attributes $X$ which do not appear in any dependency as a first sub-relation ($\rho = \set X$) and discard them from $R$ ($R' = R \setminus X$);
 

@@ -105,4 +105,4 @@ $$
 
 > [!info] Geometric Meaning
 > 
-> Matrix-Vector multiplication has a special geometric meaning: multiplying a vector by a matrix applies on the vector the [linear transformation](Linear%20Algebra/Transformations/Linear%20Transformations.md) represented by the matrix.
+> Matrix-Vector multiplication has a special geometric meaning: multiplying a vector by a matrix applies on the vector the [linear transformation](/Linear%20Algebra/Transformations/Linear%20Transformations.md) represented by the matrix.

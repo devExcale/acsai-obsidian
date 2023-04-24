@@ -6,7 +6,7 @@ Nowadays, people could use anything for their personal gains, [Internet](/System
 
 ### Packet Sniffing
 
-People could access the [transport mean](/Systems%20and%20Networking/Unit%202/Transport%20Means.md) of [packets](Systems%20and%20Networking/Unit%202/Packets/Packet.md) and read packets that are going through that transport mean (e.g. shared ethernet, wireless)!
+People could access the [transport mean](/Systems%20and%20Networking/Unit%202/Transport%20Means.md) of [packets](/Systems%20and%20Networking/Unit%202/Packets/Packet.md) and read packets that are going through that transport mean (e.g. shared ethernet, wireless)!
 
 Malicious users could read the content of these packets and find sensitive information about sender and receiver (including passwords).
 

@@ -32,7 +32,7 @@
 
 **[OpenCV](/Computer%20Vision%20and%20NLP/OpenCV/OpenCV.md)**
 
-- [OpenCV useful functions](Computer%20Vision%20and%20NLP/OpenCV/OpenCV%20Tips%20and%20Functions.md)
+- [OpenCV useful functions](/Computer%20Vision%20and%20NLP/OpenCV/OpenCV%20Tips%20and%20Functions.md)
 
 **CV and NLP**
 

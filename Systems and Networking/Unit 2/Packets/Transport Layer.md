@@ -1,6 +1,6 @@
 # Transport Layer
 
-The **Transport Layer** is the fourth layer of the [Internet Protocol Stack](Systems%20and%20Networking/Unit%202/Packets/Layered%20Structure.md#Layered%20Structure), its reason is to provide a logical channel for communication between two applications across the network.
+The **Transport Layer** is the fourth layer of the [Internet Protocol Stack](/Systems%20and%20Networking/Unit%202/Packets/Layered%20Structure.md#Layered%20Structure), its reason is to provide a logical channel for communication between two applications across the network.
 
 Transport-layer features are implemented in end hosts only, routers and switches work from the network layer down. To send a message from one host to another:
 1. On the sending host, the transport layer breaks the **message** in smaller pieces to which is added a *transport header*. The final packets are called **segments**;

@@ -15,7 +15,7 @@ reg_mdlink_rel = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?/])(.*?)\\)')
 # Regex: absolute markdown link to a markdown file [text](/link.md)
 reg_mdlink_mdfile = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?])(/.*?).md\\)', flags=re.IGNORECASE)
 # Regex: absolute markdown link to a README.md file [text](/link/README.md)
-reg_mdlink_readme = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?])(/.*?)/README.md\\)', flags=re.IGNORECASE)
+reg_mdlink_readme = re.compile('\\[(.*?)]\\((?!\\w+:/)(?![.#?])(.*?)/README.md\\)', flags=re.IGNORECASE)
 
 options = {
 	# help: help message

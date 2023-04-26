@@ -1,6 +1,6 @@
 # Agent
 
-An agent is something that interacts dynamically with an environment.
+An agent is any automated thing that interacts dynamically with an environment.
 
 ![Agent Logic Diagram](/assets/Diagram%20-%20Agent.bmp)
 
@@ -13,7 +13,7 @@ An agent is composed of
 > 
 > Example of agents are web browsers, robots, automatic vacuum cleaners.
 
-The rigorous definition of an agent is 
+The rigorous definition of an agent is the following,
 
 $$\large
 	f : \mathcal P^* \nrightarrow \mathcal A,

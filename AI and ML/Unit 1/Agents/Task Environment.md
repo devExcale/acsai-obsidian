@@ -1,6 +1,6 @@
 # Task Environment
 
-The task environment is the environment that an [agent](AI%20and%20ML/Unit%201/Agents/Agent.md) interacts with.
+The task environment is the environment that an [agent](/AI%20and%20ML/Unit%201/Agents/Agent.md) interacts with.
 
 ## Characteristics of an Environment
 

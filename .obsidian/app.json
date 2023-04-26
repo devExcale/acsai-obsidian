@@ -11,7 +11,7 @@
   "newFileLocation": "current",
   "newLinkFormat": "absolute",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "/",
+  "attachmentFolderPath": "assets",
   "strictLineBreaks": true,
   "showInlineTitle": false,
   "alwaysUpdateLinks": true

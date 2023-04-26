@@ -8,9 +8,9 @@
 
 ### Unit 1
 
-- [Agent](/AI%20and%20ML/Unit%201/Agent.md)
+- [Agent](AI%20and%20ML/Unit%201/Agents/Agent.md)
 
-- [Agent Models](/AI%20and%20ML/Unit%201/Agent%20Models.md)
+- [Agent Models](AI%20and%20ML/Unit%201/Agents/Agent%20Models.md)
 
 ### Unit 2
 

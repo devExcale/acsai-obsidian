@@ -32,4 +32,4 @@ $$
 > 
 > Given $k = 2$, $\mu = (0,0)$, $\Sigma = \text{diag}(2,1)$, the multivariate gaussian assumes the following pdf.
 > 
-> ![pdf of a double-variate gaussian distribution](assets/multivariate_gaussian_pdf.png)
+> ![pdf of a double-variate gaussian distribution](/assets/multivariate_gaussian_pdf.png)

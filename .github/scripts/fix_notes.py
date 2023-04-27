@@ -149,13 +149,13 @@ def convert_mdfile_links(file: str) -> bool:
 		og_len = len(content)
 
 		# replace all links to a README.md file
-		content = reg_mdlink_readme.sub(r"[\1](\2/)", content)
+		content = reg_mdlink_readme.sub(r"[\1](\2)", content)
 		# replace all other links to a markdown file
-		content = reg_mdlink_mdfile.sub(r"[\1](/\2)", content)
+		content = reg_mdlink_mdfile.sub(r"[\1](\2/)", content)
 
 		# check if the file was changed
 		if og_len != len(content):
-			print(f"Converting mdlinks from  to absolute in '{file}'")
+			print(f"Converting mdlinks from mdfile to dir in '{file}'")
 
 			# write the new content
 			f.seek(0)

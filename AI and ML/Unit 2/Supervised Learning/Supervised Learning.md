@@ -17,6 +17,8 @@ The goal of supervised learning is to learn a mapping function from the input va
 > Based on the label, there exist two types of supervised learning prediction:
 > - **Classification,** when the label is a discrete value, either *binary* ($0,1$) or *multi-class* ($1, \ldots, N$);
 > - **Regression,** when the output is a continuous value.
+>  
+> ![regr_vs_class](assets/regr_vs_class.webp) 
 
 ## Supervised Algorithms
 

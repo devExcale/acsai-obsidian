@@ -16,6 +16,26 @@ The whole Machine Learning system is based on finding common patterns in the dat
 
 ![Diagram of the Machine Learning workflow](/assets/Diagram%20-%20ML%20Approach%20(pad).png)
 
+## Learning
+
+Suppose that there exists a *loss function*, such that it has null value if the prediction is correct and grows the more the prediction is wrong. *Learning* is defined as lowering the loss (or *cost*) function when predicting both training and testing data.
+
+$$\large
+	\mathcal L( \underbrace{\hat y}_\text{pred.}, \underbrace{y}_\text{gt} )
+	\quad \text{where} \quad
+	\hat y = h_0(x)
+$$
+
+### Regression Loss Functions
+
+- Squared error: $\mathcal L(\hat y, y) = (\hat y - y)^2$
+
+- Absolute error: $\mathcal L(\hat y, y) = |\hat y - y|$
+
+### Classification Loss Functions
+
+- Binary error: *TK* piecewise function, 0 if correct, 1 if wrong
+
 ## Types of Machine Learning
 
 - [Unsupervised Learning](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/Unsupervised%20Learning.md)

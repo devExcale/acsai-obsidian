@@ -50,10 +50,6 @@ Different people (and different AI's) have different experiences, which influenc
 
 #### PCA
 
-- [x] PCA: point cloud should be centred by subtracting mu
-
-- [x] PCA: point cloud should be divided by sigma to round the cloud
-
 - [ ] Reconstruction Error
 
 - [ ] Another PCA interpretation: find an orthogonal projection that minimises the reconstruction error
@@ -86,17 +82,43 @@ Different people (and different AI's) have different experiences, which influenc
 
 - [ ] Furthest-first Heuristic: first is picked at random, others are picked iteratively based on decreasing distance (updated on each assignment)
 
-#### Classification vs Regression
+#### Supervised Learning
 
-- [x] Regression: turning a hyper-dimensional vector into a scalar
-- [x] Classification: map subsets of hyper-dimensional vectors into a discrete set of scalars 
+- [ ] Empirical Risk Minimization
+- [ ] Bias error
+- [ ] Bias-Variance tradeoff (dartboard)
+- [ ] Feature weighting (choosing dominant vs superficial features)
 
-#### Parametric vs Non-parametric
+#### K-NN
 
-- [x] Parametric: the conversion from a vector to the result scalar is given from some set of parameters $\theta$, the model has to be *trained* guess $\theta$
-- [x] Non-parametric: the conversion from a vector to the result scalar doesn't need any set of parameters, the model doesn't have to be trained
-- [ ] Example of non-parametric: knn, decision trees
+- [ ] Advantages and disadvantages
 
+- [ ] Split the data into training (60%), validation (20%), test (20%)
+
+- [ ] The validation data is used to select or fix the hyper-parameter $k$
+
+- [ ] The training loss function can be defined by classifying the training set itself given a parameter $k$
+
+- [ ] Generally, the increasing order of errors should be train, validation, test
+
+- [ ] **Remember** to estimate scaling / regularizing the data only with the training set, and then apply it to validation / test data too
+
+#### Decision Trees
+
+- [ ] Supervised w/parameters
+
+- [ ] $p_k = \frac{|S_k|}{|S|}$ probability of picking one label
+
+- [ ] **impurity:** misclassification in the data during the mode decision (1 - probab of picking the label picked) $1 - \max_{k \in Y}{p_k}$
+
+- [ ] **Gini impurity:** sort of an *entropy of impurities*, it's computed as the sum of (prob picking) (prob not picking)
+
+- [ ] Geany Imputiry function: $H(S) = \sum_{k \in Y} p_k (1 - p_k)$
+- [ ] Etropy function: $- \sum_{k \in Y} p_k \log_2()$
+
+- [ ] Entropy is derived from impurity: impurity is a general concept, entropy is impurity implemented
+
+- [ ] Impurity of a tree: recursive weighted sum of the entropy of both sides of the current branch of the tree.
 
 ![hr](/assets/hr.png)
 

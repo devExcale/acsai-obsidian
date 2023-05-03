@@ -17,9 +17,9 @@ $$\large \displaylines {
 	y_v = y^* \quad | \quad (x^*, y^*) \in \mathcal D
 }$$
 
-where $\text d(\cdot, \cdot)$ refers to a suitable [distance metric](AI%20and%20ML/Unit%202/Distance%20Metrics.md).
+where $\text d(\cdot, \cdot)$ refers to a suitable [distance metric](/AI%20and%20ML/Unit%202/Distance%20Metrics.md).
 
-Predicting the label by looking to just the closest datapoint would [overfit](AI%20and%20ML/Unit%202/Machine%20Learning.md#Fitting%20the%20Data) the model, so the predicted label is decided by the mode of the closest $k$ datapoints to the input.
+Predicting the label by looking to just the closest datapoint would [overfit](/AI%20and%20ML/Unit%202/Machine%20Learning.md#Fitting%20the%20Data) the model, so the predicted label is decided by the mode of the closest $k$ datapoints to the input.
 
 > [!warning] Multiple Modes
 > 
@@ -49,13 +49,13 @@ $k$ is chosen in an empirical way:
 > 
 > Setting $k=1$ will *overfit* the model, because the model would choose the label on too few information (i.e. just the closest point). This could create area patches that are too specific to the training data.
 > 
-> ![KNN - K equals 1](assets/knn_k1.png)
+> ![KNN - K equals 1](/assets/knn_k1.png)
 
 > [!info] Underfit
 > 
 > Setting $k = |\mathcal D|$ will *underfit* the model, because the model would *always* choose the label with the highest frequency. This is called the *best constant predictor*.
 > 
-> ![KNN - Best Constant Predictor](assets/knn_best_constant.png)
+> ![KNN - Best Constant Predictor](/assets/knn_best_constant.png)
 
 ## Normalization
 
@@ -83,7 +83,7 @@ $$\large
 	x' = \frac{x - \mu}{\sigma}
 $$
 
-This type of normalization is equivalent to centring and decorrelating the features with [PCA](AI%20and%20ML/Unit%202/Principal%20Component%20Analysis.md).
+This type of normalization is equivalent to centring and decorrelating the features with [PCA](/AI%20and%20ML/Unit%202/Principal%20Component%20Analysis.md).
 
 ### Feature Normalization
 

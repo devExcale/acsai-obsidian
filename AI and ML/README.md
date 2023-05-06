@@ -16,7 +16,7 @@
 
 [**Machine Learning**](/AI%20and%20ML/Unit%202/Machine%20Learning.md)
 
-- [Principal Component Analysis](/AI%20and%20ML/Unit%202/Principal%20Component%20Analysis.md)
+- [Principal Component Analysis](AI%20and%20ML/Unit%202/Preprocessing/Principal%20Component%20Analysis.md)
 
 [**Unsupervised Learning**](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/Unsupervised%20Learning.md)
 

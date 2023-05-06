@@ -59,4 +59,4 @@ $k$ is chosen in an empirical way:
 > 
 > ![KNN - Best Constant Predictor](/assets/knn_best_constant.png)
 
-[Data Normalization](AI%20and%20ML/Unit%202/Preprocessing/Data%20Normalization.md)
+[Data Normalization](/AI%20and%20ML/Unit%202/Preprocessing/Data%20Normalization.md)

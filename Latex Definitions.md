@@ -79,3 +79,10 @@ $\def \seqop#1#2#3{{ {#2}_1 #1 {#2}_2 #1 \cdots #1 {#2}_{#3} }}$
 ```tex
 $\def \indep{{ \mathrel\unicode{x2AEB} }}$
 ```
+
+- *Propositional Logic Model*
+
+```tex
+$\def \M#1{{ \mathcal M({#1}) }}$
+```
+

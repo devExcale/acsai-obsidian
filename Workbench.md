@@ -30,6 +30,10 @@ Instead of storing all possible percepts, the best solution is to start from a s
 
 - [ ] Breadth-first search is complete (if there's a solution it will return it, otherwise it won't)
 
+#### Logic-based Agents
+
+- [ ] Entailment / Models
+
 
 ![hr](/assets/hr.png)
 

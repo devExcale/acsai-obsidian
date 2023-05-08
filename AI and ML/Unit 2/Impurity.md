@@ -3,7 +3,7 @@ $\def \E#1{{ \mathbb{E} \left(#1\right) }}$
 
 # Impurity
 
-Impurity, in a Machine Learning context, is a numerical value that represent how accurate a prediction-model is. It usually refers to models that use decision-making algorithms such as [decision trees](AI%20and%20ML/Unit%202/Supervised%20Learning/Decision%20Trees.md), and it is analogous to a loss or cost function.
+Impurity, in a Machine Learning context, is a numerical value that represent how accurate a prediction-model is. It usually refers to models that use decision-making algorithms such as [decision trees](/AI%20and%20ML/Unit%202/Supervised%20Learning/Decision%20Trees.md), and it is analogous to a loss or cost function.
 
 > [!tip] Classification
 > 

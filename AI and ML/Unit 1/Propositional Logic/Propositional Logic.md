@@ -1,7 +1,7 @@
 $\def \M#1{{ \mathcal M({#1}) }}$
 $\def \seq#1#2{{ {#1}_1, {#1}_2, \ldots, {#1}_{#2} }}$
 
-# Logic
+# Propositional Logic
 
 Propositional Logic is one of the most important concepts for reasoning with artificial intelligence. It is a whole mathematical model used to describe and infer the real world.
 
@@ -15,7 +15,7 @@ A knowledge base can be queried in two ways:
 
 > [!info] Inferring
 > 
-> Inferring can happen when a KB has been told or asked anything.
+> Inferring can happen both when a KB has been told or asked something, it isn't constrained to when it is asked only-.
 
 ## Model
 
@@ -29,7 +29,7 @@ Syntax defines which sentences are valid sentences and which are invalid, it des
 
 Legal sentences are discerned in **atomic sentences** and **complex sentences**:
 
-- *atomic sentences* are sentences which are composed of a single *proposition symbol*, a proposition symbol indicates a single proposition that could be either *true* or *false*;
+- *atomic sentences* are sentences which are composed of a single *proposition symbol*, a proposition symbol indicates a single proposition (a fact about the world) that can assume a *truth value* (whose domain is defined by semantics);
 - *complex sentences* are sentences which are composed of atomic sentences and *operators*, operators define the relations between the atomic sentences.
 
 > [!note] Operators
@@ -38,36 +38,10 @@ Legal sentences are discerned in **atomic sentences** and **complex sentences**:
 
 ## Semantics
 
-Semantics define the rules for determining the truth of a sentence with respect to a particular model.
+Semantics define the rules for determining the truth of a sentence with respect to a particular model. In the simplest logic model, semantics define that a proposition can assume just one of two truth values: *true* or *false*.
 
-*TK*
+Semantics then define some other rules:
 
-## Operators
-
-In boolean proposition logic, the operators are the following (in descending order of precedence).
-
-1. **Negation** $[\,\lnot\,] \rightarrow$ negates a given proposition;
-2. **And** $[\,\land\,] \rightarrow$ true if both the LHS and RHS propositions are true;
-3. **Or** $[\,\lor\,] \rightarrow$ true if either one of or both the LHS and RHS propositions are true;
-4. **Implication** $[\,\Rightarrow\,] \rightarrow$ is true unless the LHS is true and the RHS is false;
-5. **Biconditional**$[\,\Leftrightarrow\,] \rightarrow$ it is true if both the LHS and RHS are equal (i.e. *true-true* or *false-false*).
-
-Parenthesis can be used to change the natural order of the operators by first evaluating the operators inside the parenthesis and then the ones outside.
-
-### Entailment
-
-Entailment is the equivalent of *logical consequence*. 
-
-Given two propositional formulae $\phi, \psi$, it is said that $\phi$ entails $\psi$ iff $\M\phi \subseteq \M\psi$, i.e. the set of all models of $\phi$ is a subset of the set of all models of $\psi$.
-
-$$\large
-	\phi \vDash \psi
-	\quad \Longleftrightarrow \quad
-	\M \phi \subseteq \M \psi
-$$
-
-Similarly, given a set of propositional formulae $\set\seq \phi n$ and a proposition formula $\psi$ such that $\psi$ is a logical consequence of $\set\seq \phi n$, i.e. $\M{\set\seq \phi n} \subseteq \M \psi$, it can be  said that $\seq \psi n$ are the **assumptions** and $\psi$ is the **conclusion**.
-
-$$\large
-	\set\seq \phi n \vDash \psi
-$$
+- The only *preassigned* symbols are $\top$  (a.k.a. *top*) and $\bot$ (a.k.a. *bottom*), with values *True* and *False* respectively for every model;
+- The truth value of every proposition symbol must be assigned to the model directly, it can't be supposed outside the model;
+- The rules for all [operators](/AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operators.md).

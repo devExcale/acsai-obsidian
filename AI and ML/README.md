@@ -8,9 +8,21 @@
 
 ### Unit 1
 
+**Agents**
+
 - [Agent](/AI%20and%20ML/Unit%201/Agents/Agent.md)
 
+- [Task Environment](/AI%20and%20ML/Unit%201/Agents/Task%20Environment.md)
+
 - [Agent Models](/AI%20and%20ML/Unit%201/Agents/Agent%20Models.md)
+
+[**Propositional Logic**](/AI%20and%20ML/Unit%201/Propositional%20Logic/Propositional%20Logic.md)
+
+- [Logical Operators](/AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operators.md)
+
+- [Entailment](/AI%20and%20ML/Unit%201/Propositional%20Logic/Entailment.md)
+
+- [Deductive System](/AI%20and%20ML/Unit%201/Propositional%20Logic/Deductive%20System.md)
 
 ### Unit 2
 

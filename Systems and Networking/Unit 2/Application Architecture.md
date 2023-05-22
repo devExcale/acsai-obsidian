@@ -1,6 +1,6 @@
 # Application Layer
 
-Developing an application nowadays is significantly easier, considering that [layers](/Systems%20and%20Networking/Unit%202/Packets/Layered%20Structure.md) other than the [application layer](/Systems%20and%20Networking/Unit%202/Packets/Layered%20Structure.md#Application) are already implemented. The only thing a developer should think of are:
+Developing an application nowadays is significantly easier, considering that [layers](Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md) other than the [application layer](Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md#Application) are already implemented. The only thing a developer should think of are:
 - Application logic;
 - Application architecture;
 - Which transport protocol to use.
@@ -42,7 +42,7 @@ P2P is more "efficient" than Client-Server in bandwidth usage and workload shari
 
 An application/program that runs on a machine is just a [process](/Systems%20and%20Networking/Unit%201/Operating%20System/Process.md), so applications that need to communicate can do so like processes: by [exchanging messages](?TK).
 
-These [messages](/Systems%20and%20Networking/Unit%202/Packets/Layered%20Structure.md#Application) can be exchanged over the network too, thanks to the [layered structure](/Systems%20and%20Networking/Unit%202/Packets/Layered%20Structure.md) of packets.
+These [messages](Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md#Application) can be exchanged over the network too, thanks to the [layered structure](Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md) of packets.
 
 Processes over the network can communicate through **sockets**: a software interface, a virtual channel used by the machine to transfer and receive packets. In a communication there are two sockets involved, one for each host.
 

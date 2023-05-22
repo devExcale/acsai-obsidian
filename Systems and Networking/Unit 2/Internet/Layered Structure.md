@@ -1,15 +1,15 @@
 # Layered Structure
 
-To better organize the [packet](/Systems%20and%20Networking/Unit%202/Packets/Packet.md) structure and services, packets follow a **layered structure**. Each layer follows a [Protocol](/Systems%20and%20Networking/Unit%202/Protocols.md), offers some functionalities, and uses the functionalities of the underlying layer.
+To better organize the [packet](Systems%20and%20Networking/Unit%202/Internet/Packet.md) structure and services, packets follow a **layered structure**. Each layer follows a [Protocol](/Systems%20and%20Networking/Unit%202/Protocols.md), offers some functionalities, and uses the functionalities of the underlying layer.
 
-The protocol layers could be implemented by both hardware and software, depending on the functionalities needed. When the [Internet](/Systems%20and%20Networking/Unit%202/Networks.md#Internet) was still in development, a theoretical model was developed: the **internet protocol stack**, which is similar to and was later deprecated in favor of the [ISO/OSI Model](/Systems%20and%20Networking/Unit%202/Packets/ISO-OSI%20Model.md).
+The protocol layers could be implemented by both hardware and software, depending on the functionalities needed. When the [Internet](/Systems%20and%20Networking/Unit%202/Networks.md#Internet) was still in development, a theoretical model was developed: the **internet protocol stack**, which is similar to and was later deprecated in favor of the [ISO/OSI Model](Systems%20and%20Networking/Unit%202/Internet/ISO-OSI%20Model.md).
 
 The internet protocol stack is formed by 5 layers, each layer encapsulates the packet that the upper-layer has passed and adds a functionality to it (in the form of **header**).
 
 | **Layer**                                                                                | **Packet Name** | **Description**                         |
 | ---------------------------------------------------------------------------------------- | --------------- | --------------------------------------- |
-| [Application Layer](/Systems%20and%20Networking/Unit%202/Packets/Application%20Layer.md) | *Message*       | Holds the final message of the packet.  |
-| [Transport Layer](/Systems%20and%20Networking/Unit%202/Packets/Transport%20Layer.md)     | *Segment*       | Definition of transport protocol.       |
+| [Application Layer](Systems%20and%20Networking/Unit%202/Internet/Application%20Layer.md) | *Message*       | Holds the final message of the packet.  |
+| [Transport Layer](Systems%20and%20Networking/Unit%202/Internet/Transport%20Layer.md)     | *Segment*       | Definition of transport protocol.       |
 | Network                                                                                  | *Datagram*      | Routing the packet to the destination.  |
 | Link                                                                                     | *Frame*         | Forwarding the packet to the next node. |
 | Physical                                                                                 | N/A             | Physically transmitting signals.        |

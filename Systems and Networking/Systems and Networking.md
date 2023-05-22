@@ -32,7 +32,16 @@ Unit 1 is focused more and the hardware/software of the single machine, while un
 
 ### Unit 2
 
-- [Networks](/Systems%20and%20Networking/Unit%202/Networks.md)
-- [Devices](/Systems%20and%20Networking/Unit%202/Devices.md)
-- [Protocols](/Systems%20and%20Networking/Unit%202/Protocols.md)
-- [Packet](/Systems%20and%20Networking/Unit%202/Packets/Packet.md)
+- [Networks](Systems%20and%20Networking/Unit%202/Networks.md)
+- [Network Core](Systems%20and%20Networking/Unit%202/Network%20Core.md)
+- [Transport Means](Systems%20and%20Networking/Unit%202/Transport%20Means.md)
+- [Application Architecture](Systems%20and%20Networking/Unit%202/Application%20Architecture.md)
+- [Security](Systems%20and%20Networking/Unit%202/Security.md)
+
+[**Internet Protocol**](Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md)
+
+- [Packet](Systems%20and%20Networking/Unit%202/Internet/Packet.md)
+- [ISO-OSI Model](Systems%20and%20Networking/Unit%202/Internet/ISO-OSI%20Model.md)
+- [Application Layer](Systems%20and%20Networking/Unit%202/Internet/Application%20Layer.md)
+- [Transport Layer](Systems%20and%20Networking/Unit%202/Internet/Transport%20Layer.md)
+- [Network Layer](Systems%20and%20Networking/Unit%202/Internet/Network%20Layer.md)

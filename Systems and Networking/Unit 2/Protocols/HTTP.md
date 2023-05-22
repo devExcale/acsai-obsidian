@@ -1,6 +1,6 @@
 # HyperText Transfer Protocol
 
-The **HyperText Transfer Protocol** is the main [application-layer](/Systems%20and%20Networking/Unit%202/Packets/Layered%20Structure.md#Application) protocol used in the **Web**. HTTP has been developed to permit the exchange of documents between hosts through the web.
+The **HyperText Transfer Protocol** is the main [application-layer](Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md#Application) protocol used in the **Web**. HTTP has been developed to permit the exchange of documents between hosts through the web.
 
 Clients ask, through a structured message in the application layer, to servers a **web page** (document), which is composed of objects; these objects could be any file (e.g. image, html file, video file).
 

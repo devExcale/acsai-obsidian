@@ -1,6 +1,6 @@
 # Transfer Control Protocol
 
-The Transfer Control Protocol is a [transport layer](Systems%20and%20Networking/Unit%202/Internet/Transport%20Layer.md) protocol based on the [Reliable Data Transfer](/Systems%20and%20Networking/Unit%202/Protocols/RDT.md) 3.0 protocol. It extends RDT by adding other features such as congestion control, flow control and connections.
+The Transfer Control Protocol is a [transport layer](/Systems%20and%20Networking/Unit%202/Internet/Transport%20Layer.md) protocol based on the [Reliable Data Transfer](/Systems%20and%20Networking/Unit%202/Protocols/RDT.md) 3.0 protocol. It extends RDT by adding other features such as congestion control, flow control and connections.
 
 Unlike RDT, in TCP both hosts of a conversation are both the sender and the receiver of a connection. A TCP connection is opened via a **three-way handshake**:
 - $A$ sends a SYN packet with a *random* sequence number $x$;
@@ -13,12 +13,12 @@ Unlike RDT, in TCP both hosts of a conversation are both the sender and the rece
 > 
 > Unlike RDT, hosts in a TCP connection acknowledge the sequence number of the next expected packet instead of the received packet.
 
-![Timeline of a TCP handshake](assets/tcp_handshake.png)
+![Timeline of a TCP handshake](/assets/tcp_handshake.png)
 
 
 ## TCP Segment Structure
 
-![Packet structure of a TCP segment](assets/tcp_segment.png)
+![Packet structure of a TCP segment](/assets/tcp_segment.png)
 
 1.  **Source Port:** The source port is a 16-bit field that identifies the port number of the sender's application or process.
 2.  **Destination Port:** The destination port is also a 16-bit field that specifies the port number of the receiver's application or process.
@@ -107,11 +107,11 @@ The sender monitors the network status by looking for *duplicate ACKs* and *time
 
 The first version of TCP congestion control was named **Tahoe TCP**. It considered three duplicate ACKs the same as a timeout, the only states it had were *slow start* and *congestion avoidance*.
 
-![Tahoe TCP - Diagram](assets/tcp_tahoe.png)
+![Tahoe TCP - Diagram](/assets/tcp_tahoe.png)
 
 Then, a better version of TCP congestion control called **Reno TCP** was developed. It considered three duplicate ACKs as a lighter indication of congestion than a timeout, it also added *fast recovery* as an additional state to the ones already in Tahoe TCP. 
 
-![Reno TCP - Diagram](assets/tcp_reno.png)
+![Reno TCP - Diagram](/assets/tcp_reno.png)
 
 ### Slow Start
 

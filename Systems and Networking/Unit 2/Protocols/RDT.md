@@ -1,6 +1,6 @@
 # Reliable Data Transfer
 
-Reliable Data Transfer is a theoretical [transport layer](Systems%20and%20Networking/Unit%202/Internet/Transport%20Layer.md) protocol for reliably transferring a stream of packets over an unreliable channel; it is the foundations of [TCP](/Systems%20and%20Networking/Unit%202/Protocols/TCP.md).
+Reliable Data Transfer is a theoretical [transport layer](/Systems%20and%20Networking/Unit%202/Internet/Transport%20Layer.md) protocol for reliably transferring a stream of packets over an unreliable channel; it is the foundations of [TCP](/Systems%20and%20Networking/Unit%202/Protocols/TCP.md).
 
 There have been many version of RDT, with the protocol getting better in newer versions.
 
@@ -20,7 +20,7 @@ RDT uses two *finite state machines* to manage the sender and the receiver algor
 
 The first version of RDT assumes that the underlying channel is reliable, i.e. nothing will get corrupted or changed. The protocol simply focuses on creating and forwarding the packets.
 
-![RDT 1.0 - Sender and Receiver](assets/rdt_fms_10.png)
+![RDT 1.0 - Sender and Receiver](/assets/rdt_fms_10.png)
 
 **--- Sender Side ---**
 
@@ -46,7 +46,7 @@ After sending a packet, the sender must wait an acknowledgement for the sent pac
 
 The receiver, on the other hand, must check that a packet isn't corrupted when it receives it. If the packet is valid then it must send a positive acknowledgment, otherwise it must send a negative acknowledgment.
 
-![RDT 2.0 - Sender and Receiver](assets/rdt_fms_20.png)
+![RDT 2.0 - Sender and Receiver](/assets/rdt_fms_20.png)
 
 **--- Sender Side ---**
 
@@ -77,9 +77,9 @@ The receiver, on the other hand, must check that a packet isn't corrupted when i
 
 The first reiteration of the second version of RDT handles the problem that ACK and NACK packets could get lost or corrupted; in particular, it handles duplicates of received packets.
 
-![RDT 2.1 - Sender](assets/rdt_fms_21_snd.png)
+![RDT 2.1 - Sender](/assets/rdt_fms_21_snd.png)
 
-![RDT 2.1 - Receiver](assets/rdt_fms_21_rcv.png)
+![RDT 2.1 - Receiver](/assets/rdt_fms_21_rcv.png)
 
 The sender assigns a number to each packet, alternating between 0 and 1, so that the receiver can discard duplicate packets (i.e. if more than one consecutive packets have the same number, keep the first packet only).
 
@@ -115,7 +115,7 @@ RDT 2.2 improves the previous version of RDT by removing NACK packets and identi
 
 The only difference with RDT 2.1 is that, instead of sending a NACK packet when receiving a corrupted packet, the receiver must send an ACK packet identified by the number of the last correctly received packet (i.e. the previous). When the sender receives an *out-of-order* ACK packet, it must resend the packet it just sent (i.e. send packet 1, receive ACK 0, resend packet 1).
 
-![RDT 2.2](assets/rdt_fms_22.png)
+![RDT 2.2](/assets/rdt_fms_22.png)
 
 **--- Sender Side ---**
 
@@ -156,9 +156,9 @@ The sender, after sending a packet, will wait for a given time for an ACK:
 > 
 > If a packet (either data or ACK) isn't lost but just delayed, then the sender would be transmitting the same packet two times, thus duplicating it; but this isn't a problem, because RDT already handled duplicates starting from version 2.1.
 
-![RDT 3.0 - Sender](assets/rdt_fms_30_snd.png)
+![RDT 3.0 - Sender](/assets/rdt_fms_30_snd.png)
 
-![RDT 3.0 - Receiver](assets/rdt_fms_30_rcv.png)
+![RDT 3.0 - Receiver](/assets/rdt_fms_30_rcv.png)
 
 ## Pipelining
 
@@ -166,7 +166,7 @@ Pipelining is a technique used to increase the throughput of RDT. Instead of sen
 
 To identify and acknowledge them, the packets aren't marked with 0 and 1 only, but a whole range of integers is used.
 
-![Go-Back-N packet window](assets/rdt_gobackn.png)
+![Go-Back-N packet window](/assets/rdt_gobackn.png)
 
 ## Go-Back-N
 
@@ -188,7 +188,7 @@ Go-Back-N creates a window of *transmittable* packets that can be sent at the sa
 
 Selective Repeat creates a window of *transmittable* packets that can be sent independently, which the receiver has to acknowledge one-by-one.
 
-![Selective Repeat packet window](assets/rdt_selrep.png)
+![Selective Repeat packet window](/assets/rdt_selrep.png)
 
 **--- Sender Side ---**
 

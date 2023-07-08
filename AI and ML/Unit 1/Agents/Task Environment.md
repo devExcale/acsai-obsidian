@@ -28,7 +28,7 @@ In a multi-agent environment, the agents can either be **competitive** or **coop
 
 ### Stochasticity
 
-Multple events can happen in an environment, the stocasticity of an environment is an indicator of how much is known of the probability of the events happening.
+Multiple events can happen in an environment, the stochasticity of an environment is an indicator of how much is known of the probability of the events happening.
 
 - **Deterministic,** actions in a deterministic environment have a certain outcome, it is possible to correctly predict how the environment will evolve in time;
 - **Non-deterministic,** actions in a non-deterministic environment have outcomes with known probabilities, it may be possible to predict an expectation of how the environment will evolve in time;

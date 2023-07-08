@@ -1,10 +1,10 @@
-# Network Layer of the Internet Protocol
+# Network Layer
 
-The network layer in the Internet Protocol (IP) provides routing and addressing functions, enabling the transfer of data packets across interconnected networks. It operates above the data link layer and below the transport layer in the TCP/IP protocol suite.
+The network layer provides routing and addressing functions, enabling the transfer of data packets across interconnected networks. It operates above the data link layer and below the transport layer in the TCP/IP protocol suite.
 
 ## IP Packet Structure
 
-![Packet structure of an IP packet](https://chat.openai.com/c/assets/ip_packet.png)
+![Packet structure of an IP packet](/assets/ip_datagram.png)
 
 1.  **Version:** The IP version field indicates the version of IP being used, such as IPv4 or IPv6.
 2.  **Header Length:** The header length field specifies the length of the IP header in 32-bit words.
@@ -55,6 +55,6 @@ IP multicasting enables the efficient delivery of IP packets to a group of hosts
 
 A sender sends a single copy of the IP packet to the multicast group's IP address, and routers in the network replicate and forward the packet only to those interfaces connected to hosts that have joined the multicast group.
 
-Multicasting is used for applications such as video streaming, online gaming, and real-time communication, where the same data needs to be distributed to multiple recipients simultaneously.
-
-Multicast routing protocols, such as PIM (Protocol Independent Multicast), are used to manage the distribution of multicast packets and maintain multicast group membership information.
+> [!tip] Multicasting Usages
+> 
+> Multicasting is used for applications such as video streaming, online gaming, and real-time communication, where the same data needs to be distributed to multiple recipients simultaneously.

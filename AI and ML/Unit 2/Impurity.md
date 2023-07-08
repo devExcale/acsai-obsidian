@@ -10,7 +10,9 @@ Impurity, in a Machine Learning context, is a numerical value that represent how
 > A good classification model should should aim to lower the impurity value.
 
 
-An impurity function is denoted by $H(S)$, where $S$ is a dataset. Let $S_k \subseteq S$ be subsets divided by label,
+Usually, impurity functions are denoted by $H(S)$, where $S$ is a dataset.
+
+Let $S_k \subseteq S$ be subsets divided by label,
 
 $$\large
 	S_k = \set{(x,y) \in S \ | \ y = k}, \quad
@@ -72,21 +74,22 @@ $$
 > 
 > The entropy function is denoted as $H(X)$, and not $H(S)$, because we generalize the problem and suppose that $X$ is a random variable instead of a set of points and labels, but the only thing that changes is the notation.
 
-Like Gini impurity, entropy computes some kind of expectation, but using a function $h(x)$ that measures the *impact* of a single class. For convenience, $h(x)$ must abide to some properties.
+Like Gini impurity, entropy computes some kind of expectation, but using a function $h(x)$ that measures the *excitement* of a single class. For convenience, $h(x)$ must abide to some properties.
 
-The entropy of an event should be inversely proportional to the likelihood of it happening:
-- if an event is almost certain to happen, then the entropy should be very small, $\P X \rightarrow 1 \Longrightarrow h(x) \rightarrow 0$;
-- if an event is almost impossible to happen, then the entropy should be very big, $\P X \rightarrow 0 \Longrightarrow h(x) \rightarrow \infty$.
+The excitement of a class being picked should be inversely proportional to the likelihood of it happening:
 
-If two events are independent, then we should be able to sum the entropy of both events to get the entropy of the joint events: $h(x,y) = h(x) + h(y)$.
+- if a class is almost certain to be picked, then the excitement should be very small, $\P X \rightarrow 1 \Longrightarrow h(x) \rightarrow 0$;
+- if a class is almost impossible to be picked, then the excitement should be very big, $\P X \rightarrow 0 \Longrightarrow h(x) \rightarrow \infty$.
 
-A function that satisfies all the previous properties is the $\log$ function. 
+If two pick events are independent, then we should be able to sum the excitement of both pickings to get the excitement of the joint picking: $h(x,y) = h(x) + h(y)$.
+
+A function that satisfies all the previous properties is the $\log$ function of the inverse of the probability of picking the class, which is equal to the negative $log$ of the probability. 
 
 $$\large
 	h(x) = \log\frac{1}{p_x} = - \log p_x
 $$
 
-Hence, the entropy function computes the expectation of the TK of each event.
+Hence, the entropy function computes the expectation of the excitement of each class.
 
 $$\large
 \begin{aligned}
@@ -95,3 +98,27 @@ $$\large
 	&= H(X)
 \end{aligned}
 $$
+
+> [!tip] Common cases for Entropy
+> 
+> Here are listed some common cases for entropy:
+> 
+> - If there is just one class, then $H(X) = 0$, i.e. there is no excitement because the only class present is always going to be picked.
+> - If there are $N$ classes equiprobable, then all the classes will have the same excitement. The value of the entropy will be equal to the excitement of all classes, and can be computed by the formula $H(X) = \log_2(N)$.
+
+### Relative Entropy
+
+Given two distributions $P,Q$, the cross entropy $H(P,Q)$ is defined as follows.
+
+$$\large
+	H(P,Q) = -\sum_{x \in X} p_x \log q_x
+$$
+
+The cross-entropy represents the expected value of the excitement of the classes in $Q$ while using the weights of $P$.
+
+> [!note] Note
+> 
+> Note that, usually, $H(P,Q) \neq H(Q,P) and k$
+
+
+Given two distributions $P,Q$

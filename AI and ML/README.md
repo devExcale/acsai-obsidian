@@ -18,7 +18,7 @@
 
 [**Propositional Logic**](/AI%20and%20ML/Unit%201/Propositional%20Logic/Propositional%20Logic.md)
 
-- [Logical Operators](/AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operators.md)
+- [Logical Operations](AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operations.md)
 
 - [Entailment](/AI%20and%20ML/Unit%201/Propositional%20Logic/Entailment.md)
 

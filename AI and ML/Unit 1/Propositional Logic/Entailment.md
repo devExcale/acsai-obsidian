@@ -1,5 +1,6 @@
 $\def \M#1{{ \mathcal M({#1}) }}$
 $\def \seq#1#2{{ {#1}_1, {#1}_2, \ldots, {#1}_{#2} }}$
+$\def \seqop#1#2#3{{ {#2}_1 #1 {#2}_2 #1 \cdots #1 {#2}_{#3} }}$
 
 ## Entailment
 
@@ -34,7 +35,7 @@ Because of the entailment definition, the assumptions are *stricter sentences* w
 
 Tautology, sometimes called *validity*, refers to those sentences that are satisfied by **all** models (i.e. true for all models).
 
-Let $n$ be the number of propositional symbols in a sentence $\phi$, then a sentence is a tautology (or is valid) if $|\M \phi| = 2^n$, i.e. the number of all possible models given $n$ propositions. Another way to check if a sentence is a tautology is to reduce the sentence to $True$ using [logical equivalences](/AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operators.md#Equivalences).
+Let $n$ be the number of propositional symbols in a sentence $\phi$, then a sentence is a tautology (or is valid) if $|\M \phi| = 2^n$, i.e. the number of all possible models given $n$ propositions. Another way to check if a sentence is a tautology is to reduce the sentence to $True$ using [logical equivalences](AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operations.md#Equivalences).
 
 A tautology is marked by writing the sentence(s) on the RHS of the entailment symbol, with nothing on the LHS.
 
@@ -65,3 +66,19 @@ $$
 > The AND complement of any proposition is a contradiction.
 > 
 > $\phi = \beta \land \lnot\beta$, by the complement rule, can be reduced to $\phi = False$, which shows that there's no model in which $\phi$ is satisfied and hence $\phi$ is a contradiction.
+
+## Equivalences
+
+Given some sentences $\seq \phi n, \psi$, the following entailments / tautologies / contradictions express the same concept, it could be said (by misuse of the term) that they're *equivalent*.
+
+$$\large
+\displaylines{
+	\seq \phi n \vDash \psi \\
+	\seqop{\land} \phi n \vDash \psi \\
+	\vDash (\seqop{\land} \phi n) \Rightarrow \psi \\
+	\vDash (\phi_1 \Rightarrow (
+		\cdots \Rightarrow (\phi_n \Rightarrow \psi) \cdots
+	)) \\
+	\nvDash \seqop{\land} \phi n \land \lnot\psi
+}
+$$

@@ -1,4 +1,4 @@
-# Application Layer
+# Application Architecture
 
 Developing an application nowadays is significantly easier, considering that [layers](/Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md) other than the [application layer](/Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md#Application) are already implemented. The only thing a developer should think of are:
 - Application logic;

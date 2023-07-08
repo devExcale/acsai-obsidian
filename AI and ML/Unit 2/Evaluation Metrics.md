@@ -6,7 +6,7 @@ When evaluating the performance of a classification model, several metrics can b
 
 The score of a binary classifier refers to the numerical value or probability assigned to each instance that indicates its likelihood of belonging to the positive class. The score can be used as a measure of confidence or certainty in the classification decision made by the model.
 
-![Binary Classification Score Line](assets/binary_score_model.png)
+![Binary Classification Score Line](/assets/binary_score_model.png)
 
 ## Threshold
 
@@ -17,13 +17,13 @@ When the score of an instance exceeds the threshold, it is classified as positiv
 - A lower threshold results in more positive predictions, potentially increasing the sensitivity but also increasing the risk of false positives;
 - A higher threshold leads to fewer positive predictions, potentially increasing the specificity but also increasing the risk of false negatives.
 
-![Binary Classification Score Threshold](assets/score_model_threshold.png)
+![Binary Classification Score Threshold](/assets/score_model_threshold.png)
 
 ## Confusion Matrix
 
 A confusion matrix is a useful tool to visualize and evaluate the performance of a classifier. It provides a comprehensive summary of the classifier's predictions and their agreement with the actual class labels.
 
-![Binary Confusion Matrix](assets/confusion_matrix.png)
+![Binary Confusion Matrix](/assets/confusion_matrix.png)
 
 A binary classifier confusion matrix is a 2x2 matrix that consists of four elements:
 
@@ -135,7 +135,7 @@ The *Receiver Operating Characteristic* curve is a graphical representation that
 
 The curve is created by calculating the TPR and FPR for different threshold settings and plotting them on a graph. An optimal classifier would have an ROC curve that reaches the top-left corner of the graph, indicating high sensitivity and low false positive rate.
 
-![ROC curve](assets/roc_curve.png)
+![ROC curve](/assets/roc_curve.png)
 
 The *area under the ROC curve* (AUC) is commonly used as a metric to quantify the overall performance of the classifier. A higher AUC value indicates better classifier performance in distinguishing between positive and negative instances.
 

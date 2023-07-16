@@ -2,7 +2,7 @@
 
 Correlation is a statistical relationship between variables, where a change in one variable is associated with a change in another variable.
 
-![Examples of correlation between sets of points](/assets/Correlation%20Examples.png)
+![Examples of correlation between sets of points](/assets/Correlation Examples.png)
 
 ## Pearson's Correlation Coefficient
 

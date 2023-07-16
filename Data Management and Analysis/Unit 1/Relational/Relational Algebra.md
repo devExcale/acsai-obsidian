@@ -1,6 +1,6 @@
 # Relational Algebra
 
-**Relational algebra** is a mathematical notation to query the contents of [relation](/Data%20Management%20and%20Analysis/Unit%201/Relational/Relational%20Model.md#Relation). Languages like [SQL](?) are founded on relational algebra.
+**Relational algebra** is a mathematical notation to query the contents of [relation](/Data Management and Analysis/Unit 1/Relational/Relational Model.md#Relation). Languages like [SQL](?) are founded on relational algebra.
 
 It is a formal language to interrogate a relational database, consisting of a set of unary and binary operators that, if applied to one or two relation instances (sets of tuples), generate a new relation instance.
 
@@ -12,7 +12,7 @@ The operators are:
 - [Union](#Union)
 - [Difference](#Difference)
 - [Intersection](#Intersection)
-- [Cartesian Product](#Cartesian%20Product)
+- [Cartesian Product](#Cartesian Product)
 - [Join](#Join)
 - Renaming
 
@@ -298,7 +298,7 @@ $$
 
 ## Join
 
-A **natural join** performs a [cartesian product](#Cartesian%20Product) of two relations $R_1(X), R_2(Y)$ and selects only some tuples that satisfy the condition $R_1[A_1] = R_2[A_1] \land R_1[A_2] = R_2[A_2] \land \cdots \land R_1[A_k] = R_2[A_k]$ where $A_1, \cdots, A_k \in X, Y$ are the attributes the two relations have in common.
+A **natural join** performs a [cartesian product](#Cartesian Product) of two relations $R_1(X), R_2(Y)$ and selects only some tuples that satisfy the condition $R_1[A_1] = R_2[A_1] \land R_1[A_2] = R_2[A_2] \land \cdots \land R_1[A_k] = R_2[A_k]$ where $A_1, \cdots, A_k \in X, Y$ are the attributes the two relations have in common.
 
 It is represented by the symbol $\Join$.
 

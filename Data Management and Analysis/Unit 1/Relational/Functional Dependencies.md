@@ -24,7 +24,7 @@ where $r$ is an instance of $R$.
 - $r$ is said to be legal if it satisfies all the functional dependencies in $F$.
 
 > [!tip] Constraints
-> Functional dependencies are another way to express some types of [constraints](/Data%20Management%20and%20Analysis/Unit%201/Database/Constraints.md).
+> Functional dependencies are another way to express some types of [constraints](/Data Management and Analysis/Unit 1/Database/Constraints.md).
 
 ## Armstrong's Axioms
 
@@ -46,7 +46,7 @@ By iteratively applying the axioms and rules to $F$, a new set of functional dep
 
 > [!tip] Closure of $F$
 > 
-> When no other functional dependencies can be found by applying Armstrong's axioms on $F^A$, then $F^A$ will be equal to the [closure](/Data%20Management%20and%20Analysis/Unit%201/Relational/Closure%20of%20Functional%20Dependencies.md) of $F$ ($F^+$).
+> When no other functional dependencies can be found by applying Armstrong's axioms on $F^A$, then $F^A$ will be equal to the [closure](/Data Management and Analysis/Unit 1/Relational/Closure of Functional Dependencies.md) of $F$ ($F^+$).
 
 
 > [!note] Reflexivity Axiom

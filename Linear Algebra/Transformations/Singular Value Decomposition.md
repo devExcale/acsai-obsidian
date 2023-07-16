@@ -1,6 +1,6 @@
 # Singular Value Decomposition
 
-The singular value decomposition is a method to decompose a complex transformation into a series of three simpler transformations, i.e. two [rotations](/Linear%20Algebra/Transformations/Linear%20Transformations.md#Rotation) and a [scaling](/Linear%20Algebra/Transformations/Linear%20Transformations.md#Scaling).
+The singular value decomposition is a method to decompose a complex transformation into a series of three simpler transformations, i.e. two [rotations](/Linear Algebra/Transformations/Linear Transformations.md#Rotation) and a [scaling](/Linear Algebra/Transformations/Linear Transformations.md#Scaling).
 
 Any matrix $A$, regardless of rank and dimensions, can be decomposed in the following way,
 
@@ -20,7 +20,7 @@ where:
 
 ## Geometric Meaning of SVD
 
-The SVD stems from the following reasoning, similarly to [spectral decomposition](/Linear%20Algebra/Transformations/Spectral%20Decomposition.md): we want to find a set of orthogonal vectors $v_i$ such that, when transformed by $A$, they will stay orthogonal, even if scaled ($\sigma_i \vec u_i$).
+The SVD stems from the following reasoning, similarly to [spectral decomposition](/Linear Algebra/Transformations/Spectral Decomposition.md): we want to find a set of orthogonal vectors $v_i$ such that, when transformed by $A$, they will stay orthogonal, even if scaled ($\sigma_i \vec u_i$).
 
 $$\large
 	A \vec v_i = \sigma_i \vec u_i
@@ -42,13 +42,13 @@ The previous formula gives another intuition in the geometric representation of 
 - The column vectors of $U$ and $V$ are said to be the **left** and **right** (respectively) **singular vectors** of $A$;
 - $\Sigma$ is said to contain the **singular values** of $A$.
 
-The meaning of singular vectors and values are similar to the meaning of eigenvectors for [spectral decomposition](/Linear%20Algebra/Transformations/Spectral%20Decomposition.md):
+The meaning of singular vectors and values are similar to the meaning of eigenvectors for [spectral decomposition](/Linear Algebra/Transformations/Spectral Decomposition.md):
 - the singular vectors are orthogonal vectors that will stay orthogonal once the transformation $A$ has been applied, the right singular vectors $\vec v_i$ will be mapped in the direction of the respective left singular vectors $\vec u_i$;
 - the singular values $\sigma_i$ are the factors which scale the left singular vectors $\vec u$ to align with the transformed right singular vectors $v_i$ ($A v_i =\sigma_i u_i$).
 
 ### Left Singular Matrix
 
-The left singular matrix $U$ can be computed by performing a [spectral decomposition](/Linear%20Algebra/Transformations/Spectral%20Decomposition.md) on $AA^T$, i.e. $U$ is composed by the eigenvectors of the symmetric matrix $AA^T$, ranked in descending order of their respective eigenvalues.
+The left singular matrix $U$ can be computed by performing a [spectral decomposition](/Linear Algebra/Transformations/Spectral Decomposition.md) on $AA^T$, i.e. $U$ is composed by the eigenvectors of the symmetric matrix $AA^T$, ranked in descending order of their respective eigenvalues.
 
 > [!quote] Proof
 > 
@@ -69,7 +69,7 @@ The left singular matrix $U$ can be computed by performing a [spectral decomposi
 
 ### Right Singular Matrix
 
-The right singular matrix $V$ can be computed by performing a [spectral decomposition](/Linear%20Algebra/Transformations/Spectral%20Decomposition.md) on $A^T A$, i.e. $V$ is composed by the eigenvectors of the symmetric matrix $A^T A$, ranked in descending order of their respective eigenvalues.
+The right singular matrix $V$ can be computed by performing a [spectral decomposition](/Linear Algebra/Transformations/Spectral Decomposition.md) on $A^T A$, i.e. $V$ is composed by the eigenvectors of the symmetric matrix $A^T A$, ranked in descending order of their respective eigenvalues.
 
 > [!quote] Proof
 > 
@@ -90,7 +90,7 @@ The right singular matrix $V$ can be computed by performing a [spectral decompos
 
 ### Singular Values Matrix
 
-The singular values matrix $\Sigma$ can be computed by performing a [spectral decomposition](/Linear%20Algebra/Transformations/Spectral%20Decomposition.md) on either $A A^T$ or $A^T A$. In both spectral decompositions, the scaling matrix $\Lambda$ is the square of $\Sigma$; given that $\Sigma$ is diagonal, the singular values $\sigma_i$ can be found by taking the square root of the eigenvalues $\lambda_i$ contained in $\Lambda$.
+The singular values matrix $\Sigma$ can be computed by performing a [spectral decomposition](/Linear Algebra/Transformations/Spectral Decomposition.md) on either $A A^T$ or $A^T A$. In both spectral decompositions, the scaling matrix $\Lambda$ is the square of $\Sigma$; given that $\Sigma$ is diagonal, the singular values $\sigma_i$ can be found by taking the square root of the eigenvalues $\lambda_i$ contained in $\Lambda$.
 
 $$\large
 \begin{aligned}

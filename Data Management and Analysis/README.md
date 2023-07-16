@@ -6,25 +6,25 @@ TK
 
 ### Unit 1
 
-- [Data](/Data%20Management%20and%20Analysis/Unit%201/Data.md)
-- [Information Systems](/Data%20Management%20and%20Analysis/Unit%201/Information%20Systems.md)
+- [Data](/Data Management and Analysis/Unit 1/Data.md)
+- [Information Systems](/Data Management and Analysis/Unit 1/Information Systems.md)
 
 **Relational**
 
-- [Relational Model](/Data%20Management%20and%20Analysis/Unit%201/Relational/Relational%20Model.md)
-- [Relational Algebra](/Data%20Management%20and%20Analysis/Unit%201/Relational/Relational%20Algebra.md)
-- [Functional Dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Functional%20Dependencies.md)
-- [Keys](/Data%20Management%20and%20Analysis/Unit%201/Relational/Keys.md)
-- [Third Normal Form](/Data%20Management%20and%20Analysis/Unit%201/Relational/Third%20Normal%20Form.md)
-- [Closure of Functional Dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Closure%20of%20Functional%20Dependencies.md)
-- [Closure of Attributes](/Data%20Management%20and%20Analysis/Unit%201/Relational/Closure%20of%20Attributes.md)
-- [Decomposition of Relations](/Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Decomposition%20of%20Relations.md)
+- [Relational Model](/Data Management and Analysis/Unit 1/Relational/Relational Model.md)
+- [Relational Algebra](/Data Management and Analysis/Unit 1/Relational/Relational Algebra.md)
+- [Functional Dependencies](/Data Management and Analysis/Unit 1/Relational/Functional Dependencies.md)
+- [Keys](/Data Management and Analysis/Unit 1/Relational/Keys.md)
+- [Third Normal Form](/Data Management and Analysis/Unit 1/Relational/Third Normal Form.md)
+- [Closure of Functional Dependencies](/Data Management and Analysis/Unit 1/Relational/Closure of Functional Dependencies.md)
+- [Closure of Attributes](/Data Management and Analysis/Unit 1/Relational/Closure of Attributes.md)
+- [Decomposition of Relations](/Data Management and Analysis/Unit 1/Relational/Decomposition/Decomposition of Relations.md)
 
-[**Database**](/Data%20Management%20and%20Analysis/Unit%201/Database/Databases.md)
+[**Database**](/Data Management and Analysis/Unit 1/Database/Databases.md)
 
-- [Schemas](/Data%20Management%20and%20Analysis/Unit%201/Database/Schemas.md)
-- [Constraints](/Data%20Management%20and%20Analysis/Unit%201/Database/Constraints.md)
-- [Schema Anomalies](/Data%20Management%20and%20Analysis/Unit%201/Database/Schema%20Anomalies.md)
+- [Schemas](/Data Management and Analysis/Unit 1/Database/Schemas.md)
+- [Constraints](/Data Management and Analysis/Unit 1/Database/Constraints.md)
+- [Schema Anomalies](/Data Management and Analysis/Unit 1/Database/Schema Anomalies.md)
 
 ### Unit 2
 

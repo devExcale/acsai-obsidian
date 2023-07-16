@@ -4,7 +4,7 @@ $\def \proj#1#2{{ \pi_{#1}({#2}) }}$
 
 # Lossless Join
 
-When [decomposing](/Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Decomposition%20of%20Relations.md) a relation, there could be a loss or altering of data when joining back all the decomposed instances.
+When [decomposing](/Data Management and Analysis/Unit 1/Relational/Decomposition/Decomposition of Relations.md) a relation, there could be a loss or altering of data when joining back all the decomposed instances.
 
 A decomposition $\rho = \seq R n$ of a relation $R$ is said to have a lossless join if, for every legal instance $r$ of $R$, it holds that
 

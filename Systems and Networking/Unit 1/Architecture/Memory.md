@@ -22,7 +22,7 @@ Usually, it is inversely proportional to the storage capacity.
 
 Based on its use, we can define three types of storages.
 
-1. **Primary:** used directly by the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md)
+1. **Primary:** used directly by the [CPU](/Systems and Networking/Unit 1/Architecture/CPU.md)
 2. **Secondary:** used as mass storage
 3. **Tertiary:** nowadays deprecated
 
@@ -41,7 +41,7 @@ A hierarchy of some types of memories, ranked by increasing access time and decr
 | Magnetic Tapes    | Tertiary  | no           | ?               | ?               |
 
 > [!info]
-> *cc stands for [Clock Cycle](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md#Instruction%20Cycle).*
+> *cc stands for [Clock Cycle](/Systems and Networking/Unit 1/Architecture/CPU.md#Instruction Cycle).*
 
 > [!warning] Note
 > Note: some cells are marked as unknown because the values between two different physical supports aren't equal. But the hierarchy still applies, so an average value should be found between the values of the previous and next rows.

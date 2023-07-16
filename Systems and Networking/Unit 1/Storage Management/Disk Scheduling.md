@@ -1,6 +1,6 @@
 # Disk Scheduling
 
-When using [magnetic disks](/Systems%20and%20Networking/Unit%201/Storage%20Management/Magnetic%20Disk.md), the factor that most impacts I/O time isn't the time taken to read a single sector, but the delay to get the head from where it is to the correct sector (i.e. [seek time](/Systems%20and%20Networking/Unit%201/Storage%20Management/Magnetic%20Disk.md#Data%20Transfer)).
+When using [magnetic disks](/Systems and Networking/Unit 1/Storage Management/Magnetic Disk.md), the factor that most impacts I/O time isn't the time taken to read a single sector, but the delay to get the head from where it is to the correct sector (i.e. [seek time](/Systems and Networking/Unit 1/Storage Management/Magnetic Disk.md#Data Transfer)).
 
 To help reduce the seek time, different algorithms to schedule incoming I/O requests can be applied:
 

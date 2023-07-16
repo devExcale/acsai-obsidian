@@ -1,8 +1,8 @@
 # Normalization
 
-Normalizing the data is an important step before applying any learning algorithm. If the data isn't normalized, it could be positioned in the higher-dimension space in a way such that the Euclidian distance (or any other [distance metric](/AI%20and%20ML/Unit%202/Distance%20Metrics.md)) might not be a good metric.
+Normalizing the data is an important step before applying any learning algorithm. If the data isn't normalized, it could be positioned in the higher-dimension space in a way such that the Euclidian distance (or any other [distance metric](/AI and ML/Unit 2/Distance Metrics.md)) might not be a good metric.
 
-Moreover, algorithms such as [k-NN](/AI%20and%20ML/Unit%202/Supervised%20Learning/Nearest%20Neighbour.md) have irregular and non-linear decision boundaries, which is a sign of overfitting. Normalization is applied to ensure smooth decision boundaries and reducing the risk of overfitting the data.
+Moreover, algorithms such as [k-NN](/AI and ML/Unit 2/Supervised Learning/Nearest Neighbour.md) have irregular and non-linear decision boundaries, which is a sign of overfitting. Normalization is applied to ensure smooth decision boundaries and reducing the risk of overfitting the data.
 
 ## Min-Max Normalization
 
@@ -24,7 +24,7 @@ $$\large
 	x' = \frac{x - \mu}{\sigma}
 $$
 
-This type of normalization is equivalent to centring and decorrelating the features with [PCA](/AI%20and%20ML/Unit%202/Preprocessing/Principal%20Component%20Analysis.md).
+This type of normalization is equivalent to centring and decorrelating the features with [PCA](/AI and ML/Unit 2/Preprocessing/Principal Component Analysis.md).
 
 ## Feature Normalization
 

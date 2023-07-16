@@ -23,7 +23,7 @@ The code is called *statically relocatable code*, because the program can be run
 
 ## Execution Time Address Binding
 
-With execution time address binding, the logical addresses used by the program are translated in runtime in physical addresses. This requires special a hardware support called **[MMU](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md#Memory%20Management%20Unit)**.
+With execution time address binding, the logical addresses used by the program are translated in runtime in physical addresses. This requires special a hardware support called **[MMU](/Systems and Networking/Unit 1/Architecture/Virtual Memory.md#Memory Management Unit)**.
 
 The logical addresses (also called virtual addresses) aren't equal to the physical addresses anymore, because each virtual address could be any physical address.
 

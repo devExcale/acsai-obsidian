@@ -2,7 +2,7 @@
 
 An agent is any automated thing that interacts dynamically with an environment.
 
-![Agent Logic Diagram](/assets/Diagram%20-%20Agent.bmp)
+![Agent Logic Diagram](/assets/Diagram - Agent.bmp)
 
 An agent is composed of
 - **sensors,** which are used to read from the environment (the possible readings are called *percepts*);

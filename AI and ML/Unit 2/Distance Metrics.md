@@ -18,7 +18,7 @@ $$\large
 $$
 
 The most used L-norms are the following:
-- [Manhattan Distance](#L1%20Norm)
+- [Manhattan Distance](#L1 Norm)
 
 ### L1 Norm
 

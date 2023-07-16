@@ -3,7 +3,7 @@ $\def \clj#1#2{{ #1_#2^+ }}$
 
 # Closure of Functional Dependencies
 
-A legal instance $r$ of $R$ is ensured to satisfy all the [functional dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Functional%20Dependencies.md) in $F$, but it could satisfy additional functional dependencies that aren't included in $F$.
+A legal instance $r$ of $R$ is ensured to satisfy all the [functional dependencies](/Data Management and Analysis/Unit 1/Relational/Functional Dependencies.md) in $F$, but it could satisfy additional functional dependencies that aren't included in $F$.
 
 > [!note] Closure of $F$
 > 

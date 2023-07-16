@@ -3,7 +3,7 @@ $\def\seq#1#2{{ \left( #1_#2 \right)_{#2 \ge 1} }}$
 
 # Law of Total Probability
 
-From [conditional probability](/Probability/Introduction/Conditional%20Probability.md), it can be seen that the probability of two events happening simultaneously can be derived calculating two consecutive probabilities: the probability that $B$ occurs, then the probability that $A$ occurs given that $B$ has occurred.
+From [conditional probability](/Probability/Introduction/Conditional Probability.md), it can be seen that the probability of two events happening simultaneously can be derived calculating two consecutive probabilities: the probability that $B$ occurs, then the probability that $A$ occurs given that $B$ has occurred.
 
 $$\large
 	\P{A \cap B} = \P{A|B} \P{B}

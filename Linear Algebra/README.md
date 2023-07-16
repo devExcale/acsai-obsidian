@@ -8,14 +8,14 @@ It is used to solve systems of linear equations, to analyse and model data, and 
 
 **Root**
 
-- [Sets](/Linear%20Algebra/Sets.md)
-- [Linear Equations](/Linear%20Algebra/Linear%20Equations.md)
-- [Vectors](/Linear%20Algebra/Vectors.md)
-- [Matrices](/Linear%20Algebra/Matrices.md)
-- [Hyperplanes](/Linear%20Algebra/Hyperplanes.md)
-- [Eigenvectors](/Linear%20Algebra/Eigenvectors.md)
+- [Sets](/Linear Algebra/Sets.md)
+- [Linear Equations](/Linear Algebra/Linear Equations.md)
+- [Vectors](/Linear Algebra/Vectors.md)
+- [Matrices](/Linear Algebra/Matrices.md)
+- [Hyperplanes](/Linear Algebra/Hyperplanes.md)
+- [Eigenvectors](/Linear Algebra/Eigenvectors.md)
 
 **Linear Transformations**
-- [Linear Transformations](/Linear%20Algebra/Transformations/Linear%20Transformations.md)
-- [Spectral Decomposition](/Linear%20Algebra/Transformations/Spectral%20Decomposition.md)
-- [Singular Value Decomposition](/Linear%20Algebra/Transformations/Singular%20Value%20Decomposition.md)
+- [Linear Transformations](/Linear Algebra/Transformations/Linear Transformations.md)
+- [Spectral Decomposition](/Linear Algebra/Transformations/Spectral Decomposition.md)
+- [Singular Value Decomposition](/Linear Algebra/Transformations/Singular Value Decomposition.md)

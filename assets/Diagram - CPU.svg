@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="438" version="1.1">
+    
+	<style type="text/css">
+		rect {stroke-width:2;stroke:#000}
+		text {text-anchor:middle;color:#000;font-size:16px;font-family:FreeSans,sans-serif;}
+	</style>
+	
+	<defs>
+		<marker id="arrowEnd" markerWidth="4" markerHeight="3" refX="1" refY="1.5" orient="auto">
+			<polygon points="0,3 4,1.5 0,0 1,1.5"/>
+		</marker>
+		<marker id="redArrowStart" markerWidth="4" markerHeight="3" refX="3" refY="1.5" orient="auto">
+			<polygon points="4,3 0,1.5 4,0 3,1.5" fill="#f00"/>
+		</marker>
+		<marker id="redArrowEnd" markerWidth="4" markerHeight="3" refX="1" refY="1.5" orient="auto">
+			<polygon points="0,3 4,1.5 0,0 1,1.5" fill="#f00"/>
+		</marker>
+	</defs>
+    
+    <g id="CPU">
+        <rect x="142" y="10" width="355" height="340" rx="12" ry="12" fill="#fff2e5"/>
+    </g>
+
+    <g id="Processor">
+        <rect x="208" y="130" width="225" height="195" rx="12" ry="12" fill="#ffffcc"/>
+    </g>
+    
+    <g fill="#99ccff">
+        <rect x="260" y="50" width="120" height="60"/>
+        <rect x="260" y="170" width="120" height="60"/>
+        <rect x="260" y="245" width="120" height="60"/>
+        <rect x="26" y="250" width="80" height="60"/>
+        <rect x="524" y="250" width="80" height="60"/>
+        <rect x="260" y="365" width="120" height="60"/>
+    </g>
+
+    <g marker-end="url(#arrowEnd)" stroke-width="3" fill="none" stroke="#000">
+        <line x1="0" y1="282" x2="15" y2="282"/>
+        <line x1="105" y1="282" x2="250" y2="282"/>
+        <line x1="380" y1="282" x2="514" y2="282"/>
+        <line x1="603" y1="278" x2="630" y2="278"/>
+        <polyline points="260, 390 190, 390 190, 296 250, 296"/>
+        <polyline points="260, 214 228, 214 228, 254 250, 254"/>
+        <polyline points="380, 260 408, 260 408, 200 390, 200"/>
+        <polyline points="380, 296 456, 296 456, 386 390, 386"/>
+        <polyline points="380, 406 476, 406 476, 100 390, 100"/>
+    </g>
+    
+    <g marker-start="url(#redArrowStart)" marker-end="url(#redArrowEnd)" stroke-width="3" fill="none" stroke="#f00">
+        <polyline points="390, 64 560, 64 560, 240"/>
+        <polyline points="64, 240 64, 60 250, 60"/>
+        <polyline points="250, 74 158, 74 158, 406 250, 406"/>
+        <polyline points="250, 88 174, 88 174, 268 250, 268"/>
+        <polyline points="250, 102 190, 102 190, 188 250, 188"/>
+    </g>
+    
+    <g>
+        <text x="320" y="35">CPU</text>
+        <text x="320" y="160">Processor</text>
+        <text x="320" y="77">Control</text>
+        <text x="320" y="98">Unit</text>
+        <text x="442" y="94">Instructions</text>
+        <text x="320" y="207">Registers</text>
+        <text x="320" y="272">Combinational</text>
+        <text x="320" y="293">Logic</text>
+        <text x="63" y="286">Input</text>
+        <text x="564" y="286">Output</text>
+        <text x="320" y="389">Main</text> 
+        <text x="320" y="410">Memory</text>
+    </g>
+    
+</svg>

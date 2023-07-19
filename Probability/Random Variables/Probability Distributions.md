@@ -6,7 +6,7 @@ $\def\cal#1{{ \mathcal{#1} }}$
 
 TK !uniform
 
-A **probability distribution**, or simply *distribution*, is a [probability measure](/Probability/Introduction/Probability%20Space.md#Probability%20Measure) $\bb{P}$ on some [sample space](/Probability/Introduction/Probability%20Space.md#Sample%20Space) and [sigma algebra](?TK) $(\Omega, \cal{F})$.
+A **probability distribution**, or simply *distribution*, is a [probability measure](/Probability/Introduction/Probability Space.md#Probability Measure) $\bb{P}$ on some [sample space](/Probability/Introduction/Probability Space.md#Sample Space) and [sigma algebra](?TK) $(\Omega, \cal{F})$.
 
 > [!abstract] Discrete Distribution
 > A probability distribution is called *discrete* if the sample space $\Omega$ is a discrete set.
@@ -79,7 +79,7 @@ $\bb P$ is called **Poisson distribution of parameter $\lambda$**, it is denoted
 
 > [!tip]
 > 
-> This distribution arises as the limit of a [Binomial Distribution](#Binomial%20Distribution) with parameters $N, \frac{N}{\lambda}$ as $N \rightarrow \infty$.
+> This distribution arises as the limit of a [Binomial Distribution](#Binomial Distribution) with parameters $N, \frac{N}{\lambda}$ as $N \rightarrow \infty$.
 
 > [!example]
 > 

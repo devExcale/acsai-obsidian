@@ -1,6 +1,6 @@
 # Packet Delay
 
-[Packets](/Systems%20and%20Networking/Unit%202/Internet/Packet.md) sent with [packet switching](/Systems%20and%20Networking/Unit%202/Network%20Core.md#Packet%20Switching) can be **lost** and suffer **delay**:
+[Packets](/Systems and Networking/Unit 2/Internet/Packet.md) sent with [packet switching](/Systems and Networking/Unit 2/Network Core.md#Packet Switching) can be **lost** and suffer **delay**:
 
 - Packets lost need to be sent again;
 - **Every** packet suffers from delay that is given from different sources.
@@ -34,7 +34,7 @@ $$\large d_\text{transm} = \frac{L}{R}\ [s]$$
 
 ## Propagation Delay
 
-Propagation delay is the time it takes the signal to travel through the whole [transport mean](/Systems%20and%20Networking/Unit%202/Transport%20Means.md). It is dependent on the **length of the mean** $d\ [m]$ and the **propagation speed** $s\ [\frac{m}{s}]$, and is given from the following ratio.
+Propagation delay is the time it takes the signal to travel through the whole [transport mean](/Systems and Networking/Unit 2/Transport Means.md). It is dependent on the **length of the mean** $d\ [m]$ and the **propagation speed** $s\ [\frac{m}{s}]$, and is given from the following ratio.
 
 $$\large d_\text{prop} = \frac{d}{s}\ [s]$$
 
@@ -42,7 +42,7 @@ $$\large d_\text{prop} = \frac{d}{s}\ [s]$$
 
 Take a queue with 10 packets: the first packet will be sent immediately, while the last packet will have to wait for 9 packets to be sent.
 
-Now, imagine an **average packet arrival rate** $a \ [\frac{packets}{s}]$, meaning a rate of how many packets arrive in a second. We can use this variable to compute an average queueing rate, where $L,R$ are the same variables from the [Transmission Delay](#transmission%20delay).
+Now, imagine an **average packet arrival rate** $a \ [\frac{packets}{s}]$, meaning a rate of how many packets arrive in a second. We can use this variable to compute an average queueing rate, where $L,R$ are the same variables from the [Transmission Delay](#transmission delay).
 
 $$\large
 	\text{traffic intensity} = \frac{L \cdot a}{R}
@@ -60,4 +60,4 @@ Traffic intensity is the ratio of how many bits are arriving vs. how many bits a
 
 Throughput is the rate at which bits are actually delivered from the sender to the receiver, measured in $\frac{bits}{s}$. It can be either **instantaneous** (at a given point in time) or **average** (over a span of time).
 
-Throughput is measured from sender to receiver, meaning we need to account for all routers/[links](?TK) in the path. In the path there's always a **bottleneck**, a link that caps the transfer rate to a certain limit: if in a path there's a link which supports at max 1K bits/s, even though other links could support higher speeds the minimum speed will always be 1K bits/s (meaning, no matter what other higher speeds there are, the [transmission delay](#Transmission%20Delay) will always be affected the most by the lower speed).
+Throughput is measured from sender to receiver, meaning we need to account for all routers/[links](?TK) in the path. In the path there's always a **bottleneck**, a link that caps the transfer rate to a certain limit: if in a path there's a link which supports at max 1K bits/s, even though other links could support higher speeds the minimum speed will always be 1K bits/s (meaning, no matter what other higher speeds there are, the [transmission delay](#Transmission Delay) will always be affected the most by the lower speed).

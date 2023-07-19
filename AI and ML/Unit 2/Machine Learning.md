@@ -14,7 +14,7 @@ The whole Machine Learning system is based on finding common patterns in the dat
 > 
 > - Hyper-dimensional vectors, e.g. from the same space of the input data $\rightarrow Y \subset \mathbb R^d$
 
-![Diagram of the Machine Learning workflow](/assets/Diagram%20-%20ML%20Approach%20(pad).png)
+![Diagram of the Machine Learning workflow](/assets/Diagram - ML Approach (pad).png)
 
 ## Learning
 
@@ -38,9 +38,9 @@ $$
 
 ## Types of Machine Learning
 
-- [Unsupervised Learning](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/Unsupervised%20Learning.md)
+- [Unsupervised Learning](/AI and ML/Unit 2/Unsupervised Learning/Unsupervised Learning.md)
 
-- [Supervised Learning](/AI%20and%20ML/Unit%202/Supervised%20Learning/Supervised%20Learning.md)
+- [Supervised Learning](/AI and ML/Unit 2/Supervised Learning/Supervised Learning.md)
 
 - Deep Learning
 

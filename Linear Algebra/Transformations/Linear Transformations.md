@@ -2,7 +2,7 @@
 
 A linear transformation can be seen as a function that *transforms* a vector space in some kind of way. Some transformations that can be applied on a vector space are [scaling](#Scaling), [rotating](#Rotation), [shearing](#Shearing).
 
-[Matrix-Vector multiplication](/Linear%20Algebra/Vectors.md#Matrix-Vector%20Multiplication) is used to apply a linear transformation; many transformations applied sequentially can be applied at the same time by multiplying the vector space by a single matrix, which can be computed by multiplying all the matrices together in the order of application.
+[Matrix-Vector multiplication](/Linear Algebra/Vectors.md#Matrix-Vector Multiplication) is used to apply a linear transformation; many transformations applied sequentially can be applied at the same time by multiplying the vector space by a single matrix, which can be computed by multiplying all the matrices together in the order of application.
 
 $$\large
 	CBA \vec v = M \vec v, \quad

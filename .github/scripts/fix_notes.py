@@ -3,6 +3,7 @@ import re
 import sys
 
 from typing import Callable
+from urllib.parse import unquote
 
 exit_codes = {
 	"success": 0,
@@ -31,7 +32,7 @@ args = {
 
 def init_options() -> None:
 	options["rel-abs"] = {
-		"help": "Convert relative links to absolute links",
+		"help": "Convert relative links to absolute decoded links",
 		"args_check": check_argument_directory,
 		"action": command_rel_abs,
 	}
@@ -175,8 +176,8 @@ def convert_relative_links(file: str) -> bool:
 		content = f.read()
 		og_len = len(content)
 
-		# replace all relative links
-		content = reg_mdlink_rel.sub(r"[\1](/\2)", content)
+		# replace all relative links and decode urls
+		content = unquote(reg_mdlink_rel.sub(r"[\1](/\2)", content))
 
 		# check if the file was changed
 		if og_len != len(content):

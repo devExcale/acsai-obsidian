@@ -1,6 +1,6 @@
 # Transport Layer
 
-The **Transport Layer** is the fourth layer of the [Internet Protocol Stack](/Systems%20and%20Networking/Unit%202/Internet/Layered%20Structure.md#Layered%20Structure), its reason is to provide a logical channel for communication between two applications across the network.
+The **Transport Layer** is the fourth layer of the [Internet Protocol Stack](/Systems and Networking/Unit 2/Internet/Layered Structure.md#Layered Structure), its reason is to provide a logical channel for communication between two applications across the network.
 
 Transport-layer features are implemented in end hosts only, routers and switches work from the network layer down. To send a message from one host to another:
 
@@ -9,7 +9,7 @@ Transport-layer features are implemented in end hosts only, routers and switches
 3. On the destination host, the network layer receives the datagrams, unpacks the segments and passes them to the transport layer;
 4. The transport layer processes the received segments, builds the message and passes it to the application layer.
 
-The internet works on two transport protocols: [**TCP**](/Systems%20and%20Networking/Unit%202/Protocols/TCP.md) and [**UDP**](/Systems%20and%20Networking/Unit%202/Protocols/UDP.md), each with its set of services. Some of the services that both *cannot* provide, though, are *delay guarantee* (i.e. maximum delay) and *bandwidth guarantee* (i.e. minimum throughput).
+The internet works on two transport protocols: [**TCP**](/Systems and Networking/Unit 2/Protocols/TCP.md) and [**UDP**](/Systems and Networking/Unit 2/Protocols/UDP.md), each with its set of services. Some of the services that both *cannot* provide, though, are *delay guarantee* (i.e. maximum delay) and *bandwidth guarantee* (i.e. minimum throughput).
 
 | **Protocol** | **Reliability** | **Packet Ordering** | **Connection** |
 | ------------ | --------------- | ------------------- | -------------- |

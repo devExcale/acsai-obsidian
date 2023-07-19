@@ -26,14 +26,14 @@
 
 ## Table of Contents
 
-**[NumPy](/Computer%20Vision%20and%20NLP/NumPy/NumPy.md)**
+**[NumPy](/Computer Vision and NLP/NumPy/NumPy.md)**
 
-- [Matrices](/Computer%20Vision%20and%20NLP/NumPy/NumPy%20Matrix.md)
+- [Matrices](/Computer Vision and NLP/NumPy/NumPy Matrix.md)
 
-**[OpenCV](/Computer%20Vision%20and%20NLP/OpenCV/OpenCV.md)**
+**[OpenCV](/Computer Vision and NLP/OpenCV/OpenCV.md)**
 
-- [OpenCV useful functions](/Computer%20Vision%20and%20NLP/OpenCV/OpenCV%20Tips%20and%20Functions.md)
+- [OpenCV useful functions](/Computer Vision and NLP/OpenCV/OpenCV Tips and Functions.md)
 
 **CV and NLP**
 
-- [Image Processing](/Computer%20Vision%20and%20NLP/Image%20Processing.md)
+- [Image Processing](/Computer Vision and NLP/Image Processing.md)

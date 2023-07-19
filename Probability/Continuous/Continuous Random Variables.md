@@ -40,7 +40,7 @@ $$
 > 
 > Note that the expectation of a continuous random variables isn't ensured to converge to a finite value, but could diverge. For example, the expectation of a Cauchy random variable isn't defined because the integral diverges.
 
-The expectation of continuous random variables satisfies the same properties of the expectation of [discrete random variables](/Probability/Random%20Variables/Expectation.md#Properties%20of%20Expectations). In particular, the expectation of a function of a continuous random variables is defined as follows.
+The expectation of continuous random variables satisfies the same properties of the expectation of [discrete random variables](/Probability/Random Variables/Expectation.md#Properties of Expectations). In particular, the expectation of a function of a continuous random variables is defined as follows.
 
 $$\large
 	\E{g(X)} = \int_{-\infty}^{+\infty} g(x) f(x) dx
@@ -48,7 +48,7 @@ $$
 
 ## Variance of Continuous Random Variables
 
-Analogously to the [variance of discrete random variables](/Probability/Random%20Variables/Variance.md), the variance of a continuous random variable is defined as follows.
+Analogously to the [variance of discrete random variables](/Probability/Random Variables/Variance.md), the variance of a continuous random variable is defined as follows.
 
 $$\large
 	\Var{X} = \bb E[(X - \E X)^2]

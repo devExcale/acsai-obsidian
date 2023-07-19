@@ -20,7 +20,7 @@ The term *Multiprogramming Memory* means a memory that can host multiple program
 
 ## Static Relocation
 
-Static relocation uses [Load Time Address Binding](/Systems%20and%20Networking/Unit%201/Memory%20Management/Address%20Binding.md#Load%20Time%20Address%20Binding). The OS is loaded at the highest memory address, while other processes are loaded contiguously below the OS (`memory_size` - `os_size` - 1).
+Static relocation uses [Load Time Address Binding](/Systems and Networking/Unit 1/Memory Management/Address Binding.md#Load Time Address Binding). The OS is loaded at the highest memory address, while other processes are loaded contiguously below the OS (`memory_size` - `os_size` - 1).
 
 > [!warning] Static Relocation Problems
 > With static relocation no HW support is needed, but there are many problems:
@@ -30,7 +30,7 @@ Static relocation uses [Load Time Address Binding](/Systems%20and%20Networking/U
 
 ## Dynamic Relocation
 
-Dynamic Relocation uses [Execution Time Address Binding](/Systems%20and%20Networking/Unit%201/Memory%20Management/Address%20Binding.md#Execution%20Time%20Address%20Binding). On each memory access request, the [MMU](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md#Memory%20Management%20Unit) can check if the physical address associated to the virtual address belongs to the requesting process and block the request if needed.
+Dynamic Relocation uses [Execution Time Address Binding](/Systems and Networking/Unit 1/Memory Management/Address Binding.md#Execution Time Address Binding). On each memory access request, the [MMU](/Systems and Networking/Unit 1/Architecture/Virtual Memory.md#Memory Management Unit) can check if the physical address associated to the virtual address belongs to the requesting process and block the request if needed.
 
 ![MMU Logic Diagram](?TK)
 

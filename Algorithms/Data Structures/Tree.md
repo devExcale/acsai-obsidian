@@ -1,9 +1,9 @@
 # Tree
 
-A *tree* is a [directed](/Algorithms/Data%20Structures/Graphs.md#Directed%20or%20Undirected%20Graphs) [connected](/Algorithms/Data%20Structures/Graphs.md#Connected%20or%20Disconnected%20Graphs) [graph](/Algorithms/Data%20Structures/Graphs.md) such that:  
+A *tree* is a [directed](/Algorithms/Data Structures/Graphs.md#Directed or Undirected Graphs) [connected](/Algorithms/Data Structures/Graphs.md#Connected or Disconnected Graphs) [graph](/Algorithms/Data Structures/Graphs.md) such that:  
 
 - there exists one and only one node from which every node is reachable (called *root*);  
-- there exists one and only one [path](/Algorithms/Data%20Structures/Graphs.md#Path) from the root to every other node (i.e. no loops or overlapping paths).
+- there exists one and only one [path](/Algorithms/Data Structures/Graphs.md#Path) from the root to every other node (i.e. no loops or overlapping paths).
 
 The nodes with no outgoing edges are called **leaves**.
 

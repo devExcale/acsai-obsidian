@@ -2,7 +2,7 @@ $\def \clj#1#2{{ {#1}_{#2}^+ }}$
 
 # Minimal Cover
 
-A minimal cover of a set $F$ of [functional dependencies](/Data%20Management%20and%20Analysis/Unit%201/Relational/Functional%20Dependencies.md) is an equivalent set $G$ of functional dependencies such that some of the original ones are *reduced* or *removed*. Minimal covers are the starting point to compute a preserving-lossless [decomposition](/Data%20Management%20and%20Analysis/Unit%201/Relational/Decomposition/Decomposition%20of%20Relations.md).
+A minimal cover of a set $F$ of [functional dependencies](/Data Management and Analysis/Unit 1/Relational/Functional Dependencies.md) is an equivalent set $G$ of functional dependencies such that some of the original ones are *reduced* or *removed*. Minimal covers are the starting point to compute a preserving-lossless [decomposition](/Data Management and Analysis/Unit 1/Relational/Decomposition/Decomposition of Relations.md).
 
 Formally, a minimal cover of a set $F$ of functional dependencies is an equivalent set $G$ such that
 

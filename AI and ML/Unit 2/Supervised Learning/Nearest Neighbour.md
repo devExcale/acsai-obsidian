@@ -2,7 +2,7 @@ $\def \seq#1#2{{ {#1}_1, {#1}_2, \ldots, {#1}_{#2} }}$
 
 # Nearest Neighbour
 
-Nearest Neighbour, a.k.a. *k-NN*, is a [supervised](/AI%20and%20ML/Unit%202/Supervised%20Learning/Supervised%20Learning.md) machine learning algorithm used to predict classifications on data.
+Nearest Neighbour, a.k.a. *k-NN*, is a [supervised](/AI and ML/Unit 2/Supervised Learning/Supervised Learning.md) machine learning algorithm used to predict classifications on data.
 
 Let the input data live in a $D$ dimensional space, then the goal of k-NN is to infer the classification of the data by looking at the closest $k$ *neighbours* (data points) to the input in the space.
 
@@ -19,9 +19,9 @@ $$\large \displaylines {
 	y_v = y^* \quad | \quad (x^*, y^*) \in \mathcal D
 }$$
 
-where $\text d(\cdot, \cdot)$ refers to a suitable [distance metric](/AI%20and%20ML/Unit%202/Distance%20Metrics.md).
+where $\text d(\cdot, \cdot)$ refers to a suitable [distance metric](/AI and ML/Unit 2/Distance Metrics.md).
 
-Predicting the label by looking to just the closest datapoint would [overfit](/AI%20and%20ML/Unit%202/Machine%20Learning.md#Fitting%20the%20Data) the model, so the predicted label is decided by the mode of the closest $k$ datapoints to the input.
+Predicting the label by looking to just the closest datapoint would [overfit](/AI and ML/Unit 2/Machine Learning.md#Fitting the Data) the model, so the predicted label is decided by the mode of the closest $k$ datapoints to the input.
 
 > [!warning] Multiple Modes
 > 
@@ -30,7 +30,7 @@ Predicting the label by looking to just the closest datapoint would [overfit](/A
 
 ## Choosing K
 
-Choosing the right hyper-parameter $k$ is important to avoid [underfitting or overfitting](/AI%20and%20ML/Unit%202/Machine%20Learning.md#Fitting%20the%20Data) the model. One heuristic rule of thumb is to set $k = \sqrt{|\mathcal D|}$.
+Choosing the right hyper-parameter $k$ is important to avoid [underfitting or overfitting](/AI and ML/Unit 2/Machine Learning.md#Fitting the Data) the model. One heuristic rule of thumb is to set $k = \sqrt{|\mathcal D|}$.
 
 A stable way to choose $k$ is to divide the dataset into three parts:
 - **training,** which is stored to be used by the k-NN algorithm;
@@ -59,4 +59,4 @@ $k$ is chosen in an empirical way:
 > 
 > ![KNN - Best Constant Predictor](/assets/knn_best_constant.png)
 
-[Data Normalization](/AI%20and%20ML/Unit%202/Preprocessing/Data%20Normalization.md)
+[Data Normalization](/AI and ML/Unit 2/Preprocessing/Data Normalization.md)

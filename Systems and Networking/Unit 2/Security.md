@@ -1,12 +1,12 @@
 # Security
 
-Nowadays, people could use anything for their personal gains, [Internet](/Systems%20and%20Networking/Unit%202/Networks.md#Internet) included. So, it is imperative to learn what malicious people could do and how to counteract.
+Nowadays, people could use anything for their personal gains, [Internet](/Systems and Networking/Unit 2/Networks.md#Internet) included. So, it is imperative to learn what malicious people could do and how to counteract.
 
 ## Attacks
 
 ### Packet Sniffing
 
-People could access the [transport mean](/Systems%20and%20Networking/Unit%202/Transport%20Means.md) of [packets](/Systems%20and%20Networking/Unit%202/Internet/Packet.md) and read packets that are going through that transport mean (e.g. shared ethernet, wireless)!
+People could access the [transport mean](/Systems and Networking/Unit 2/Transport Means.md) of [packets](/Systems and Networking/Unit 2/Internet/Packet.md) and read packets that are going through that transport mean (e.g. shared ethernet, wireless)!
 
 Malicious users could read the content of these packets and find sensitive information about sender and receiver (including passwords).
 
@@ -46,4 +46,4 @@ Devices could connect to password-protected VPNs, so that their devices are not 
 
 Firewalls are either hardwares or softwares inserted in network cores, specialized in network analysis. The main functionalities are:
 - Filter incoming packets to restrict senders, receivers and applications;
-- Detecting and reacting to [DOS](#Denial%20of%20Service).
+- Detecting and reacting to [DOS](#Denial of Service).

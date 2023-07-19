@@ -2,7 +2,7 @@
 
 *The classes I've signed up for: AI and machine learning.*
 
-![Venn Diagram of AI, ML and DL](/assets/Diagram%20-%20Venn%20AI%20Branches.png)
+![Venn Diagram of AI, ML and DL](/assets/Diagram - Venn AI Branches.png)
 
 ## Table of Contents
 
@@ -10,34 +10,34 @@
 
 **Agents**
 
-- [Agent](/AI%20and%20ML/Unit%201/Agents/Agent.md)
+- [Agent](/AI and ML/Unit 1/Agents/Agent.md)
 
-- [Task Environment](/AI%20and%20ML/Unit%201/Agents/Task%20Environment.md)
+- [Task Environment](/AI and ML/Unit 1/Agents/Task Environment.md)
 
-- [Agent Models](/AI%20and%20ML/Unit%201/Agents/Agent%20Models.md)
+- [Agent Models](/AI and ML/Unit 1/Agents/Agent Models.md)
 
-[**Propositional Logic**](/AI%20and%20ML/Unit%201/Propositional%20Logic/Propositional%20Logic.md)
+[**Propositional Logic**](/AI and ML/Unit 1/Propositional Logic/Propositional Logic.md)
 
-- [Logical Operations](AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operations.md)
+- [Logical Operations](/AI and ML/Unit 1/Propositional Logic/Logical Operations.md)
 
-- [Entailment](/AI%20and%20ML/Unit%201/Propositional%20Logic/Entailment.md)
+- [Entailment](/AI and ML/Unit 1/Propositional Logic/Entailment.md)
 
-- [Deductive System](/AI%20and%20ML/Unit%201/Propositional%20Logic/Deductive%20System.md)
+- [Deductive System](/AI and ML/Unit 1/Propositional Logic/Deductive System.md)
 
 ### Unit 2
 
-[**Machine Learning**](/AI%20and%20ML/Unit%202/Machine%20Learning.md)
+[**Machine Learning**](/AI and ML/Unit 2/Machine Learning.md)
 
-- [Principal Component Analysis](/AI%20and%20ML/Unit%202/Preprocessing/Principal%20Component%20Analysis.md)
+- [Principal Component Analysis](/AI and ML/Unit 2/Preprocessing/Principal Component Analysis.md)
 
-[**Unsupervised Learning**](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/Unsupervised%20Learning.md)
+[**Unsupervised Learning**](/AI and ML/Unit 2/Unsupervised Learning/Unsupervised Learning.md)
 
-- [Clustering](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/Clustering.md)
+- [Clustering](/AI and ML/Unit 2/Unsupervised Learning/Clustering.md)
 
-- [K-means Clustering](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/K-means%20Clustering.md)
+- [K-means Clustering](/AI and ML/Unit 2/Unsupervised Learning/K-means Clustering.md)
 
-- [Gaussian Mixture Model](/AI%20and%20ML/Unit%202/Unsupervised%20Learning/Gaussian%20Mixture%20Model.md)
+- [Gaussian Mixture Model](/AI and ML/Unit 2/Unsupervised Learning/Gaussian Mixture Model.md)
 
-[**Supervised Learning**](/AI%20and%20ML/Unit%202/Supervised%20Learning/Supervised%20Learning.md)
+[**Supervised Learning**](/AI and ML/Unit 2/Supervised Learning/Supervised Learning.md)
 
-- [Bayes Optimal Classifier](/AI%20and%20ML/Unit%202/Supervised%20Learning/Bayes%20Optimal%20Classifier.md)
+- [Bayes Optimal Classifier](/AI and ML/Unit 2/Supervised Learning/Bayes Optimal Classifier.md)

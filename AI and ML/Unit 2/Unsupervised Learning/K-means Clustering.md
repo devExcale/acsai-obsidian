@@ -57,7 +57,7 @@ $$
 
 K-means++ is another method to select the centroids during the initialization step.
 
-The logic is similar to [Furthest-First Heuristic](#Furthest-First%20Heuristic), but with a non-deterministic trait: instead of selecting the centroids from the points that are further away, centroids are selected by random sampling the set of closest points while maintaining the probability of the single point proportional to the distance.
+The logic is similar to [Furthest-First Heuristic](#Furthest-First Heuristic), but with a non-deterministic trait: instead of selecting the centroids from the points that are further away, centroids are selected by random sampling the set of closest points while maintaining the probability of the single point proportional to the distance.
 
 The first centroid is picked randomly between all the points. Then, for each centroid to be found:
 

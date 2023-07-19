@@ -3,7 +3,7 @@ $\def \Ind#1#2{{ \mathbb {1}_{#1} \left( {#2} \right) }}$
 
 # Continuous Probability
 
-Continuous probability distributions are [distributions](/Probability/Random%20Variables/Probability%20Distributions.md) that take values in the whole set of real numbers. Because there are infinite outcomes, $\P A = 0$ for every non-dense set $A$; probabilities are instead measured on sets of intervals $[a,b]$.
+Continuous probability distributions are [distributions](/Probability/Random Variables/Probability Distributions.md) that take values in the whole set of real numbers. Because there are infinite outcomes, $\P A = 0$ for every non-dense set $A$; probabilities are instead measured on sets of intervals $[a,b]$.
 
 A function $f : R \rightarrow [0,1]$ is a **probability density function** *pdf* if
 

@@ -6,7 +6,7 @@ There are two types of schemas: the **internal schema**, the one databases use t
 
 ## External Schema
 
-It's the outer layer of a database, the one a normal user interacts with; it is a portion of the database which is coincident to [relations](/Data%20Management%20and%20Analysis/Unit%201/Relational/Relational%20Model.md#Relation), it is also called **relation schema**.
+It's the outer layer of a database, the one a normal user interacts with; it is a portion of the database which is coincident to [relations](/Data Management and Analysis/Unit 1/Relational/Relational Model.md#Relation), it is also called **relation schema**.
 
 > [!abstract] Notation
 > - $R = \{A_1, A_2, \ldots, A_n\}$

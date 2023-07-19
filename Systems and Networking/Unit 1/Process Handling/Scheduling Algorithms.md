@@ -11,7 +11,7 @@ Scheduling processes is no easy task, there are multiple variables to keep track
 | **Response time**   | 📉 Minimize | Usually applicable to interactive processes, it's the time measured from the issuance of a command to the begin of a response to the command. |
 
 > [!warning] Waiting time
-> The waiting time mentioned above is **not** the waiting state! The [scheduler](/Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Process%20Scheduler) doesn't have control over processes in waiting state, it can only manage the ones in ready and running states.
+> The waiting time mentioned above is **not** the waiting state! The [scheduler](/Systems and Networking/Unit 1/Process Handling/Process Scheduling.md#Process Scheduler) doesn't have control over processes in waiting state, it can only manage the ones in ready and running states.
 
 Some of these variables are dependent on other, so they can be computed through some formulas.
 
@@ -23,13 +23,13 @@ Some of these variables are dependent on other, so they can be computed through 
 
 ## List of Scheduling Algorithms
 
-1. [First Come First Serve](#First%20Come%20First%20Serve)
-2. [Round Robin](#Round%20Robin)
-3. [Shortest Job First](#Shortest%20Job%20First)
+1. [First Come First Serve](#First Come First Serve)
+2. [Round Robin](#Round Robin)
+3. [Shortest Job First](#Shortest Job First)
 4. [Priority](#Priority)
-5. [Multilevel Queue](#Multilevel%20Queue)
-6. [Multilevel Feedback Queue](#Multilevel%20Feedback%20Queue)
-7. [Lottery Scheduling](#Lottery%20Scheduling)
+5. [Multilevel Queue](#Multilevel Queue)
+6. [Multilevel Feedback Queue](#Multilevel Feedback Queue)
+7. [Lottery Scheduling](#Lottery Scheduling)
 
 ## Scheduling Policies
 
@@ -55,7 +55,7 @@ When the currently running process changes states, two things can happen:
 - **it goes into waiting state,** the scheduler will place it back at the end of the queue.
 
 > [!info] Non-preemptive
-> A process may continue running indefinitely until it waits or terminates by itself, which is why FCFS is a [non-preemptive](/Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Preemptive%20Scheduling) scheduling algorithm.
+> A process may continue running indefinitely until it waits or terminates by itself, which is why FCFS is a [non-preemptive](/Systems and Networking/Unit 1/Process Handling/Process Scheduling.md#Preemptive Scheduling) scheduling algorithm.
 
 - **PROs**
 1. Very simple
@@ -66,14 +66,14 @@ When the currently running process changes states, two things can happen:
 
 ## Round Robin
 
-**Round Robin** is a simple scheduling algorithm that works just like [FCFS](#First%20Come%20First%20Serve), but [CPU-bursts](?TK) are assigned with a *time slice* (or *time quantum*) limit.
+**Round Robin** is a simple scheduling algorithm that works just like [FCFS](#First Come First Serve), but [CPU-bursts](?TK) are assigned with a *time slice* (or *time quantum*) limit.
 
 If the current job the CPU is executing finishes before the time slice ends, then the job is replaced with another one just like FCFS. If instead the time slice ends first, the job is switched with the next one and it is put in the ready queue again.
 
-This scheduling algorithm makes extensive use of [timers](/Systems%20and%20Networking/Unit%201/Architecture/Timer.md): every time the time slice ends, the timer generates an interrupt that the [dispatcher](/Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Dispatcher) uses to switch the jobs.
+This scheduling algorithm makes extensive use of [timers](/Systems and Networking/Unit 1/Architecture/Timer.md): every time the time slice ends, the timer generates an interrupt that the [dispatcher](/Systems and Networking/Unit 1/Process Handling/Process Scheduling.md#Dispatcher) uses to switch the jobs.
 
 > [!info] Preemptive
-> Unless the time it takes to complete the job is less than the time slice, processes are interrupted at least one during execution, which is why Round Robin is a [preemptive](/Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Preemptive%20Scheduling) scheduling algorithm.
+> Unless the time it takes to complete the job is less than the time slice, processes are interrupted at least one during execution, which is why Round Robin is a [preemptive](/Systems and Networking/Unit 1/Process Handling/Process Scheduling.md#Preemptive Scheduling) scheduling algorithm.
 
 Round Robin is a *fair* scheduling algorithm, because it shares the CPU equally among the jobs, even though the average waiting time can be longer than other algorithms; once a job has been given a time slice, the dispatcher must give all the other jobs a time slice before giving it back to the initial job.
 
@@ -96,7 +96,7 @@ It is optimal to minimize the average waiting time, but the difficulty is is fou
 
 ## Priority
 
-Priority is a scheduling technique in which every job is assigned a *priority*, jobs with higher priorities get scheduled first. These priorities can be assigned either *internally* by the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) or externally by the user.
+Priority is a scheduling technique in which every job is assigned a *priority*, jobs with higher priorities get scheduled first. These priorities can be assigned either *internally* by the [OS](/Systems and Networking/Unit 1/Operating System/Operating System.md) or externally by the user.
 
 Priorities are implemented using integers, but there is no convention for the ordering. Usually, low numbers mean higher priority (with 0 being the highest one).
 
@@ -119,13 +119,13 @@ So, there are two levels of scheduling: a higher level scheduling to select the 
 > [!abstract] Higher Level Scheduling
 > Usually, the higher level scheduling is one of the following.
 > - *[Strict Priority](#Priority):* each queue is assigned different priorities, higher priorities get scheduled first.
-> - *[Round Robin](#Round%20Robin):* each queue gets a time slice, which can be of different sizes too.
+> - *[Round Robin](#Round Robin):* each queue gets a time slice, which can be of different sizes too.
 
 ![MLQ example](?TK)
 
 ## Multilevel Feedback Queue
 
-Multilevel Feedback Queue is a scheduling algorithm similar to [MLQ](#Multilevel%20Queue), except the fact that jobs can change queue.
+Multilevel Feedback Queue is a scheduling algorithm similar to [MLQ](#Multilevel Queue), except the fact that jobs can change queue.
 
 This is most appropriate when a process instructions may change from CPU-intensive to I/O-intensive, going from a higher to a lower priority. **Aging** can also be applied easier, by moving the job from a lower to a higher priority queue.
 
@@ -142,7 +142,7 @@ MLFQ is the most flexible scheduling algorithm, but it's also the most complex t
 - Method used to choose the initial queue for a job
 
 > [!info] Fairness
-> MLFQ tries to mimic the optimal behaviour of [SJF](#Shortest%20Job%20First) in terms of waiting time; it explicitly promotes short jobs, but it could be unfair to longer jobs.
+> MLFQ tries to mimic the optimal behaviour of [SJF](#Shortest Job First) in terms of waiting time; it explicitly promotes short jobs, but it could be unfair to longer jobs.
 
 ## Lottery Scheduling
 

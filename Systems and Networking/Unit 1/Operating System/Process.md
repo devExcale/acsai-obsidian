@@ -1,25 +1,25 @@
 # Process
 
-A *process* is a particular instance of a program, it differs from a program because a program is static, saved in the [mass memory](/Systems%20and%20Networking/Unit%201/Architecture/Memory.md), while a process is the program that's running in the [main memory](/Systems%20and%20Networking/Unit%201/Architecture/Memory.md). Many processes may run the same program, but each process instance will have its own state!
+A *process* is a particular instance of a program, it differs from a program because a program is static, saved in the [mass memory](/Systems and Networking/Unit 1/Architecture/Memory.md), while a process is the program that's running in the [main memory](/Systems and Networking/Unit 1/Architecture/Memory.md). Many processes may run the same program, but each process instance will have its own state!
 
 ## Process Control Block
 
-The *Process Control Block* is the main structure used by the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) to keep track of all the processes.
+The *Process Control Block* is the main structure used by the [OS](/Systems and Networking/Unit 1/Operating System/Operating System.md) to keep track of all the processes.
 
 Every process has its own PCB. Every time a new process is created, a corresponding PCB is created and placed into a queue containing all the other PCBs. As soon as the corresponding process is terminated, the PCB is deallocated.
 
 The PCB contains the following information:
-- [Execution State](#Process%20Execution%20State)
+- [Execution State](#Process Execution State)
 - PID (process identifier, a unique number)
-- [Registers'](/Systems%20and%20Networking/Unit%201/Architecture/Registers.md) values (e.g. program counter, stack pointer, general purpose)
-- [Scheduling](/Systems%20and%20Networking/Unit%201/Process%20Handling/Scheduling.md) information (priority, state)
-- Memory management information ([page tables](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md#Page))
-- [I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md) status (list of open files/devices)
-- General information ([CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) time consumed, owner process)
+- [Registers'](/Systems and Networking/Unit 1/Architecture/Registers.md) values (e.g. program counter, stack pointer, general purpose)
+- [Scheduling](/Systems and Networking/Unit 1/Process Handling/Scheduling.md) information (priority, state)
+- Memory management information ([page tables](/Systems and Networking/Unit 1/Architecture/Virtual Memory.md#Page))
+- [I/O](/Systems and Networking/Unit 1/Architecture/IO Devices.md) status (list of open files/devices)
+- General information ([CPU](/Systems and Networking/Unit 1/Architecture/CPU.md) time consumed, owner process)
 
 ## Process Execution State
 
-Each process has an execution state, dictated by program actions (e.g. [system calls](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md)), [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) actions (e.g. [scheduling](?TK)) and external actions (e.g. [interrupts](/Systems%20and%20Networking/Unit%201/Operating%20System/Trap.md#Interrupt))
+Each process has an execution state, dictated by program actions (e.g. [system calls](/Systems and Networking/Unit 1/Operating System/System Calls.md)), [OS](/Systems and Networking/Unit 1/Operating System/Operating System.md) actions (e.g. [scheduling](?TK)) and external actions (e.g. [interrupts](/Systems and Networking/Unit 1/Operating System/Trap.md#Interrupt))
 
 ![Process Execution State Transitions Diagram](?TK)
 
@@ -32,28 +32,28 @@ From here, the process can go in the following states:
 
 ### Ready
 
-In *ready* state, the process is ready to be executed by the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md).
+In *ready* state, the process is ready to be executed by the [CPU](/Systems and Networking/Unit 1/Architecture/CPU.md).
 
 From here, the process can go in the following states:
 - [Running](#Running) (dispatched by scheduler)
 
 ### Running
 
-In *running* state, the process is actually being executed by the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md).
+In *running* state, the process is actually being executed by the [CPU](/Systems and Networking/Unit 1/Architecture/CPU.md).
 
 From here, the process can go in the following states:
 - [Ready](#Ready) (interrupted by scheduler)
-- [Waiting](#Waiting) (interrupted by [I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md) or event)
+- [Waiting](#Waiting) (interrupted by [I/O](/Systems and Networking/Unit 1/Architecture/IO Devices.md) or event)
 - [Terminated](#Terminated) (exit)
 
 ### Waiting
 
-In *waiting* state, the process is suspended while waiting for (usually) [I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md) events. Once the event is done, the process goes back to ready state to be resume execution.
+In *waiting* state, the process is suspended while waiting for (usually) [I/O](/Systems and Networking/Unit 1/Architecture/IO Devices.md) events. Once the event is done, the process goes back to ready state to be resume execution.
 
-Most of the events are **blocking**: the process can't do anything until the [system call](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md) returns. Meanwhile, the [OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) sets the process to the waiting state and [schedules](/^TK) another process right away, so to avoid the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md) being idle.
+Most of the events are **blocking**: the process can't do anything until the [system call](/Systems and Networking/Unit 1/Operating System/System Calls.md) returns. Meanwhile, the [OS](/Systems and Networking/Unit 1/Operating System/Operating System.md) sets the process to the waiting state and [schedules](/^TK) another process right away, so to avoid the [CPU](/Systems and Networking/Unit 1/Architecture/CPU.md) being idle.
 
 From here, the process can go in the following states:
-- [Ready](#Ready) ([I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md) or event completion)
+- [Ready](#Ready) ([I/O](/Systems and Networking/Unit 1/Architecture/IO Devices.md) or event completion)
 
 ### Terminated
 

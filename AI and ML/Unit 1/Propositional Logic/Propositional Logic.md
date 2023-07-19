@@ -44,7 +44,7 @@ Semantics then define some other rules:
 
 - The only *pre-existent sentences* are $\top$  (a.k.a. *top*) and $\bot$ (a.k.a. *bottom*), with values *True* and *False* respectively for every model;
 - The truth value of every proposition symbol must be assigned to the model directly, it can't be supposed outside the model;
-- The rules for all [operators](AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operations.md).
+- The rules for all [operators](/AI and ML/Unit 1/Propositional Logic/Logical Operations.md).
 
 ## Evaluation
 

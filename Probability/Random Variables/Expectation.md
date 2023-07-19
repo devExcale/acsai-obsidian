@@ -9,7 +9,7 @@ $\def\indep{{ \mathrel\unicode{x2AEB} }}$
 
 # Expectation
 
-For a [random variable](/Probability/Random%20Variables/Random%20Variables.md) $X : \Omega \rightarrow S$, the *expectation* (*expected* or *mean* value) of $X$ is defined to be
+For a [random variable](/Probability/Random Variables/Random Variables.md) $X : \Omega \rightarrow S$, the *expectation* (*expected* or *mean* value) of $X$ is defined to be
 
 $$\large
 \begin{aligned}

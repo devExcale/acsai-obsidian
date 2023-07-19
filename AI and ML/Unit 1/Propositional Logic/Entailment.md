@@ -35,7 +35,7 @@ Because of the entailment definition, the assumptions are *stricter sentences* w
 
 Tautology, sometimes called *validity*, refers to those sentences that are satisfied by **all** models (i.e. true for all models).
 
-Let $n$ be the number of propositional symbols in a sentence $\phi$, then a sentence is a tautology (or is valid) if $|\M \phi| = 2^n$, i.e. the number of all possible models given $n$ propositions. Another way to check if a sentence is a tautology is to reduce the sentence to $True$ using [logical equivalences](AI%20and%20ML/Unit%201/Propositional%20Logic/Logical%20Operations.md#Equivalences).
+Let $n$ be the number of propositional symbols in a sentence $\phi$, then a sentence is a tautology (or is valid) if $|\M \phi| = 2^n$, i.e. the number of all possible models given $n$ propositions. Another way to check if a sentence is a tautology is to reduce the sentence to $True$ using [logical equivalences](/AI and ML/Unit 1/Propositional Logic/Logical Operations.md#Equivalences).
 
 A tautology is marked by writing the sentence(s) on the RHS of the entailment symbol, with nothing on the LHS.
 

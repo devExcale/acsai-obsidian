@@ -1,6 +1,6 @@
 # System Calls
 
-[User programs](?TK) cannot run [privileged instructions](/Systems%20and%20Networking/Unit%201/Architecture/Instructions.md#Protected%20Instructions) directly, but they can ask the [Operating System](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) to run the instructions on their behalf in [Kernel mode](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md#Kernel-User%20Mode).
+[User programs](?TK) cannot run [privileged instructions](/Systems and Networking/Unit 1/Architecture/Instructions.md#Protected Instructions) directly, but they can ask the [Operating System](/Systems and Networking/Unit 1/Operating System/Operating System.md) to run the instructions on their behalf in [Kernel mode](/Systems and Networking/Unit 1/Architecture/CPU.md#Kernel-User Mode).
 
 A System Call is an interface to a service provided by the OS, typically written in C/C++. Most programs, though, access these services via a high-level [API](?TK) rather a direct system call.
 
@@ -12,10 +12,10 @@ Examples of high-level API for system calls are:
 ## Categories
 
 There are 6 main categories of system call, distinguished by the type of service they offer:
-- [Process Control](#Process%20Control)
-- [File Management](#File%20Management)
-- [Device Management](#Device%20Management)
-- [Information Management](#Information%20Management)
+- [Process Control](#Process Control)
+- [File Management](#File Management)
+- [Device Management](#Device Management)
+- [Information Management](#Information Management)
 - [Communications](#Communications)
 - *TK*
 
@@ -35,7 +35,7 @@ A program does not need to know how the [File System](?TK) works or how it is im
 
 Device management system calls may be used to execute all those actions needed to operate on devices other than the CPU, such as request/read/write/release a device or get/set device attributes.
 
-The devices may be physical (e.g. disk drives) or virtual (e.g. files, partitions). An OS may *attach* these devices as special files in the [File System](?TK), so that the [File Management](#File%20Management) system calls may be used too.
+The devices may be physical (e.g. disk drives) or virtual (e.g. files, partitions). An OS may *attach* these devices as special files in the [File System](?TK), so that the [File Management](#File Management) system calls may be used too.
 
 ### Information Management
 

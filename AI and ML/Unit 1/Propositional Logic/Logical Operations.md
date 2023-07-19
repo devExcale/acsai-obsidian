@@ -18,7 +18,7 @@ Parenthesis can be used to change the natural order of the operators by first ev
 
 ## Equivalences
 
-A sentence $\phi$ is said to be equivalent to a sentence $\psi$ if $\M \phi = \M \psi$. It could also be said that the two sentences are equivalent if they [entail](/AI%20and%20ML/Unit%201/Propositional%20Logic/Entailment.md) each other, i.e. $\phi \vDash \psi$ and $\psi \vDash \phi$.
+A sentence $\phi$ is said to be equivalent to a sentence $\psi$ if $\M \phi = \M \psi$. It could also be said that the two sentences are equivalent if they [entail](/AI and ML/Unit 1/Propositional Logic/Entailment.md) each other, i.e. $\phi \vDash \psi$ and $\psi \vDash \phi$.
 
 > [!note]
 > 

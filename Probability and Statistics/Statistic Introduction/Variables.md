@@ -4,7 +4,7 @@ Variables are characteristics that are observed on the subjects of a study.
 
 > [!example] Variables
 > 
-> Examples of variables are *height* and *names* in people, *milage* in cars.
+> Examples of variables are *height* and *names* in people, *mileage* in cars.
 
 > [!tip] Modalities
 > 

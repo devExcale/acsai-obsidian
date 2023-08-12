@@ -7,7 +7,7 @@ The centre of a distribution can be defined in multiple ways, depending on the n
 The *arithmetic* mean is the sum the observations normalized by the number of observations.
 
 $$\large
-	\bar x = \frac{1}{n} \sum_{i=1}^n x_i
+	\mu = \frac{1}{n} \sum_{i=1}^n x_i
 	= \frac{x_1 + x_2 + \cdots + x_n}{n}
 $$
 
@@ -15,14 +15,14 @@ $$
 
 > [!warning] Extreme Values
 > 
-> The mean is affected by extreme values: changing one of the first/last values into something much lower/higher will greatly affect the mean.
+> The mean is affected by extreme values: changing one of the first/last values into a much lower or higher value will greatly affect the mean.
 
 
 ### Properties of the Mean
 
-1. The mean value is *internal*, i.e. $x_1 \le \bar x \le x_n$
-2. The mean value is the fair value in the distribution, i.e. $\sum_{i=1}^n x_i = \sum_{i=1}^n \bar x$
-3. The sum of all [deviations](?TK) is zero, i.e. $\sum_{i=1}^n (x_i - \bar x) = 0$
+1. The mean value is *internal*, i.e. $x_1 \le \mu \le x_n$
+2. The mean value is the fair value in the distribution, i.e. $\sum_{i=1}^n x_i = \sum_{i=1}^n \mu$
+3. The sum of all [deviations](?TK) is zero, i.e. $\sum_{i=1}^n (x_i - \mu) = 0$
 4. The mean function is a linear function
 
 ## Median

@@ -16,7 +16,7 @@ $$\large
 	\Cov X Y = \E{ [X - \E X][Y - \E Y] }
 $$
 
-> [!tip] Covariance of a two Distributions
+> [!tip] Covariance of two Random Variables
 > 
 > The covariance of two distributions tell how much the two distributions are related:
 > - if the covariance is positive then there's a proportional trend;

@@ -1,4 +1,6 @@
 $\def \P#1{{ \mathbb{P} \left(#1\right) }}$
+$\def \E#1{{ \mathbb{E} \left(#1\right) }}$
+$\def \Var#1{{ \text{Var} \left(#1\right) }}$
 $\def \Ind#1#2{{ \mathbb {1}_{#1} \left( {#2} \right) }}$
 $\def \ND#1#2{{ \mathcal N \left( {#1},{#2} \right) }}$
 

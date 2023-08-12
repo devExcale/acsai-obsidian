@@ -13,8 +13,8 @@ The study of probability has two main branches:
 
 1. [Probability Space](/Probability/Introduction/Probability Space.md)
 1. [Combinatorial Analysis](/Probability/Introduction/Combinatorial Analysis.md)
-2. [Independence](Probability%20and%20Statistics/Probabilistic%20Introduction/Independence.md)
-3. [Inclusion-Exclusion](Probability%20and%20Statistics/Probabilistic%20Introduction/Inclusion-Exclusion.md)
+2. [Independence](/Probability and Statistics/Probabilistic Introduction/Independence.md)
+3. [Inclusion-Exclusion](/Probability and Statistics/Probabilistic Introduction/Inclusion-Exclusion.md)
 4. [Conditional Probability](/Probability/Introduction/Conditional Probability.md)
 5. [Total Probability Law](/Probability/Introduction/Total Probability Law.md)
 6. [Bayes' Theorem](/Probability/Introduction/Bayes' Theorem.md)

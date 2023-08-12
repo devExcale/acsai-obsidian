@@ -10,13 +10,13 @@ The pie chart is a graph for qualitative data. It is a circle where each categor
 > 
 > The pie chart makes it easy to compare one category with the others, but it may be unsuitable for too many categories.
 
-![Image of a Pie Chart](/assets/Graphs%20-%20Pie%20Chart.png)
+![Image of a Pie Chart](/assets/Graphs - Pie Chart.png)
 
 ## Bar Chart
 
 The bar chart is a graph for qualitative data. It is a canvas with multiple vertical detached bars, each bar represents a category and the bar's height can either be the value or the relative frequency of the category.
 
-![Image of a Bar Chart](assets/Graphs%20-%20Bar%20Chart.png)
+![Image of a Bar Chart](/assets/Graphs - Bar Chart.png)
 
 ## Dot Plot
 

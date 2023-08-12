@@ -8,17 +8,17 @@ Probability and Statistics are both tools which can be used to understand and st
 
 1. [Probability Space](/Probability/Introduction/Probability Space.md)
 1. [Combinatorial Analysis](/Probability/Introduction/Combinatorial Analysis.md)
-2. [Independence](Probability%20and%20Statistics/Probabilistic%20Introduction/Independence.md)
-3. [Inclusion-Exclusion](Probability%20and%20Statistics/Probabilistic%20Introduction/Inclusion-Exclusion.md)
+2. [Independence](/Probability and Statistics/Probabilistic Introduction/Independence.md)
+3. [Inclusion-Exclusion](/Probability and Statistics/Probabilistic Introduction/Inclusion-Exclusion.md)
 4. [Conditional Probability](/Probability/Introduction/Conditional Probability.md)
 5. [Total Probability Law](/Probability/Introduction/Total Probability Law.md)
 6. [Bayes' Theorem](/Probability/Introduction/Bayes' Theorem.md)
 
 **Statistic Introduction**
 
-1. [Sample and Population](Probability%20and%20Statistics/Statistic%20Introduction/Sample%20and%20Population.md)
-2. [Variables](Probability%20and%20Statistics/Statistic%20Introduction/Variables.md)
-3. [Data Graphs](Probability%20and%20Statistics/Statistic%20Introduction/Data%20Graphs.md)
+1. [Sample and Population](/Probability and Statistics/Statistic Introduction/Sample and Population.md)
+2. [Variables](/Probability and Statistics/Statistic Introduction/Variables.md)
+3. [Data Graphs](/Probability and Statistics/Statistic Introduction/Data Graphs.md)
 
 **Distribution Properties**
 

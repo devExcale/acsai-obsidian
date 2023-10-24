@@ -11,7 +11,7 @@ Here's a python (with pseudo-types) overview of the backtracking algorithm.
 # - either return a valid solution (list of values)
 # - or failure
 def backtracking_search(csp) -> list[val] | None:
-	return backtrack
+	return backtrack({}, csp)
 
 # Recursive backtracking
 def backtrack(
@@ -52,3 +52,17 @@ Backtracking allows for an efficient exploration of the solution space by prunin
 Backtracking can be enhanced with various optimization techniques, such as variable and value ordering heuristics, constraint propagation, and forward checking, to improve the efficiency of finding a valid solution.
 
 ## Forward Checking
+
+Forward checking is a technique used to reduce the search space and enforce consistency during the assignment process. It is an efficient form of constraint propagation that narrows down the possible values for variables by considering the constraints between variables and their domains.
+
+Whenever a value is assigned to a variable, the domains of the neighbouring variables are reduced to only the values that are still compatible with the assigned value. This reduction is based on the constraints between the variables. By performing this local consistency check, we eliminate values from the domains of neighbouring variables that are not compatible with the assigned value, thus reducing the branching factor in the search space.
+
+The main steps involved in forward checking are as follows:
+
+1. **Initial assignment**: Start with an initial assignment of values to some variables in the CSP.
+
+2. **Assign a value**: Select a variable and assign a value to it.
+
+3. **Forward checking**: For each unassigned neighbouring variable, check the constraints between that variable and the assigned variable. Remove any values from the domain of the neighbouring variable that are inconsistent with the assigned value.
+
+4. **Repeat**: Repeat steps 2 and 3, selecting variables and assigning values, and performing forward checking, until either a valid assignment is found or it is determined that no valid assignment exists.

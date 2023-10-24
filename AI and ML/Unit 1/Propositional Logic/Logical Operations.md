@@ -51,9 +51,15 @@ $$
 **Biconditionals can be removed:** biconditionals tell that two implications are in place, LHS implies RHS and RHS implies LHS.
 
 $$\large
+\begin{aligned}
 	\alpha \Leftrightarrow \beta
-	\ \equiv \ 
+	\ &\equiv \ 
 	(\alpha \Rightarrow \beta) \land (\beta \Rightarrow \alpha)
+	\\ &\equiv \
+	(\lnot \alpha \lor \beta) \land (\lnot \beta \lor \alpha)
+	\\ &\equiv \
+	(\lnot \alpha \land \lnot \beta) \lor (\alpha \land \beta)
+\end{aligned}
 $$
 
 ## Negated Normal Form

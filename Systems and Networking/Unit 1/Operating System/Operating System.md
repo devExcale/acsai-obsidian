@@ -1,6 +1,6 @@
 # Operating System
 
-There isn't a universal definition for an **Operating System**, but one could say that it is an implementation of a *virtual machine* which should be easier to program than bare [hardware](/Systems%20and%20Networking/Unit%201/High-Level%20Computer%20Architecture.md).
+There isn't a universal definition for an **Operating System**, but one could say that it is an implementation of a *virtual machine* which should be easier to program than bare [hardware](/Systems and Networking/Unit 1/High-Level Computer Architecture.md).
 
 An **OS** stands between users (or application programs) and the underlying hardware, and it is the only mean to access the hardware.
 
@@ -18,7 +18,7 @@ It is crucial to separate **policies** (what the OS will do) from **mechanisms**
 ## Features
 
 The features of an OS are many:
-- **Resource Manager:** manage physical resources ([CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md), [memory](/Systems%20and%20Networking/Unit%201/Architecture/Memory.md), [I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md), etc.) with efficiency;
+- **Resource Manager:** manage physical resources ([CPU](/Systems and Networking/Unit 1/Architecture/CPU.md), [memory](/Systems and Networking/Unit 1/Architecture/Memory.md), [I/O](/Systems and Networking/Unit 1/Architecture/IO Devices.md), etc.) with efficiency;
 - **Virtual Machine:** virtualize any physical resource, to give the user and programs the illusion of infinite resources (and for efficiency reasons);
 - **Separate HW/SW:** provide a set of [API](?TK)'s, to control the access to physical hardware.
 
@@ -28,11 +28,11 @@ Which services an Operative System can offer is dictated by the underlying struc
 
 | **OS Service**          | **HW Support**                                                                                                                                                                                                  |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Protection and Security | [Kernel/User Mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode), Protected Instructions, Base/Limit Registers                                     |
-| System Calls            | [Traps](/Systems%20and%20Networking/Unit%201/Operating%20System/Trap.md), Interrupt Vectors                                                                                                                     |
-| Exception Handling      | [Traps](/Systems%20and%20Networking/Unit%201/Operating%20System/Trap.md), Interrupt Vectors                                                                                                                     |
-| I/O Operations          | [Traps](/Systems%20and%20Networking/Unit%201/Operating%20System/Trap.md), Interrupt Vectors, [Memory Mapping](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md#Communicating%20with%20Devices) |
-| Scheduling              | [Timer](/Systems%20and%20Networking/Unit%201/Architecture/Timer.md)                                                                                                                                             |
+| Protection and Security | [Kernel/User Mode](/Systems and Networking/Unit 1/Operating System/Protection and Security.md#Kernel-User Mode), Protected Instructions, Base/Limit Registers                                     |
+| System Calls            | [Traps](/Systems and Networking/Unit 1/Operating System/Trap.md), Interrupt Vectors                                                                                                                     |
+| Exception Handling      | [Traps](/Systems and Networking/Unit 1/Operating System/Trap.md), Interrupt Vectors                                                                                                                     |
+| I/O Operations          | [Traps](/Systems and Networking/Unit 1/Operating System/Trap.md), Interrupt Vectors, [Memory Mapping](/Systems and Networking/Unit 1/Architecture/IO Devices.md#Communicating with Devices) |
+| Scheduling              | [Timer](/Systems and Networking/Unit 1/Architecture/Timer.md)                                                                                                                                             |
 | Synchronization         | Atomic Instructions                                                                                                                                                                                             |
 | Virtual Memory          | Translation Look-Aside Buffer (TLB)                                                                                                                                                                             |
 
@@ -42,22 +42,22 @@ Many OS have different structures, with a mixture of languages and techniques. A
 
 | **Structure**                                                | **PROs**                                             | **CONs**                                           |
 | ------------------------------------------------------------ | ---------------------------------------------------- | -------------------------------------------------- |
-| [Simple Structure](#Simple%20Structure)                      | easy to implement                                    | rigidity, security                                 |
-| [Traditional Monolithic](#Traditional%20Monolithic%20Kernel) | easy to implement, efficiency                        | rigidity, security                                 |
-| [Layered](#Layered%20Structure)                              | easy to implement and debug, modularity, portability | communication overhead, duplicated functionalities |
-| [Microkernel](#Microkernel%20Structure)                      | security, reliability, extendibility                 | efficiency (message passing)                       |
+| [Simple Structure](#Simple Structure)                      | easy to implement                                    | rigidity, security                                 |
+| [Traditional Monolithic](#Traditional Monolithic Kernel) | easy to implement, efficiency                        | rigidity, security                                 |
+| [Layered](#Layered Structure)                              | easy to implement and debug, modularity, portability | communication overhead, duplicated functionalities |
+| [Microkernel](#Microkernel Structure)                      | security, reliability, extendibility                 | efficiency (message passing)                       |
 
 ### Simple Structure
 
-The main example being *MS-DOS*, it is the most simple OS structure, there is no modular subsystem whatsoever and no separation between [kernel and user mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode). Every functionality is implemented directly without decoupling of [policies and mechanisms](#Design).
+The main example being *MS-DOS*, it is the most simple OS structure, there is no modular subsystem whatsoever and no separation between [kernel and user mode](/Systems and Networking/Unit 1/Operating System/Protection and Security.md#Kernel-User Mode). Every functionality is implemented directly without decoupling of [policies and mechanisms](#Design).
 
 ![Diagram of Simple Structure](?TK)
 
 ### Traditional Monolithic Kernel
 
-The main example being *UNIX systems*, it's one huge program run as one process in the same [address space](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md#Virtual%20Memory).
+The main example being *UNIX systems*, it's one huge program run as one process in the same [address space](/Systems and Networking/Unit 1/Architecture/Virtual Memory.md#Virtual Memory).
 
-Even though it's one big program, it's still kind of modular: the protected functionalities are run in [kernel mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode) (e.g. [I/O](/Systems%20and%20Networking/Unit%201/Architecture/IO%20Devices.md), [virtual memory](/Systems%20and%20Networking/Unit%201/Architecture/Virtual%20Memory.md), [scheduling](?TK)), while the other programs (e.g. shells, commands) are run in [user mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode).
+Even though it's one big program, it's still kind of modular: the protected functionalities are run in [kernel mode](/Systems and Networking/Unit 1/Operating System/Protection and Security.md#Kernel-User Mode) (e.g. [I/O](/Systems and Networking/Unit 1/Architecture/IO Devices.md), [virtual memory](/Systems and Networking/Unit 1/Architecture/Virtual Memory.md), [scheduling](?TK)), while the other programs (e.g. shells, commands) are run in [user mode](/Systems and Networking/Unit 1/Operating System/Protection and Security.md#Kernel-User Mode).
 
 ![Diagram of Traditional Monolithic Kernel](?TK)
 
@@ -69,9 +69,9 @@ The OS is divided in $N$ layers, with the hardware being layer 0. Each layer L u
 
 ### Microkernel Structure
 
-The microkernel opposes to the monolithic kernel because the kernel contains very basic functionalities, usually what's needed to communicate with the hardware (e.g. [scheduling](?TK), [memory management](/Systems%20and%20Networking/Unit%201/Architecture/Memory.md)), the rest (e.g. application programs, [file system](?TK)) runs in [user mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode).
+The microkernel opposes to the monolithic kernel because the kernel contains very basic functionalities, usually what's needed to communicate with the hardware (e.g. [scheduling](?TK), [memory management](/Systems and Networking/Unit 1/Architecture/Memory.md)), the rest (e.g. application programs, [file system](?TK)) runs in [user mode](/Systems and Networking/Unit 1/Operating System/Protection and Security.md#Kernel-User Mode).
 
-In this structure there is a clear distinction between [policy](#Design) (user mode) and [mechanism](#Design) (microkernel) and it is very modular, but this modularity comes at a cost: processes use [message passing](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md#Message%20Passing) to communicate, which can slow down processing speed.
+In this structure there is a clear distinction between [policy](#Design) (user mode) and [mechanism](#Design) (microkernel) and it is very modular, but this modularity comes at a cost: processes use [message passing](/Systems and Networking/Unit 1/Operating System/System Calls.md#Message Passing) to communicate, which can slow down processing speed.
 
 ![Diagram of Microkernel Structure](?TK)
 

@@ -1,6 +1,6 @@
 # Transfer Control Protocol
 
-The Transfer Control Protocol is a [transport layer](/Systems%20and%20Networking/Unit%202/Internet/Transport%20Layer.md) protocol based on the [Reliable Data Transfer](/Systems%20and%20Networking/Unit%202/Protocols/RDT.md) 3.0 protocol. It extends RDT by adding other features such as congestion control, flow control and connections.
+The Transfer Control Protocol is a [transport layer](/Systems and Networking/Unit 2/Internet/Transport Layer.md) protocol based on the [Reliable Data Transfer](/Systems and Networking/Unit 2/Protocols/RDT.md) 3.0 protocol. It extends RDT by adding other features such as congestion control, flow control and connections.
 
 Unlike RDT, in TCP both hosts of a conversation are both the sender and the receiver of a connection. A TCP connection is opened via a **three-way handshake**:
 - $A$ sends a SYN packet with a *random* sequence number $x$;

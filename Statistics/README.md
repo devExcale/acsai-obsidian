@@ -1,4 +1,4 @@
- # Statistics
+# Statistics
 
 Statistics is the art and science of *designing studies*, *analysing the data produced by these studies* and *translating the data into knowledge to understand the world around us*.
 
@@ -13,12 +13,12 @@ Statistics is the art and science of *designing studies*, *analysing the data pr
 
 **Chapter 1**
 
-- [Sample and Population](/Statistics/Sample%20and%20Population.md)
+- [Sample and Population](/Statistics/Sample and Population.md)
 
 **Chapter 2**
 
-- [Variables](/Statistics/Variables.md)
-- [Data Graphs](/Statistics/Data%20Graphs.md)
-- [Shapes of Distributions](/Statistics/Distributions/Shapes%20of%20Distributions.md)
-- [Centres of Distributions](/Statistics/Distributions/Centres%20of%20Distributions.md)
+- [Variables](/Probability and Statistics/Statistic Introduction/Variables.md)
+- [Data Graphs](/Statistics/Data Graphs.md)
+- [Shapes of Distributions](/Statistics/Distributions/Shapes of Distributions.md)
+- [Centres of Distributions](/Statistics/Distributions/Centres of Distributions.md)
 - [Z-Score](/Statistics/Z-Score.md)

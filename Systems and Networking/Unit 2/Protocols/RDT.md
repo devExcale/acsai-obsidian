@@ -1,6 +1,6 @@
 # Reliable Data Transfer
 
-Reliable Data Transfer is a theoretical [transport layer](/Systems%20and%20Networking/Unit%202/Internet/Transport%20Layer.md) protocol for reliably transferring a stream of packets over an unreliable channel; it is the foundations of [TCP](/Systems%20and%20Networking/Unit%202/Protocols/TCP.md).
+Reliable Data Transfer is a theoretical [transport layer](/Systems and Networking/Unit 2/Internet/Transport Layer.md) protocol for reliably transferring a stream of packets over an unreliable channel; it is the foundations of [TCP](/Systems and Networking/Unit 2/Protocols/TCP.md).
 
 There have been many version of RDT, with the protocol getting better in newer versions.
 

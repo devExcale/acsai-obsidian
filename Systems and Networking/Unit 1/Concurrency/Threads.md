@@ -4,7 +4,7 @@ A "thread of control" is the basic unit of CPU utilization, it represents a stre
 
 Implicitly, in single-threaded OS's, every process is a thread. In multi-thread OS, every process can have multiple threads that execute code while sharing the process' resources.
 
-Threads can collaborate between themselves in the same process, so no [system calls](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md) are required to cooperate. Also, context-switch between threads is faster than between processes.
+Threads can collaborate between themselves in the same process, so no [system calls](/Systems and Networking/Unit 1/Operating System/System Calls.md) are required to cooperate. Also, context-switch between threads is faster than between processes.
 
 | **Traditional Processes**                             | **Multi-threaded Processes**                                  |
 | ----------------------------------------------------- | ------------------------------------------------------------- |
@@ -45,7 +45,7 @@ Creating threads is less expensive than creating processes, but continuously cre
 
 
 > [!info] Thread Pool Scheduling
-> Thread Pools operate with a [FCFS](/Systems%20and%20Networking/Unit%201/Process%20Handling/Scheduling%20Algorithms.md#First%20Come%20First%20Serve) scheduling policy.
+> Thread Pools operate with a [FCFS](/Systems and Networking/Unit 1/Process Handling/Scheduling Algorithms.md#First Come First Serve) scheduling policy.
 > 
 > If there are no threads available when a new task comes in, the new task will be appended to a queue. When a thread frees up, the first task in the queue will be assigned to that thread.
 
@@ -89,7 +89,7 @@ TK
 
 ### Lightweight Processes
 
-A better method to implement threads is a hybrid of both [kernel](#Kernel%20Threads) and [user](#User%20Threads) threads: mapping user threads to kernel threads.
+A better method to implement threads is a hybrid of both [kernel](#Kernel Threads) and [user](#User Threads) threads: mapping user threads to kernel threads.
 
 A number of kernel threads is created by the OS, while user processes create user threads using a thread library; these user threads are then mapped to kernel threads, so that the CPU can actually run the user threads in a (true) multi-threading environment.
 
@@ -132,9 +132,9 @@ Contention Scope how threads will compete with each other for the use of physica
 > [!abstract] Process Contention Scope
 > Competition occurs between threads of the same process.
 > 
-> It is the case of user threads mapped to a single kernel thread, or threads managed by a thread library (e.g. *[many-to-one](#Many%20to%20One)*, *[many-to-many](#Many%20to%20Many)*).
+> It is the case of user threads mapped to a single kernel thread, or threads managed by a thread library (e.g. *[many-to-one](#Many to One)*, *[many-to-many](#Many to Many)*).
 
 > [!abstract] System Contention Scope
-> Competition occurs between kernel threads and involves the [system scheduler](/Systems%20and%20Networking/Unit%201/Process%20Handling/Process%20Scheduling.md#Process%20Scheduler).
+> Competition occurs between kernel threads and involves the [system scheduler](/Systems and Networking/Unit 1/Process Handling/Process Scheduling.md#Process Scheduler).
 > 
 > 

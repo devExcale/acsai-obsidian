@@ -24,7 +24,7 @@ The `cv2.imshow` function opens a window containing an image.
 The prototype of the function is `cv2.imshow(window, img)`, where:
 
 - `window` is the title of the window;
-- `img` is the [matrix](/Computer%20Vision%20and%20NLP/NumPy/NumPy%20Matrix.md) representing the image.
+- `img` is the [matrix](/Computer Vision and NLP/NumPy/NumPy Matrix.md) representing the image.
 
 #### split
 
@@ -32,7 +32,7 @@ The `cv2.split` function splits the different channels into the grayscale compon
 
 The prototype of the function is `cv2.split(img)`, where:
 
-- `img` is the [matrix](/Computer%20Vision%20and%20NLP/NumPy/NumPy%20Matrix.md) representing the image.
+- `img` is the [matrix](/Computer Vision and NLP/NumPy/NumPy Matrix.md) representing the image.
 
 > [!tip] Split vs NumPy slicing
 > 
@@ -52,7 +52,7 @@ The `cv2.line` function draws a line over an image.
 
 The prototype of the function is `cv2.line(img, start, end, color, thickness)`, where:
 
-- `img` is the [matrix](/Computer%20Vision%20and%20NLP/NumPy/NumPy%20Matrix.md) containing the image;
+- `img` is the [matrix](/Computer Vision and NLP/NumPy/NumPy Matrix.md) containing the image;
 - `start` is the point `(x,y)` where the line should start;
 - `end` is the point `(x,y)` where the line should end;
 - `color` is a tuple `(b,g,r)` containing the colour of the line;
@@ -64,7 +64,7 @@ The `cv2.rectangle` function draws a rectangle over an image.
 
 The prototype of the function is `cv2.rectangle(img, start, end, color, thickness)`, where:
 
-- `img` is the [matrix](/Computer%20Vision%20and%20NLP/NumPy/NumPy%20Matrix.md) containing the image;
+- `img` is the [matrix](/Computer Vision and NLP/NumPy/NumPy Matrix.md) containing the image;
 - `start` are the coordinates `(x,y)` of the top-left corner of the rectangle;
 - `end` are the coordinates `(x,y)` of the bottom-right corner of the rectangle;
 - `color` is a tuple `(b,g,r)` containing the colour of the rectangle;
@@ -81,7 +81,7 @@ The `cv2.circle` function draws a circle over an image.
 
 The prototype of the function is `cv2.rectangle(img, center, radius, color, thickness)`, where:
 
-- `img` is the [matrix](/Computer%20Vision%20and%20NLP/NumPy/NumPy%20Matrix.md) containing the image;
+- `img` is the [matrix](/Computer Vision and NLP/NumPy/NumPy Matrix.md) containing the image;
 - `center` are the coordinates `(x,y)` of the centre of the circle;
 - `radius` is the radius of the circle;
 - `color` is a tuple `(b,g,r)` containing the colour of the circle;

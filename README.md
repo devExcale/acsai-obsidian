@@ -15,8 +15,8 @@ Some of the courses
 **First Year - First Semester**
 
 - Calculus 1 - Unit 1
-- [Computer Architecture - Unit 1](/Computer%20Architecture/README.md)
-- [Linear Algebra](/Linear%20Algebra/README.md)
+- [Computer Architecture - Unit 1](/Computer Architecture/README.md)
+- [Linear Algebra](/Linear Algebra/README.md)
 - Programming 1 - Unit 1
 - Programming 1 - Unit 2
 
@@ -24,30 +24,30 @@ Some of the courses
 
 - [Algorithms](/Algorithms/Algorithms.md)
 - Calculus 1 - Unit 2
-- [Computer Architecture - Unit 2](/Computer%20Architecture/README.md)
+- [Computer Architecture - Unit 2](/Computer Architecture/README.md)
 - [Physics](/Physics/README.md)
 - Programming 2
 
 **Second Year - First Semester**
 
 - Calculus 2
-- [Data Management and Analysis - Unit 1](/Data%20Management%20and%20Analysis/README.md)
+- [Data Management and Analysis - Unit 1](/Data Management and Analysis/README.md)
 - [Probability](/Probability/README.md)
-- [Systems and Networking - Unit 1](/Systems%20and%20Networking/Systems%20and%20Networking.md)
-- [Systems and Networking - Unit 2](/Systems%20and%20Networking/Systems%20and%20Networking.md)
+- [Systems and Networking - Unit 1](/Systems and Networking/Systems and Networking.md)
+- [Systems and Networking - Unit 2](/Systems and Networking/Systems and Networking.md)
 
 **Second Year - Second Semester**
 
-- [Artificial Intelligence and Machine Learning - Unit 1](/AI%20and%20ML/README.md#Unit%201)
-- [Artificial Intelligence and Machine Learning - Unit 2](/AI%20and%20ML/README.md#Unit%202)
-- [Computer Vision and Natural Language Processing](/Computer%20Vision%20and%20NLP/README.md)
+- [Artificial Intelligence and Machine Learning - Unit 1](/AI and ML/README.md#Unit 1)
+- [Artificial Intelligence and Machine Learning - Unit 2](/AI and ML/README.md#Unit 2)
+- [Computer Vision and Natural Language Processing](/Computer Vision and NLP/README.md)
 - [Data Management and Analysis - Unit 2](?TK)
 - [Statistics](/Statistics/README.md)
 
 **Other**
 
 - [Workbench](/Workbench.md)
-- [Latex Definitions](/Latex%20Definitions.md)
+- [Latex Definitions](/Latex Definitions.md)
 
 ## Obsidian
 
@@ -64,7 +64,7 @@ This is the state of the knowledge graph, updated on `march 26th, 2023`.
 - The nodes are markdown notes
 - The edges are links between notes
 
-![Knowledge Graph](/assets/Knowledge%20Graph.png)
+![Knowledge Graph](/assets/Knowledge Graph.png)
 
 *Every colour is a root folder, a list will follow.*
 

@@ -1,6 +1,6 @@
 # Supervised Learning
 
-Supervised learning is a type of [machine learning](/AI%20and%20ML/Unit%202/Machine%20Learning.md) in which an algorithm learns to make predictions or decisions by training on a labelled dataset, which consists of input data and the corresponding output label.
+Supervised learning is a type of [machine learning](/AI and ML/Unit 2/Machine Learning.md) in which an algorithm learns to make predictions or decisions by training on a labelled dataset, which consists of input data and the corresponding output label.
 
 $$\large
 	\underbrace{
@@ -22,4 +22,4 @@ The goal of supervised learning is to learn a mapping function from the input va
 
 ## Supervised Algorithms
 
-- [Nearest Neighbour](/AI%20and%20ML/Unit%202/Supervised%20Learning/Nearest%20Neighbour.md)
+- [Nearest Neighbour](/AI and ML/Unit 2/Supervised Learning/Nearest Neighbour.md)

@@ -2,9 +2,9 @@
 
 %% TK definition %%
 
-[Constraints](/Data%20Management%20and%20Analysis/Unit%201/Database/Constraints.md)
+[Constraints](/Data Management and Analysis/Unit 1/Database/Constraints.md)
 
-[Schemas](/Data%20Management%20and%20Analysis/Unit%201/Database/Schemas.md)
+[Schemas](/Data Management and Analysis/Unit 1/Database/Schemas.md)
 
 A DBMS allows:
 - Definition of constraints

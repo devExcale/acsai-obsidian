@@ -1,15 +1,10 @@
-# Probability
+# Probability and Statistics
 
-The study of probability concerns the study of experiments with **random outcomes** (the outcome of an action isn't predetermined), such as the result of tossing a coin.
-
-The study of probability has two main branches:
-
-- **Discrete Probability,** which goal is to study probability on countable sets of outcomes;
-- **Continuous Probability,** which goal is to study probability on uncountable sets of outcomes.
+Probability and Statistics are both tools which can be used to understand and study uncertainty in events and experiments. Probability is about the likelihood of events happening, while statistics is about collecting and analysing data to make inferences about the events.
 
 ## Table of Contents
 
-**Introduction**
+**Probabilistic Introduction**
 
 1. [Probability Space](/Probability/Introduction/Probability Space.md)
 1. [Combinatorial Analysis](/Probability/Introduction/Combinatorial Analysis.md)
@@ -18,6 +13,18 @@ The study of probability has two main branches:
 4. [Conditional Probability](/Probability/Introduction/Conditional Probability.md)
 5. [Total Probability Law](/Probability/Introduction/Total Probability Law.md)
 6. [Bayes' Theorem](/Probability/Introduction/Bayes' Theorem.md)
+
+**Statistic Introduction**
+
+1. [Sample and Population](/Probability and Statistics/Statistic Introduction/Sample and Population.md)
+2. [Variables](/Probability and Statistics/Statistic Introduction/Variables.md)
+3. [Data Graphs](/Probability and Statistics/Statistic Introduction/Data Graphs.md)
+
+**Distribution Properties**
+
+**Common Distributions**
+
+---
 
 **Random Variables**
 

@@ -49,4 +49,4 @@ Fragmentation could be solved by either
 - **Partial Compaction:** moving as less processes as possible, so to make a hole big enough for the new process to fit;
 - **Swapping:** processes currently not in execution (i.e. in waiting state) could be *swapped out* of the memory and saved in the disk to free space, then when they go back to a ready state they are *swapped in* the memory.
 
-Both fragmentation and swapping are good management techniques that unfortunately require much overhead, so if the possibility arises it'd be better to turn to more efficient techniques (e.g. *[paging](/Systems%20and%20Networking/Unit%201/Memory%20Management/Paging.md)*).
+Both fragmentation and swapping are good management techniques that unfortunately require much overhead, so if the possibility arises it'd be better to turn to more efficient techniques (e.g. *[paging](/Systems and Networking/Unit 1/Memory Management/Paging.md)*).

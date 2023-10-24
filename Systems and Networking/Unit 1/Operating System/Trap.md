@@ -1,6 +1,6 @@
 # Trap
 
-A *trap* is a signal that prompts the [CPU](/Systems%20and%20Networking/Unit%201/Architecture/CPU.md)/[OS](/Systems%20and%20Networking/Unit%201/Operating%20System/Operating%20System.md) to switch to [kernel mode](/Systems%20and%20Networking/Unit%201/Operating%20System/Protection%20and%20Security.md#Kernel-User%20Mode).
+A *trap* is a signal that prompts the [CPU](/Systems and Networking/Unit 1/Architecture/CPU.md)/[OS](/Systems and Networking/Unit 1/Operating System/Operating System.md) to switch to [kernel mode](/Systems and Networking/Unit 1/Operating System/Protection and Security.md#Kernel-User Mode).
 
 | Trap        | Reason             | Synchronous | Generator |
 | ----------- | ------------------ | ----------- | --------- |
@@ -10,7 +10,7 @@ A *trap* is a signal that prompts the [CPU](/Systems%20and%20Networking/Unit%201
 
 ## System Call
 
-A [System Call](/Systems%20and%20Networking/Unit%201/Operating%20System/System%20Calls.md) is a trap that is used to request a service from the OS (e.g. read a file).
+A [System Call](/Systems and Networking/Unit 1/Operating System/System Calls.md) is a trap that is used to request a service from the OS (e.g. read a file).
 
 It's synchronous, in the sense that it is dependent on instructions (e.g. `ecall`), it's generated from user programs.
 

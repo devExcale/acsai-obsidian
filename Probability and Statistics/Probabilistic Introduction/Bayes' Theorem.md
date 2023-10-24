@@ -2,7 +2,7 @@ $\def\P#1{{ \mathbb{P} \left(#1\right) }}$
 
 # Bayes' Theorem
 
-From [conditional probability](/Probability/Introduction/Conditional%20Probability.md), if $A,B$ are two events with positive probabilities, we have
+From [conditional probability](/Probability/Introduction/Conditional Probability.md), if $A,B$ are two events with positive probabilities, we have
 
 $$\large
 	\P{A \cap B} = \P{A|B} \P{B} = \P{B|A} \P{A}

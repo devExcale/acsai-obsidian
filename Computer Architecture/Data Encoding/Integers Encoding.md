@@ -49,7 +49,7 @@ The MSB is a sign indicator:
 
 **2-compl conversion**
 To turn an integer $N$ from base-10 to base-2 in 2-compl with $n$ bits:
-- If $N\ge0$, use [iterated divisions](/Representing%20Numbers.md#Iterated%20divisions%20method),
+- If $N\ge0$, use [iterated divisions](/Representing Numbers.md#Iterated divisions method),
 	- if less than $n$ bits are required, the number can be represented and we must 0-pad until $n$ bits are used;
 	- otherwise the number cannot be represented using $n$ bits.
 - If $N<0$, use iterated divisions on $-N$,

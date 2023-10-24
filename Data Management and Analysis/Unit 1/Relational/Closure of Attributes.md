@@ -41,7 +41,7 @@ The logic of the algorithm is to start with the attributes of $X$, and iterative
 
 ## Checking Keys with Closure
 
-The closure of a set of attributes $X$ can be used to determine if $X$ is a [key](/Data%20Management%20and%20Analysis/Unit%201/Relational/Functional%20Dependencies.md#Keys) of a relation:
+The closure of a set of attributes $X$ can be used to determine if $X$ is a [key](/Data Management and Analysis/Unit 1/Relational/Functional Dependencies.md#Keys) of a relation:
 
 1. if the closure $X^+$ equals to $R$, then $X \rightarrow R$ and $X$ is a **superkey**;
 1. if there's no proper subset $X' \subset X$ such that $X' \rightarrow R$, then $X$ is a **candidate key**.

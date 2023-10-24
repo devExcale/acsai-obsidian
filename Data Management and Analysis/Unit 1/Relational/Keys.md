@@ -1,6 +1,6 @@
 # Keys
 
-A key is a subset of attributes $K \subseteq R$ such that every tuple instance of $K$ [**uniquely determines**](/Data%20Management%20and%20Analysis/Unit%201/Relational/Functional%20Dependencies.md) every tuple of a relation $R$.
+A key is a subset of attributes $K \subseteq R$ such that every tuple instance of $K$ [**uniquely determines**](/Data Management and Analysis/Unit 1/Relational/Functional Dependencies.md) every tuple of a relation $R$.
 
 > [!example] Example
 >
@@ -9,7 +9,7 @@ A key is a subset of attributes $K \subseteq R$ such that every tuple instance o
 > | **200** | *Emanuele* | *Scaccia* | 11/05/2002  | ... |
 > | **146** | *Mario*    | *Rossi*   | 11/05/2002  | ... |
 >
-> In this case, by imposing [unique](/Data%20Management%20and%20Analysis/Unit%201/Database/Constraints.md#Uniqueness%20constraints) on $\set\text{Name, Surname}$, both
+> In this case, by imposing [unique](/Data Management and Analysis/Unit 1/Database/Constraints.md#Uniqueness constraints) on $\set\text{Name, Surname}$, both
 > - $\set\text{ID} \rightarrow R$
 > - $\set\text{Name, Surname} \rightarrow R$
 > 
@@ -41,7 +41,7 @@ $$
 
 ### Primary Key
 
-A primary key is chosen [candidate key](#Candidate%20Key). In a relation where there are multiple valid candidate keys, one is picked to consistently identity all the tuples.
+A primary key is chosen [candidate key](#Candidate Key). In a relation where there are multiple valid candidate keys, one is picked to consistently identity all the tuples.
 
 ## Uniqueness Test
 

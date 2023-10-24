@@ -20,7 +20,7 @@ To conduct a study, samples are observed and the result is *inferred* to the who
 
 ## Parameters and Statistics
 
-The concept of parameters and statistics is derived from the [sample and population](/Statistics/Sample%20and%20Population.md).
+The concept of parameters and statistics is derived from the [sample and population](/Statistics/Sample and Population.md).
 
 > [!note] Parameter
 > 

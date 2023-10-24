@@ -6,7 +6,7 @@ $\def \bb#1{{ \mathbb{#1} }}$
 
 ## Markov's Inequality
 
-Let $X$ be a non-negative [random variable](/Probability/Random%20Variables/Random%20Variables.md), $\lambda \in (0, \infty)$ a parameter.
+Let $X$ be a non-negative [random variable](/Probability/Random Variables/Random Variables.md), $\lambda \in (0, \infty)$ a parameter.
 
 $$\large
 	\P{X \ge \lambda} \le \frac{\E X}{\lambda}
@@ -14,7 +14,7 @@ $$
 
 ## Chebyshev's Inequality
 
-Let $X$ be a [random variable](/Probability/Random%20Variables/Random%20Variables.md) with finite mean $\E X$, $\lambda \in (0, \infty)$ a parameter.
+Let $X$ be a [random variable](/Probability/Random Variables/Random Variables.md) with finite mean $\E X$, $\lambda \in (0, \infty)$ a parameter.
 
 $$\large
 	\P{|X - \E X| \ge \lambda} \le \frac{\Var X}{\lambda^2}
@@ -22,7 +22,7 @@ $$
 
 ## Cauchy-Schwarz Inequality
 
-Let $X,Y$ be any [random variables](/Probability/Random%20Variables/Random%20Variables.md), then
+Let $X,Y$ be any [random variables](/Probability/Random Variables/Random Variables.md), then
 
 $$\large 
 	\E{|XY|} \le \sqrt{\E{X^2}\E{Y^2}}

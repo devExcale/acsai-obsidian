@@ -6,6 +6,19 @@
 
 $$\large
 \displaylines{
+	\lceil \text{Wrap} \rfloor \\
+	\lceil \cdot \rfloor
+}
+$$
+
+```tex
+$\def \wrap#1{{ \lceil {#1} \rfloor }}$
+```
+
+---
+
+$$\large
+\displaylines{
 	\text{[Probability]} \\
 	\mathbb P(\cdot)
 }

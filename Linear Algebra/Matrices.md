@@ -73,7 +73,7 @@ $$
 
 > [!note] Eigenvectors
 > 
-> If matrix is symmetric, then all the [eigenvectors](/Linear%20Algebra/Eigenvectors.md) will be **orthogonal** one to each other.
+> If matrix is symmetric, then all the [eigenvectors](/Linear Algebra/Eigenvectors.md) will be **orthogonal** one to each other.
 
 ## Orthogonal Matrix
 

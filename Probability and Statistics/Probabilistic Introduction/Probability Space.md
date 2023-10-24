@@ -91,9 +91,9 @@ $$\P{ \bigcup\limits_{n=1}^\infty{ A_n } }
 
 A probability space is defined by the triple $(\Omega, \cal{F}, \bb{P})$, where:
 
-- $\Omega$ is the [sample space](#Sample%20Space);
-- $\cal{F}$ is the set of all [observable events](#Observable%20Events);
-- $\bb{P}$ is the [probability measure](#Probability%20Measure).
+- $\Omega$ is the [sample space](#Sample Space);
+- $\cal{F}$ is the set of all [observable events](#Observable Events);
+- $\bb{P}$ is the [probability measure](#Probability Measure).
 
 ### Uniform Probability Space
 

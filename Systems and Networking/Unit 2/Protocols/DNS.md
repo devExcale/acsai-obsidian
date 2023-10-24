@@ -9,7 +9,7 @@ The DNS is both:
 2. an application-layer protocol that allows hosts to query said database.
 
 > [!info] The protocol
-> The DNS is an application-layer protocol that can be used parallelly to other application-layer protocols such as [HTTP](/Systems%20and%20Networking/Unit%202/Protocols/HTTP.md) and [SMTP](/Systems%20and%20Networking/Unit%202/Protocols/Email.md#Simple%20Mail%20Transfer%20Protocol). It uses [UDP](?TK) over port 53.
+> The DNS is an application-layer protocol that can be used parallelly to other application-layer protocols such as [HTTP](/Systems and Networking/Unit 2/Protocols/HTTP.md) and [SMTP](/Systems and Networking/Unit 2/Protocols/Email.md#Simple Mail Transfer Protocol). It uses [UDP](?TK) over port 53.
 
 ## Services
 

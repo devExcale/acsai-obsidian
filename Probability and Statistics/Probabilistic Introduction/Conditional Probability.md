@@ -3,7 +3,7 @@ $\def\indep{{ \mathrel{\unicode{x2AEB}} }}$
 
 # Conditional Probability
 
-**Conditional Probability** is a concept closely related to [event](/Probability/Introduction/Probability%20Space.md#Events) [independence](/Probability/Introduction/Independence.md).
+**Conditional Probability** is a concept closely related to [event](/Probability/Introduction/Probability Space.md#Events) [independence](/Probability and Statistics/Probabilistic Introduction/Independence.md).
 
 Let $A,B$ be two events with $\P{B}>0$. Then, the conditional probability of $A$ *given* $B$ is
 

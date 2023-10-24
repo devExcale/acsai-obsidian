@@ -3,7 +3,7 @@ $\def\indep{{ \mathrel{\unicode{x2AEB}} }}$
 
 # Independence
 
-Independence is a property of two or more [events](/Probability/Introduction/Probability%20Space.md#Events), it indicates whether the [probability](/Probability/Introduction/Probability%20Space.md#Probability%20Measure) of the events is influenced by one of the events happening first.
+Independence is a property of two or more [events](/Probability/Introduction/Probability Space.md#Events), it indicates whether the [probability](/Probability/Introduction/Probability Space.md#Probability Measure) of the events is influenced by one of the events happening first.
 
 ## Pairwise Independence
 

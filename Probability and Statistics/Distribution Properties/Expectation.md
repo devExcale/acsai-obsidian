@@ -9,27 +9,32 @@ $\def\indep{{ \mathrel\unicode{x2AEB} }}$
 
 # Expectation
 
-For a [random variable](/Probability/Random%20Variables/Random%20Variables.md) $X : \Omega \rightarrow S$, the *expectation* (*expected* or *mean* value) of $X$ is defined to be
+The expectation of a random variable $X$, often referred to as *expected* or *mean* value, is the average of the values taken by $X$, averaged by the weights of the values.
+
+There are various ways to compute the expectation:
+
+1. **Indexed by the weights and values of the distribution**
 
 $$\large
 \begin{aligned}
-	\E{X}
-	&= \sum_{x \in S} x \P{X=x}
-	\\
+	\E X &= \sum_{x \in S} x \P{X=x} \\
 	&= \sum_{x \in S} x p_x
 \end{aligned}
 $$
 
-> [!info] Expectation of $X$
-> The *expectation* of $X$ is the average of  the values taken by $X$, averaged with weights corresponding to the probabilities of the values.
-
-The expectation of a random variable can also be computed using the following formula.
+2. **Indexed by the events of the random variable**
 
 $$\large
-	\E{X} = \sum_{\omega \in \Omega} X(\omega) \P{\set\omega} .
+	\E X = \sum_{\omega \in \Omega} X(\omega) \P{\set\omega}
 $$
 
-> [!cite] Proof
+3. **Uniform distribution**
+
+$$\large
+	\E X = \frac{1}{n} \sum_{i=1}^n x_i
+$$
+
+> [!cite]- Converting from events-index to values-index
 > 
 > $$\large
 > \begin{aligned}
@@ -50,14 +55,16 @@ $$
 A non-negative random variable will always have non-negative expectation.
 
 $$\large
-	X \ge 0 \Rightarrow \E{X} \ge 0
+	X \ge 0
+	\quad \Rightarrow \quad
+	\E{X} \ge 0
 $$
 
 The only way for a non-negative random variable to have expectation zero is for the random variable to have zero as the only result.
 
 $$\large
 	X \ge 0 \land \E{X} = 0
-	\Leftrightarrow
+	\quad \Leftrightarrow
 	\P{X = 0} = 1
 $$
 
@@ -116,7 +123,7 @@ $$\large
 $$
 
 ## Expectations of Common Distributions
-
+ TK move in respective distribution pages
 $$\large
 \begin{aligned}
 	X &\sim Bernoulli(p) &\Longrightarrow \E{X} &= p
